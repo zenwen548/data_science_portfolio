@@ -37,10 +37,12 @@ ROC Curve
 
 ### ROC Curve
 ![ROC Curve](https://github.com/zenwen548/data_science_portfolio/blob/main/Log_Reg_ROC_Curve.jpg)
+
 Key Insight:
 The AUC (Area Under the Curve) score of 1.00 indicates perfect separation between churned and non-churned customers.
 
-
+### Tableau Visualization
+![Tableau_Viz](https://public.tableau.com/app/profile/lee6095/viz/Churn_Model_Viz/Dashboard1)
 
 
 
