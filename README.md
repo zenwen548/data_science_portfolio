@@ -28,6 +28,7 @@ The Logistic Regression model achieved exceptional performance in predicting cus
 
 ### Confusion Matrix
 ![Confusion Matrix](https://github.com/zenwen548/data_science_portfolio/blob/main/Log_Reg_Confusion_Matrix.jpg)
+
 Interpretation:
 True Positives: 2339 (Correctly identified churned customers).
 True Negatives: 294 (Correctly identified non-churned customers).
