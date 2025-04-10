@@ -19,7 +19,7 @@ Each project folder contains:
   - Outputs include a cleaned dataset for Tableau and model evaluation metrics.
 - **Files**:
   - [`Logistic_Regression_Customer_Churn.py`](Logistic_Regression_Customer_Churn.py): Main script for data cleaning, feature engineering, and churn prediction.
-## Model Performance
+### Model Performance
 
 The Logistic Regression model achieved exceptional performance in predicting customer churn:
 
@@ -46,4 +46,40 @@ The AUC (Area Under the Curve) score of 1.00 indicates perfect separation betwee
 ![Tableau_Viz](https://public.tableau.com/app/profile/lee6095/viz/Churn_Model_Viz/Dashboard1)
 
 
+### 2. Bulldozer_Price_Regression
+- **Description**: Built a regression model to predict used bulldozer sale prices using structured auction data from Kaggle. Applied a full data science workflow including preprocessing, feature engineering, model tuning, and real-world performance evaluation.
 
+- **Key Features**:
+
+Created a reusable preprocessing function that handled missing values, converted categories, and extracted sale date features like year, month, and day of week.
+
+Trained and tuned a Random Forest Regressor using scikit-learn, comparing baseline and hyperparameter-optimized models.
+
+Used feature importance plots to identify the top predictive features: YearMade, ProductSize, and saleYear.
+
+Exported model predictions and structured them for Tableau dashboards and potential business use.
+
+**Files**:
+
+- end-to-end-bulldozer-price-regression.ipynb: Full notebook including data cleaning, modeling, feature importance analysis, and predictions.
+
+- LinkedIn_Bulldozer_Article_Improved_Final.docx: A long-form article-style write-up designed for technical storytelling and portfolio presentation.
+
+### Model Performance
+The final model demonstrated strong predictive power and generalizability:
+
+- **R² Score (Validation Set):** 0.876
+
+- **Mean Absolute Error (MAE):** ~$6,000
+
+This means the model explains nearly 88% of the variation in bulldozer prices and can predict sale prices within a few thousand dollars on average — offering actionable accuracy for real-world decisions.
+
+### Feature Importance
+
+**Top Predictors**:
+
+- YearMade – newer equipment correlates with higher sale prices.
+
+- ProductSize – larger machinery tends to command more value.
+
+- saleYear – captures market timing and inflation trends.
