@@ -58,7 +58,8 @@ The AUC (Area Under the Curve) score of 1.00 indicates perfect separation betwee
 
 **Files**:
 
-- bulldozer-price-regression.ipynb: Full notebook including data cleaning, modeling, feature importance analysis, and predictions.
+- bulldozer-price-regression.ipynb (https://github.com/zenwen548/data_science_portfolio/blob/1885c46b3fbdf61bfb44258df61103076a76cbc7/Bulldozer-Price-Regression.ipynb):
+  Full notebook including data cleaning, modeling, feature importance analysis, and predictions.
 
 - LinkedIn_Bulldozer_Article_Improved_Final.docx: A long-form article-style write-up designed for technical storytelling and portfolio presentation.
 
