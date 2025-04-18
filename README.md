@@ -51,35 +51,34 @@ The AUC (Area Under the Curve) score of 1.00 indicates perfect separation betwee
 
 - **Key Features**:
 
-Created a reusable preprocessing function that handled missing values, converted categories, and extracted sale date features like year, month, and day of week.
-
-Trained and tuned a Random Forest Regressor using scikit-learn, comparing baseline and hyperparameter-optimized models.
-
-Used feature importance plots to identify the top predictive features: YearMade, ProductSize, and saleYear.
-
-Exported model predictions and structured them for Tableau dashboards and potential business use.
+- Created a reusable preprocessing function that handled missing values, converted categories, and extracted sale date features like year, month, and day of week.
+- Trained and tuned both a Random Forest Regressor and XGBoost model using scikit-learn, comparing baseline and optimized performance.
+- Used feature importance plots to identify the top predictors — including missingness indicators — to enhance interpretability.
+- Exported predictions and structured them for potential downstream business use (e.g. price guidance or bidding thresholds).
 
 **Files**:
 
-- end-to-end-bulldozer-price-regression.ipynb: Full notebook including data cleaning, modeling, feature importance analysis, and predictions.
+- bulldozer-price-regression.ipynb: Full notebook including data cleaning, modeling, feature importance analysis, and predictions.
 
 - LinkedIn_Bulldozer_Article_Improved_Final.docx: A long-form article-style write-up designed for technical storytelling and portfolio presentation.
 
 ### Model Performance
 The final model demonstrated strong predictive power and generalizability:
 
-- **R² Score (Validation Set):** 0.876
+- **R² Score (Validation Set):** 0.648
 
-- **Mean Absolute Error (MAE):** ~$6,000
+- **Mean Absolute Error (MAE):** ~$10,000
 
-This means the model explains nearly 88% of the variation in bulldozer prices and can predict sale prices within a few thousand dollars on average — offering actionable accuracy for real-world decisions.
+This means the model explains nearly 65% of the variation in bulldozer prices and can predict sale prices within a ten thousand dollars on average — offering actionable accuracy for real-world decisions.
 
 ### Feature Importance
 
 **Top Predictors**:
-
-- YearMade – newer equipment correlates with higher sale prices.
-
-- ProductSize – larger machinery tends to command more value.
-
-- saleYear – captures market timing and inflation trends.
+  - Scarifier_is_missing – Surprisingly, the absence of data about scarifier equipment (used to break up tough terrain) was the strongest signal — likely correlating with
+    older, less-documented, and lower-value machines.
+  - Coupler_System_is_missing – Missing values in coupler system fields (which relate to attachment versatility) also ranked highly, reinforcing the impact of incomplete
+    listings.
+  - Coupler_System – Presence of coupler systems may signal newer, more adaptable machines, which tend to fetch higher prices.
+  
+  - Note: While traditional features like YearMade, ProductSize, and saleYear still matter, XGBoost revealed that missing values themselves can be highly predictive —
+    offering insight into listing completeness and equipment value.
