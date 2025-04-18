@@ -13,10 +13,10 @@ Each project folder contains:
 ### 1. Logistic Regression Customer Churn
 - **Description**: Predicts customer churn using logistic regression and random forest models based on subscription and customer data.
 - **Key Features**:
-  - Data cleaning to handle missing values and duplicates.
-  - Calculation of derived features like tenure days and referral status.
-  - Model training with logistic regression and random forest classifiers.
-  - Outputs include a cleaned dataset for Tableau and model evaluation metrics.
+  - Created a reusable preprocessing function that handled missing values, converted categories, and extracted sale date features like year, month, and day of week.
+  - Trained and tuned both a Random Forest Regressor and XGBoost model using scikit-learn, comparing baseline and optimized performance.
+  - Used feature importance plots to identify the top predictors — including missingness indicators — to enhance interpretability.
+  - Exported predictions and structured them for potential downstream business use (e.g. price guidance or bidding thresholds).
 - **Files**:
   - [`Logistic_Regression_Customer_Churn.py`](Logistic_Regression_Customer_Churn.py): Main script for data cleaning, feature engineering, and churn prediction.
 ### Model Performance
