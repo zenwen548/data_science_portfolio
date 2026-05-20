@@ -44,6 +44,13 @@ What the project demonstrates:
 - Tableau-ready export with churn predictions and churn probabilities for dashboarding.
 - Business-facing communication through visual segmentation and retention-risk reporting.
 
+Run the churn pipeline with the included sample schema:
+
+```bash
+pip install -r requirements.txt
+python Logistic_Regression_Customer_Churn.py --customers data/sample_customers.csv --subscriptions data/sample_subscriptions.csv --output-dir outputs/churn
+```
+
 Pipeline outputs:
 
 - `cleaned_data.csv`
@@ -55,6 +62,8 @@ Pipeline outputs:
 Artifacts:
 
 - [Churn analytics pipeline](Logistic_Regression_Customer_Churn.py)
+- [Sample customer data](data/sample_customers.csv)
+- [Sample subscription data](data/sample_subscriptions.csv)
 - Tableau dashboard: stakeholder-facing dashboard link to be added before Carrd/resume sharing.
 
 ## Upcoming PySpark / KMeans Work
@@ -75,7 +84,6 @@ Near-term cleanup:
 
 - Keep bulldozer and churn as the current featured portfolio projects.
 - Move project assets into `projects/` folders over time.
-- Add `requirements.txt` and reproducibility notes.
 - Add optional Docker and MLflow tracking to the bulldozer workflow.
 - Add the Tableau dashboard URL and screenshots for the churn project.
 
@@ -101,5 +109,8 @@ projects/
     docker/
 assets/
 requirements.txt
+data/
+  sample_customers.csv
+  sample_subscriptions.csv
 .gitignore
 ```
