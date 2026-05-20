@@ -11,9 +11,9 @@ This portfolio is being organized around two goals:
 
 | Project | Focus | Tools | Status |
 | --- | --- | --- | --- |
-| [Bulldozer Price Regression](projects/bulldozer-price-regression/README.md) | Price prediction, feature engineering, model evaluation, feature importance | Python, pandas, scikit-learn, XGBoost | Featured project |
+| [Bulldozer Price Regression](projects/bulldozer-price-regression/README.md) | Price prediction, feature engineering, model evaluation, feature importance | Python, pandas, scikit-learn, XGBoost | Featured |
 | PySpark Clustering and Feature Engineering | Distributed data processing, unsupervised learning, production-style workflow | PySpark, KMeans, Docker/AWS | In progress |
-| Customer Churn Classification | Classification workflow and Tableau export | Python, pandas, scikit-learn, Tableau | Legacy / under review |
+| Customer Churn Analytics Dashboard | Churn risk analysis, classification workflow, stakeholder dashboarding | Python, pandas, scikit-learn, Tableau | Dashboard project |
 
 ## Featured Project: Bulldozer Price Regression
 
@@ -32,26 +32,27 @@ Artifacts:
 - [Case study README](projects/bulldozer-price-regression/README.md)
 - [Notebook](Bulldozer-Price-Regression.ipynb)
 
-## Legacy Project: Customer Churn Classification
+## Customer Churn Analytics Dashboard
 
-The churn project is currently kept as a legacy learning exercise rather than a featured portfolio project.
+Built a standalone churn analytics project pairing Python-based customer feature engineering and classification with a Tableau dashboard for visualizing retention patterns and communicating customer-risk insights.
 
-Why it is under review:
+Current positioning:
 
-- The current script trains a `RandomForestClassifier`, while the older README title described logistic regression.
-- The original performance claim of `1.00` accuracy / ROC-AUC is not used as portfolio evidence because the feature engineering needs leakage-safe validation.
-- The source CSV files are not included in this repository, so the project is not currently reproducible from the public repo alone.
+- The Tableau dashboard is the primary business-facing artifact for stakeholder communication.
+- The Python workflow demonstrates customer data preparation, churn labeling, feature creation, model training, and exportable evaluation outputs.
+- The old `1.00` accuracy / ROC-AUC claim is not used as final model-performance evidence until validation is tightened.
 
-Planned direction:
+Model-validation refinements planned before featuring model scores on a resume or Carrd page:
 
-- Rebuild with public or sample data.
-- Use a leakage-safe train/test split.
+- Add public, sample, or documented source data so the project is reproducible from the repo.
+- Use a leakage-safe train/test split and remove features derived from post-outcome subscription status.
 - Add a logistic regression baseline before comparing stronger models.
-- Document the Tableau output as business communication rather than presenting the current model as final.
+- Keep the Tableau dashboard as the stakeholder-facing communication deliverable.
 
-Artifact:
+Artifacts:
 
-- [Legacy churn script](Logistic_Regression_Customer_Churn.py)
+- [Churn analysis script](Logistic_Regression_Customer_Churn.py)
+- Tableau dashboard: available as the stakeholder-facing deliverable; public link to be added or confirmed before resume/Carrd sharing.
 
 ## Upcoming PySpark / KMeans Work
 
@@ -70,10 +71,10 @@ Planned portfolio framing:
 Near-term cleanup:
 
 - Keep bulldozer as the strongest current portfolio project.
+- Preserve churn as a dashboard-centered analytics project while tightening the model validation story.
 - Move project assets into `projects/` folders over time.
 - Add `requirements.txt` and reproducibility notes.
 - Add optional Docker and MLflow tracking to the bulldozer workflow.
-- Demote or rebuild the churn project before using it on a resume or Carrd page.
 
 Longer-term target structure:
 
