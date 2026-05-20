@@ -1,84 +1,100 @@
-# data_science_portfolio
+# Data Science & ML Engineering Portfolio
 
-Welcome to my data science portfolio! This repository showcases various projects demonstrating my skills in Python, data cleaning, data analysis, and machine learning.
+Selected graduate and independent projects demonstrating Python, machine learning, feature engineering, model evaluation, and reproducible analysis workflows.
 
-This repository showcases various projects that highlight my skills in Python, data cleaning, data analysis, and machine learning.
+This portfolio is being organized around two goals:
 
-Each project folder contains:
-- Python scripts for data processing and modeling.
-- Datasets (where applicable).
-- Detailed explanations of the project's purpose, approach, and outcomes.
+- Show clear, business-facing data science work through concise case studies.
+- Separate polished portfolio projects from older learning exercises and work in progress.
 
-## Projects
-### 1. Logistic Regression Customer Churn
-- **Description**: Predicts customer churn using logistic regression and random forest models based on subscription and customer data.
-- **Key Features**:
-  - Created a reusable preprocessing function that handled missing values, converted categories, and extracted sale date features like year, month, and day of week.
-  - Trained and tuned both a Random Forest Regressor and XGBoost model using scikit-learn, comparing baseline and optimized performance.
-  - Used feature importance plots to identify the top predictors — including missingness indicators — to enhance interpretability.
-  - Exported predictions and structured them for potential downstream business use (e.g. price guidance or bidding thresholds).
-- **Files**:
-  - [`Logistic_Regression_Customer_Churn.py`](Logistic_Regression_Customer_Churn.py): Main script for data cleaning, feature engineering, and churn prediction.
-### Model Performance
+## Project Index
 
-The Logistic Regression model achieved exceptional performance in predicting customer churn:
+| Project | Focus | Tools | Status |
+| --- | --- | --- | --- |
+| [Bulldozer Price Regression](projects/bulldozer-price-regression/README.md) | Price prediction, feature engineering, model evaluation, feature importance | Python, pandas, scikit-learn, XGBoost | Featured project |
+| PySpark Clustering and Feature Engineering | Distributed data processing, unsupervised learning, production-style workflow | PySpark, KMeans, Docker/AWS | In progress |
+| Customer Churn Classification | Classification workflow and Tableau export | Python, pandas, scikit-learn, Tableau | Legacy / under review |
 
-- **Accuracy:** 1.00
-- **ROC-AUC Score:** 1.00
+## Featured Project: Bulldozer Price Regression
 
-### Confusion Matrix
-![Confusion Matrix](https://github.com/zenwen548/data_science_portfolio/blob/main/Log_Reg_Confusion_Matrix.jpg)
+Built a supervised regression workflow to predict used bulldozer auction prices from structured equipment and sales data from the Kaggle Blue Book for Bulldozers competition.
 
-Interpretation:
-True Positives: 2339 (Correctly identified churned customers).
-True Negatives: 294 (Correctly identified non-churned customers).
-False Positives: 2 (Misclassified as churned).
-False Negatives: 5 (Misclassified as not churned).
-ROC Curve
+Current saved model evidence from the notebook:
 
-### ROC Curve
-![ROC Curve](https://github.com/zenwen548/data_science_portfolio/blob/main/Log_Reg_ROC_Curve.jpg)
+- Validation MAE: about `$10,480`
+- Validation RMSLE: `0.398`
+- Validation R2: `0.648`
 
-Key Insight:
-The AUC (Area Under the Curve) score of 1.00 indicates perfect separation between churned and non-churned customers.
+The strongest feature-importance signals in the tuned XGBoost model were missingness indicators, especially `Scarifier_is_missing` and `Coupler_System_is_missing`, plus `Coupler_System`. This suggests that listing completeness and equipment configuration may be meaningful pricing signals, not just traditional variables like model year.
 
-### Tableau Visualization
-![Tableau_Viz](https://public.tableau.com/app/profile/lee6095/viz/Churn_Model_Viz/Dashboard1)
+Artifacts:
 
+- [Case study README](projects/bulldozer-price-regression/README.md)
+- [Notebook](Bulldozer-Price-Regression.ipynb)
 
-### 2. Bulldozer_Price_Regression
-- **Description**: Built a regression model to predict used bulldozer sale prices using structured auction data from Kaggle. Applied a full data science workflow including preprocessing, feature engineering, model tuning, and real-world performance evaluation.
+## Legacy Project: Customer Churn Classification
 
-- **Key Features**:
+The churn project is currently kept as a legacy learning exercise rather than a featured portfolio project.
 
-- Created a reusable preprocessing function that handled missing values, converted categories, and extracted sale date features like year, month, and day of week.
-- Trained and tuned both a Random Forest Regressor and XGBoost model using scikit-learn, comparing baseline and optimized performance.
-- Used feature importance plots to identify the top predictors — including missingness indicators — to enhance interpretability.
-- Exported predictions and structured them for potential downstream business use (e.g. price guidance or bidding thresholds).
+Why it is under review:
 
-**Files**:
+- The current script trains a `RandomForestClassifier`, while the older README title described logistic regression.
+- The original performance claim of `1.00` accuracy / ROC-AUC is not used as portfolio evidence because the feature engineering needs leakage-safe validation.
+- The source CSV files are not included in this repository, so the project is not currently reproducible from the public repo alone.
 
-- ![bulldozer-price-regression.ipynb](https://github.com/zenwen548/data_science_portfolio/blob/1885c46b3fbdf61bfb44258df61103076a76cbc7/Bulldozer-Price-Regression.ipynb): Full notebook including data cleaning, modeling, feature importance analysis, and predictions.
+Planned direction:
 
-- LinkedIn_Bulldozer_Article_Improved_Final.docx: A long-form article-style write-up designed for technical storytelling and portfolio presentation.
+- Rebuild with public or sample data.
+- Use a leakage-safe train/test split.
+- Add a logistic regression baseline before comparing stronger models.
+- Document the Tableau output as business communication rather than presenting the current model as final.
 
-### Model Performance
-The final model demonstrated strong predictive power and generalizability:
+Artifact:
 
-- **R² Score (Validation Set):** 0.648
+- [Legacy churn script](Logistic_Regression_Customer_Churn.py)
 
-- **Mean Absolute Error (MAE):** ~$10,000
+## Upcoming PySpark / KMeans Work
 
-This means the model explains nearly 65% of the variation in bulldozer prices and can predict sale prices within a ten thousand dollars on average — offering actionable accuracy for real-world decisions.
+The upcoming PySpark and KMeans projects will be added as standalone headline projects when complete. They are a better fit for demonstrating distributed processing, clustering, Docker, AWS, and production-style workflow than retrofitting Spark into the current supervised learning projects.
 
-### Feature Importance
+Planned portfolio framing:
 
-**Top Predictors**:
-  - Scarifier_is_missing – Surprisingly, the absence of data about scarifier equipment (used to break up tough terrain) was the strongest signal — likely correlating with
-    older, less-documented, and lower-value machines.
-  - Coupler_System_is_missing – Missing values in coupler system fields (which relate to attachment versatility) also ranked highly, reinforcing the impact of incomplete
-    listings.
-  - Coupler_System – Presence of coupler systems may signal newer, more adaptable machines, which tend to fetch higher prices.
-  
-  - Note: While traditional features like YearMade, ProductSize, and saleYear still matter, XGBoost revealed that missing values themselves can be highly predictive —
-    offering insight into listing completeness and equipment value.
+- PySpark feature engineering on larger or partitioned data
+- KMeans clustering / segmentation with interpretable cluster profiles
+- Dockerized project environment
+- Cloud-oriented workflow notes
+- Clear case-study write-up for both technical and non-technical reviewers
+
+## Repository Cleanup Roadmap
+
+Near-term cleanup:
+
+- Keep bulldozer as the strongest current portfolio project.
+- Move project assets into `projects/` folders over time.
+- Add `requirements.txt` and reproducibility notes.
+- Add optional Docker and MLflow tracking to the bulldozer workflow.
+- Demote or rebuild the churn project before using it on a resume or Carrd page.
+
+Longer-term target structure:
+
+```text
+README.md
+projects/
+  bulldozer-price-regression/
+    README.md
+    notebooks/
+    src/
+    outputs/
+  pyspark-clustering/
+    README.md
+    notebooks/
+    src/
+    docker/
+  customer-churn/
+    README.md
+    src/
+    outputs/
+assets/
+requirements.txt
+.gitignore
+```
