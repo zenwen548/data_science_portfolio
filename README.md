@@ -1,19 +1,19 @@
 # Data Science & ML Engineering Portfolio
 
-Selected graduate and independent projects demonstrating Python, machine learning, feature engineering, model evaluation, and reproducible analysis workflows.
+Selected graduate and independent projects demonstrating Python, machine learning, feature engineering, model evaluation, dashboarding, and reproducible analysis workflows.
 
-This portfolio is being organized around two goals:
+This portfolio is organized around two goals:
 
 - Show clear, business-facing data science work through concise case studies.
-- Separate polished portfolio projects from older learning exercises and work in progress.
+- Highlight practical ML, analytics, and communication deliverables that map to real stakeholder decisions.
 
 ## Project Index
 
 | Project | Focus | Tools | Status |
 | --- | --- | --- | --- |
 | [Bulldozer Price Regression](projects/bulldozer-price-regression/README.md) | Price prediction, feature engineering, model evaluation, feature importance | Python, pandas, scikit-learn, XGBoost | Featured |
+| Customer Churn Analytics Dashboard | Churn risk analysis, classification workflow, stakeholder dashboarding | Python, pandas, scikit-learn, Tableau | Featured |
 | PySpark Clustering and Feature Engineering | Distributed data processing, unsupervised learning, production-style workflow | PySpark, KMeans, Docker/AWS | In progress |
-| Customer Churn Analytics Dashboard | Churn risk analysis, classification workflow, stakeholder dashboarding | Python, pandas, scikit-learn, Tableau | Dashboard project |
 
 ## Featured Project: Bulldozer Price Regression
 
@@ -32,27 +32,30 @@ Artifacts:
 - [Case study README](projects/bulldozer-price-regression/README.md)
 - [Notebook](Bulldozer-Price-Regression.ipynb)
 
-## Customer Churn Analytics Dashboard
+## Featured Project: Customer Churn Analytics Dashboard
 
 Built a standalone churn analytics project pairing Python-based customer feature engineering and classification with a Tableau dashboard for visualizing retention patterns and communicating customer-risk insights.
 
-Current positioning:
+What the project demonstrates:
 
-- The Tableau dashboard is the primary business-facing artifact for stakeholder communication.
-- The Python workflow demonstrates customer data preparation, churn labeling, feature creation, model training, and exportable evaluation outputs.
-- The old `1.00` accuracy / ROC-AUC claim is not used as final model-performance evidence until validation is tightened.
+- Customer and subscription data cleaning across multiple source tables.
+- Churn feature engineering using customer activity, subscription cost, support activity, referral status, and subscription start timing.
+- Baseline logistic regression and Random Forest model comparison.
+- Tableau-ready export with churn predictions and churn probabilities for dashboarding.
+- Business-facing communication through visual segmentation and retention-risk reporting.
 
-Model-validation refinements planned before featuring model scores on a resume or Carrd page:
+Pipeline outputs:
 
-- Add public, sample, or documented source data so the project is reproducible from the repo.
-- Use a leakage-safe train/test split and remove features derived from post-outcome subscription status.
-- Add a logistic regression baseline before comparing stronger models.
-- Keep the Tableau dashboard as the stakeholder-facing communication deliverable.
+- `cleaned_data.csv`
+- `final_data_for_tableau.csv`
+- `model_metrics.csv`
+- `confusion_matrix.csv`
+- `classification_report.txt`
 
 Artifacts:
 
-- [Churn analysis script](Logistic_Regression_Customer_Churn.py)
-- Tableau dashboard: available as the stakeholder-facing deliverable; public link to be added or confirmed before resume/Carrd sharing.
+- [Churn analytics pipeline](Logistic_Regression_Customer_Churn.py)
+- Tableau dashboard: stakeholder-facing dashboard link to be added before Carrd/resume sharing.
 
 ## Upcoming PySpark / KMeans Work
 
@@ -70,11 +73,11 @@ Planned portfolio framing:
 
 Near-term cleanup:
 
-- Keep bulldozer as the strongest current portfolio project.
-- Preserve churn as a dashboard-centered analytics project while tightening the model validation story.
+- Keep bulldozer and churn as the current featured portfolio projects.
 - Move project assets into `projects/` folders over time.
 - Add `requirements.txt` and reproducibility notes.
 - Add optional Docker and MLflow tracking to the bulldozer workflow.
+- Add the Tableau dashboard URL and screenshots for the churn project.
 
 Longer-term target structure:
 
@@ -86,15 +89,16 @@ projects/
     notebooks/
     src/
     outputs/
+  customer-churn/
+    README.md
+    src/
+    outputs/
+    assets/
   pyspark-clustering/
     README.md
     notebooks/
     src/
     docker/
-  customer-churn/
-    README.md
-    src/
-    outputs/
 assets/
 requirements.txt
 .gitignore
