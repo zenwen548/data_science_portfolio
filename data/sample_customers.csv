@@ -1,0 +1,25 @@
+customer_id,customer_segment,region,account_type
+C001,Enterprise,West,Annual
+C002,Small Business,South,Monthly
+C003,Mid-Market,East,Annual
+C004,Small Business,West,Monthly
+C005,Enterprise,North,Annual
+C006,Mid-Market,South,Monthly
+C007,Small Business,East,Monthly
+C008,Enterprise,West,Annual
+C009,Mid-Market,North,Annual
+C010,Small Business,South,Monthly
+C011,Enterprise,East,Annual
+C012,Mid-Market,West,Monthly
+C013,Small Business,North,Monthly
+C014,Enterprise,South,Annual
+C015,Mid-Market,East,Annual
+C016,Small Business,West,Monthly
+C017,Enterprise,North,Annual
+C018,Mid-Market,South,Monthly
+C019,Small Business,East,Monthly
+C020,Enterprise,West,Annual
+C021,Mid-Market,North,Annual
+C022,Small Business,South,Monthly
+C023,Enterprise,East,Annual
+C024,Mid-Market,West,Monthly
