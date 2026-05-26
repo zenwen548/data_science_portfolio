@@ -56,6 +56,8 @@ Pipeline outputs:
 - `confusion_matrix.csv`
 - `classification_report.txt`
 
+This pipeline was verified end-to-end against the sample files above, producing all five outputs listed.
+
 Artifacts:
 
 - [Churn analytics pipeline](Logistic_Regression_Customer_Churn.py)
