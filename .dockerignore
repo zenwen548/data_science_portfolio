@@ -1,0 +1,8 @@
+.git
+.venv
+__pycache__
+*.pyc
+.ipynb_checkpoints
+data/
+mlruns/
+projects/bulldozer-price-regression/outputs/
