@@ -56,6 +56,8 @@ docker build -f projects/bulldozer-price-regression/Dockerfile -t bulldozer-pric
 docker run --rm -v "%cd%/data:/app/data" -v "%cd%/mlruns:/app/mlruns" bulldozer-price-regression --data data/TrainAndValid.csv --mlflow-tracking-uri file:/app/mlruns
 ```
 
+PowerShell users can replace `%cd%` with `${PWD}`. Bash users can replace it with `$(pwd)`.
+
 The script logs XGBoost parameters, training and validation metrics, feature importance, validation predictions, and the fitted model to MLflow. Add `--no-mlflow` to write local artifacts only.
 
 ## Saved Model Results
