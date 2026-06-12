@@ -24,9 +24,9 @@ from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
 
-DEFAULT_CUSTOMERS_PATH = "customers.csv"
-DEFAULT_SUBSCRIPTIONS_PATH = "subscriptions.csv"
-DEFAULT_OUTPUT_DIR = "."
+DEFAULT_CUSTOMERS_PATH = "projects/customer-churn/data/sample_customers.csv"
+DEFAULT_SUBSCRIPTIONS_PATH = "projects/customer-churn/data/sample_subscriptions.csv"
+DEFAULT_OUTPUT_DIR = "outputs/churn"
 TARGET_COLUMN = "churned"
 
 LEAKAGE_COLUMNS = {
