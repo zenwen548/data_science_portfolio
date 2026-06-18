@@ -14,7 +14,7 @@ Auction buyers and sellers need a practical way to estimate equipment value from
 
 - [Notebook](../../Bulldozer-Price-Regression.ipynb)
 
-The notebook is currently the main project artifact. Later cleanup can move it into this folder and split reusable logic into `src/` modules.
+The notebook is the main narrative artifact. The reusable training entrypoint lives in `src/train.py` so the model can be rerun from the command line or Docker without changing the notebook.
 
 ## Data
 
@@ -38,6 +38,27 @@ The notebook includes:
 - Evaluating with MAE, RMSLE, and R2
 - Exporting test predictions
 - Reviewing model feature importance
+
+## Reproducible Training
+
+The command-line training wrapper uses the tuned XGBoost parameters from the notebook and writes metrics, validation predictions, feature importance, and the trained model artifact.
+
+Run locally from the repo root after placing the Kaggle `TrainAndValid.csv` file in `data/`:
+
+```bash
+python projects/bulldozer-price-regression/src/train.py --data data/TrainAndValid.csv
+```
+
+Run with Docker:
+
+```bash
+docker build -f projects/bulldozer-price-regression/Dockerfile -t bulldozer-price-regression .
+docker run --rm -v "%cd%/data:/app/data" -v "%cd%/mlruns:/app/mlruns" bulldozer-price-regression --data data/TrainAndValid.csv --mlflow-tracking-uri file:/app/mlruns
+```
+
+PowerShell users can replace `%cd%` with `${PWD}`. Bash users can replace it with `$(pwd)`.
+
+The script logs XGBoost parameters, training and validation metrics, feature importance, validation predictions, and the fitted model to MLflow. Add `--no-mlflow` to write local artifacts only.
 
 ## Saved Model Results
 
@@ -73,9 +94,5 @@ I would not add Spark to this project. The dataset fits in memory, so Spark woul
 
 ## Next Updates
 
-- Fix visible notebook typos.
-- Standardize data path casing to `data/`.
-- Update the notebook's final feature-importance sentence so it matches the `feature_importance_df.head(15)` output.
 - Move the notebook and outputs into this folder.
-- Extract reusable preprocessing, training, and evaluation code into `src/`.
-- Optionally add Docker and MLflow tracking.
+- Add a small saved-output sample after the Kaggle data is rerun locally.

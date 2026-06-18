@@ -8,7 +8,7 @@ I use this repo to keep finished portfolio projects, work in progress, and suppo
 
 | Project | Focus | Tools | Status |
 | --- | --- | --- | --- |
-| [Bulldozer Price Regression](projects/bulldozer-price-regression/README.md) | Price prediction, feature engineering, model evaluation, feature importance | Python, pandas, scikit-learn, XGBoost | Featured |
+| [Bulldozer Price Regression](projects/bulldozer-price-regression/README.md) | Price prediction, feature engineering, model evaluation, feature importance | Python, pandas, scikit-learn, XGBoost, Docker, MLflow | Featured |
 | Customer Churn Analytics Dashboard | Churn analysis, classification workflow, Tableau dashboard | Python, pandas, scikit-learn, Tableau | Featured |
 | PySpark Clustering and Feature Engineering | Distributed data processing, unsupervised learning, production-style workflow | PySpark, KMeans, Docker/AWS | In progress |
 
@@ -28,6 +28,8 @@ Artifacts:
 
 - [Case study README](projects/bulldozer-price-regression/README.md)
 - [Notebook](Bulldozer-Price-Regression.ipynb)
+- [Training entrypoint](projects/bulldozer-price-regression/src/train.py)
+- [Dockerfile](projects/bulldozer-price-regression/Dockerfile)
 
 ## Customer Churn Analytics Dashboard
 
@@ -81,7 +83,7 @@ Planned additions:
 
 - Add the public Tableau dashboard link and screenshots for the churn project.
 - Move project assets into `projects/` folders over time.
-- Add optional Docker and MLflow tracking to the bulldozer workflow.
+- Add a small saved-output sample for the bulldozer workflow after the Kaggle data is rerun locally.
 
 Target structure:
 
