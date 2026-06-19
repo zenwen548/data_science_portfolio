@@ -9,7 +9,7 @@ I use this repo to keep finished portfolio projects, work in progress, and suppo
 | Project | Focus | Tools | Status |
 | --- | --- | --- | --- |
 | [Bulldozer Price Regression](projects/bulldozer-price-regression/README.md) | Price prediction, feature engineering, model evaluation, feature importance | Python, pandas, scikit-learn, XGBoost, Docker, MLflow | Featured |
-| Customer Churn Analytics Dashboard | Churn analysis, classification workflow, Tableau dashboard | Python, pandas, scikit-learn, Tableau | Featured |
+| [Customer Churn Analytics Dashboard](projects/customer-churn/README.md) | Churn analysis, classification workflow, Tableau dashboard | Python, pandas, scikit-learn, Tableau | Featured |
 | PySpark Clustering and Feature Engineering | Distributed data processing, unsupervised learning, production-style workflow | PySpark, KMeans, Docker/AWS | In progress |
 
 ## Bulldozer Price Regression
@@ -47,7 +47,7 @@ Run the churn pipeline with the included sample files:
 
 ```bash
 pip install -r requirements.txt
-python Logistic_Regression_Customer_Churn.py --customers data/sample_customers.csv --subscriptions data/sample_subscriptions.csv --output-dir outputs/churn
+python projects/customer-churn/src/Logistic_Regression_Customer_Churn.py --customers projects/customer-churn/data/sample_customers.csv --subscriptions projects/customer-churn/data/sample_subscriptions.csv --output-dir outputs/churn
 ```
 
 Pipeline outputs:
@@ -62,9 +62,11 @@ This pipeline was verified end-to-end against the sample files above, producing 
 
 Artifacts:
 
-- [Churn analytics pipeline](Logistic_Regression_Customer_Churn.py)
-- [Sample customer data](data/sample_customers.csv)
-- [Sample subscription data](data/sample_subscriptions.csv)
+- [Case study README](projects/customer-churn/README.md)
+- [Churn analytics pipeline](projects/customer-churn/src/Logistic_Regression_Customer_Churn.py)
+- [Sample customer data](projects/customer-churn/data/sample_customers.csv)
+- [Sample subscription data](projects/customer-churn/data/sample_subscriptions.csv)
+- [Tableau workbook](projects/customer-churn/dashboards/Churn_Model_Viz.twbx)
 - Public Tableau link coming soon.
 
 ## Upcoming PySpark / KMeans Work
@@ -82,7 +84,7 @@ Planned additions:
 ## Next Updates
 
 - Add the public Tableau dashboard link and screenshots for the churn project.
-- Move project assets into `projects/` folders over time.
+- Move remaining project assets into `projects/` folders over time.
 - Add a small saved-output sample for the bulldozer workflow after the Kaggle data is rerun locally.
 
 Target structure:
@@ -98,8 +100,10 @@ projects/
   customer-churn/
     README.md
     src/
+    data/
     outputs/
     assets/
+    dashboards/
   pyspark-clustering/
     README.md
     notebooks/
@@ -107,8 +111,5 @@ projects/
     docker/
 assets/
 requirements.txt
-data/
-  sample_customers.csv
-  sample_subscriptions.csv
 .gitignore
 ```
