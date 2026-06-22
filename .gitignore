@@ -169,3 +169,14 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Portfolio local data and generated artifacts
+data/*
+!data/README.md
+outputs/
+projects/*/outputs/
+mlruns/
+projects/*/mlruns/
+
+# Deferred local dashboard workbook. Add intentionally with git add -f if Phase 2 calls for it.
+Operations KPIs.twbx

@@ -1,0 +1,16 @@
+* text=auto
+
+*.csv text eol=lf
+*.md text eol=lf
+*.py text eol=lf
+*.sh text eol=lf
+*.txt text eol=lf
+
+*.jpg -text
+*.jpeg -text
+*.png -text
+*.twb -text
+*.twbx -text
+*.xlsx -text
+*.zip -text
+*.7z -text
