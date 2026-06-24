@@ -4,5 +4,6 @@ __pycache__
 *.pyc
 .ipynb_checkpoints
 data/
+outputs/
 mlruns/
-projects/bulldozer-price-regression/outputs/
+projects/*/outputs/

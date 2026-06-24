@@ -78,6 +78,33 @@ Outputs land in `outputs/churn/`:
 | `top_impacted_customers.csv` | Highest revenue-at-risk customers for dashboard QA |
 | `qa_packet.md` | Static pre-Tableau QA packet |
 
+## Spark Scale Layer
+
+The Spark path keeps the same Tableau serving contract as the scikit-learn pipeline, but separates large-scale processing from Tableau delivery. Spark generates and trains on the large synthetic dataset, then writes two dashboard-serving outputs instead of committing large generated data:
+
+- `aggregated_rollups`: region, contract type, and risk-tier rollups for high-level dashboard views
+- `sampled_tableau_extract`: top revenue-at-risk row-level records for drilldown, capped at 1,000,000 rows by default
+
+Build the container from the repo root:
+
+```bash
+docker build -f projects/customer-churn/docker/Dockerfile -t customer-churn-spark .
+```
+
+Generate Spark-scale data into ignored local outputs:
+
+```bash
+docker run --rm -v "${PWD}/outputs:/app/outputs" --entrypoint python customer-churn-spark projects/customer-churn/spark/generate_churn_spark.py --rows 10000000 --seed 42 --output-dir outputs/churn_spark/generated
+```
+
+Train with Spark MLlib and write Tableau serving extracts:
+
+```bash
+docker run --rm -v "${PWD}/outputs:/app/outputs" customer-churn-spark --generated-data-dir outputs/churn_spark/generated --output-dir outputs/churn_spark/serving --sample-limit 1000000
+```
+
+Local Windows PySpark writes may require `HADOOP_HOME` with `winutils.exe`; the Docker path runs on Linux and avoids that local Hadoop filesystem dependency.
+
 ## Dashboard
 
 The Tableau workbook in `dashboards/Churn_Model_Viz.twbx` visualizes the pipeline output across eight views, including churn probability distribution, churn by region, customer tenure against churn probability, revenue at risk, and support-call patterns by risk group.
