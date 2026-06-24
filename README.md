@@ -12,6 +12,11 @@ I use this repo to keep finished portfolio projects, work in progress, and suppo
 | [Customer Churn Analytics Dashboard](projects/customer-churn/README.md) | Churn analysis, classification workflow, Tableau dashboard | Python, pandas, scikit-learn, Tableau | Featured |
 | PySpark Clustering and Feature Engineering | Distributed data processing, unsupervised learning, production-style workflow | PySpark, KMeans, Docker/AWS | In progress |
 
+## Repo Reference
+
+- [Data handling](data/README.md)
+- [Software requirements](docs/software_requirements.md)
+
 ## Bulldozer Price Regression
 
 I built a regression workflow to predict used bulldozer auction prices from structured equipment and sales data from the Kaggle Blue Book for Bulldozers competition.
@@ -91,10 +96,18 @@ Target structure:
 
 ```text
 README.md
+LICENSE
+requirements.txt
+.gitignore
+.gitattributes
+data/
+  README.md
+docs/
+  README.md
+  software_requirements.md
 projects/
   bulldozer-price-regression/
     README.md
-    notebooks/
     src/
     outputs/
   customer-churn/
@@ -109,7 +122,4 @@ projects/
     notebooks/
     src/
     docker/
-assets/
-requirements.txt
-.gitignore
 ```
