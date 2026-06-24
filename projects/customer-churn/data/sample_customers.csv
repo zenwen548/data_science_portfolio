@@ -1,25 +1,2001 @@
-customer_id,customer_segment,region,account_type
-C001,Enterprise,West,Annual
-C002,Small Business,South,Monthly
-C003,Mid-Market,East,Annual
-C004,Small Business,West,Monthly
-C005,Enterprise,North,Annual
-C006,Mid-Market,South,Monthly
-C007,Small Business,East,Monthly
-C008,Enterprise,West,Annual
-C009,Mid-Market,North,Annual
-C010,Small Business,South,Monthly
-C011,Enterprise,East,Annual
-C012,Mid-Market,West,Monthly
-C013,Small Business,North,Monthly
-C014,Enterprise,South,Annual
-C015,Mid-Market,East,Annual
-C016,Small Business,West,Monthly
-C017,Enterprise,North,Annual
-C018,Mid-Market,South,Monthly
-C019,Small Business,East,Monthly
-C020,Enterprise,West,Annual
-C021,Mid-Market,North,Annual
-C022,Small Business,South,Monthly
-C023,Enterprise,East,Annual
-C024,Mid-Market,West,Monthly
+customer_id,customer_segment,region,account_type,state_province,contract_type,payment_method,internet_service,tech_support,num_addon_services,senior_citizen,has_partner,has_dependents,paperless_billing
+C00001,Enterprise,North,Annual,WI,One year,Credit card,DSL,No,5,0,No,No,Yes
+C00002,Small Business,West,Monthly,AZ,Month-to-month,Electronic check,DSL,No,4,0,No,No,Yes
+C00003,Enterprise,East,Annual,NY,Two year,Credit card,Fiber optic,Yes,1,1,No,Yes,Yes
+C00004,Mid-Market,South,Monthly,GA,Month-to-month,Electronic check,Fiber optic,Yes,5,0,Yes,Yes,No
+C00005,Small Business,South,Annual,TX,One year,Electronic check,DSL,Yes,5,1,Yes,Yes,Yes
+C00006,Enterprise,West,Monthly,AZ,Month-to-month,Credit card,DSL,Yes,0,0,No,No,Yes
+C00007,Mid-Market,North,Monthly,MI,Month-to-month,Bank transfer,DSL,Yes,0,1,No,No,Yes
+C00008,Small Business,East,Monthly,MA,Month-to-month,Bank transfer,DSL,No,1,0,No,Yes,No
+C00009,Small Business,North,Monthly,WI,Month-to-month,Bank transfer,DSL,Yes,4,0,No,No,No
+C00010,Mid-Market,North,Annual,MN,One year,Bank transfer,DSL,Yes,3,0,No,No,Yes
+C00011,Small Business,East,Monthly,NY,Month-to-month,Bank transfer,None,No,3,0,No,No,No
+C00012,Small Business,West,Monthly,CA,Month-to-month,Bank transfer,DSL,No,2,1,Yes,No,Yes
+C00013,Small Business,East,Annual,MA,Two year,Electronic check,DSL,Yes,2,0,No,No,No
+C00014,Small Business,West,Monthly,WA,Month-to-month,Bank transfer,Fiber optic,Yes,3,0,No,Yes,Yes
+C00015,Small Business,East,Annual,PA,One year,Electronic check,Fiber optic,No,0,0,No,No,Yes
+C00016,Mid-Market,West,Annual,CA,One year,Electronic check,Fiber optic,Yes,3,0,Yes,Yes,Yes
+C00017,Small Business,East,Monthly,NY,Month-to-month,Electronic check,DSL,No,1,1,Yes,Yes,No
+C00018,Small Business,North,Monthly,MN,Month-to-month,Bank transfer,DSL,No,4,0,Yes,No,No
+C00019,Mid-Market,West,Monthly,OR,Month-to-month,Bank transfer,Fiber optic,Yes,1,0,Yes,No,Yes
+C00020,Small Business,South,Annual,GA,One year,Mailed check,DSL,No,0,0,No,No,Yes
+C00021,Mid-Market,East,Monthly,NY,Month-to-month,Mailed check,Fiber optic,Yes,2,1,No,Yes,Yes
+C00022,Small Business,South,Monthly,NC,Month-to-month,Mailed check,Fiber optic,Yes,2,0,Yes,No,Yes
+C00023,Small Business,North,Monthly,MN,Month-to-month,Electronic check,None,Yes,3,0,No,No,Yes
+C00024,Small Business,West,Annual,OR,Two year,Mailed check,Fiber optic,No,5,0,Yes,No,Yes
+C00025,Small Business,West,Annual,AZ,One year,Bank transfer,Fiber optic,Yes,4,1,No,No,No
+C00026,Small Business,East,Annual,NY,Two year,Mailed check,DSL,Yes,2,1,Yes,No,Yes
+C00027,Enterprise,South,Annual,NC,One year,Electronic check,Fiber optic,No,4,0,No,No,No
+C00028,Small Business,West,Annual,WA,One year,Electronic check,DSL,Yes,3,0,No,No,Yes
+C00029,Mid-Market,East,Monthly,PA,Month-to-month,Mailed check,None,No,1,0,No,No,Yes
+C00030,Mid-Market,South,Annual,GA,Two year,Electronic check,DSL,No,0,0,No,No,Yes
+C00031,Small Business,South,Annual,NC,One year,Credit card,DSL,No,0,0,Yes,No,Yes
+C00032,Mid-Market,North,Monthly,IL,Month-to-month,Credit card,Fiber optic,No,1,1,No,No,Yes
+C00033,Small Business,North,Annual,IL,One year,Electronic check,DSL,No,4,0,Yes,Yes,No
+C00034,Small Business,East,Annual,PA,One year,Electronic check,Fiber optic,Yes,2,1,Yes,No,Yes
+C00035,Small Business,West,Monthly,WA,Month-to-month,Mailed check,Fiber optic,No,2,0,No,Yes,Yes
+C00036,Mid-Market,North,Monthly,WI,Month-to-month,Mailed check,DSL,No,2,0,No,No,No
+C00037,Enterprise,West,Monthly,OR,Month-to-month,Mailed check,Fiber optic,No,1,0,No,Yes,Yes
+C00038,Small Business,West,Annual,AZ,Two year,Electronic check,DSL,No,4,0,Yes,No,Yes
+C00039,Mid-Market,South,Monthly,TX,Month-to-month,Electronic check,Fiber optic,No,0,1,No,No,No
+C00040,Mid-Market,East,Annual,NY,Two year,Credit card,DSL,No,3,0,Yes,Yes,Yes
+C00041,Small Business,North,Monthly,MI,Month-to-month,Credit card,Fiber optic,Yes,5,0,No,No,Yes
+C00042,Mid-Market,West,Annual,WA,One year,Electronic check,Fiber optic,No,5,1,No,No,No
+C00043,Mid-Market,East,Monthly,PA,Month-to-month,Bank transfer,DSL,No,2,0,No,Yes,No
+C00044,Enterprise,South,Annual,NC,Two year,Mailed check,Fiber optic,No,5,0,No,Yes,Yes
+C00045,Enterprise,North,Monthly,MI,Month-to-month,Credit card,None,Yes,1,1,No,No,Yes
+C00046,Small Business,West,Monthly,WA,Month-to-month,Credit card,Fiber optic,No,1,0,Yes,No,No
+C00047,Small Business,South,Monthly,GA,Month-to-month,Credit card,DSL,No,2,0,No,No,Yes
+C00048,Mid-Market,West,Monthly,OR,Month-to-month,Electronic check,None,Yes,0,0,No,No,Yes
+C00049,Small Business,East,Monthly,VA,Month-to-month,Electronic check,DSL,No,1,0,Yes,No,Yes
+C00050,Small Business,West,Annual,OR,One year,Credit card,DSL,No,5,0,Yes,No,No
+C00051,Enterprise,West,Annual,AZ,Two year,Credit card,Fiber optic,Yes,4,1,Yes,No,Yes
+C00052,Small Business,North,Annual,MI,One year,Credit card,DSL,Yes,1,0,No,No,Yes
+C00053,Small Business,South,Annual,GA,One year,Bank transfer,None,No,1,1,No,No,Yes
+C00054,Enterprise,South,Monthly,TX,Month-to-month,Electronic check,DSL,Yes,2,0,No,No,Yes
+C00055,Small Business,South,Annual,NC,Two year,Electronic check,None,No,0,0,Yes,No,No
+C00056,Mid-Market,North,Annual,MI,Two year,Electronic check,DSL,Yes,0,0,Yes,No,Yes
+C00057,Enterprise,East,Monthly,PA,Month-to-month,Electronic check,DSL,Yes,5,0,No,No,Yes
+C00058,Mid-Market,North,Annual,MN,Two year,Credit card,Fiber optic,Yes,4,0,Yes,No,No
+C00059,Small Business,East,Monthly,NY,Month-to-month,Bank transfer,DSL,No,4,1,Yes,No,Yes
+C00060,Small Business,East,Annual,NY,Two year,Mailed check,DSL,No,1,0,Yes,No,Yes
+C00061,Enterprise,West,Annual,WA,Two year,Bank transfer,DSL,No,5,0,Yes,No,Yes
+C00062,Small Business,East,Annual,PA,One year,Credit card,Fiber optic,No,1,0,Yes,Yes,No
+C00063,Mid-Market,South,Monthly,FL,Month-to-month,Electronic check,DSL,No,5,1,No,No,No
+C00064,Small Business,West,Annual,OR,One year,Credit card,DSL,Yes,3,0,Yes,No,No
+C00065,Small Business,South,Monthly,NC,Month-to-month,Electronic check,None,No,1,0,Yes,No,Yes
+C00066,Enterprise,South,Annual,NC,One year,Mailed check,Fiber optic,No,4,0,No,No,Yes
+C00067,Mid-Market,West,Monthly,OR,Month-to-month,Credit card,Fiber optic,Yes,2,0,No,Yes,Yes
+C00068,Enterprise,South,Annual,TX,One year,Electronic check,Fiber optic,No,1,0,No,No,No
+C00069,Small Business,North,Annual,MI,Two year,Electronic check,Fiber optic,Yes,4,1,No,Yes,Yes
+C00070,Mid-Market,South,Monthly,GA,Month-to-month,Electronic check,None,Yes,4,0,No,Yes,No
+C00071,Enterprise,West,Monthly,AZ,Month-to-month,Mailed check,Fiber optic,No,3,0,No,Yes,No
+C00072,Small Business,North,Annual,MN,One year,Electronic check,DSL,No,2,1,No,No,Yes
+C00073,Small Business,South,Monthly,GA,Month-to-month,Electronic check,Fiber optic,Yes,1,0,No,No,Yes
+C00074,Enterprise,North,Monthly,MI,Month-to-month,Electronic check,Fiber optic,No,2,0,No,No,Yes
+C00075,Small Business,East,Monthly,PA,Month-to-month,Bank transfer,None,Yes,5,0,Yes,No,Yes
+C00076,Mid-Market,South,Monthly,GA,Month-to-month,Credit card,DSL,No,2,0,Yes,No,No
+C00077,Enterprise,South,Annual,GA,One year,Bank transfer,Fiber optic,No,5,0,Yes,Yes,Yes
+C00078,Small Business,North,Annual,MI,One year,Credit card,Fiber optic,Yes,0,0,Yes,No,No
+C00079,Small Business,East,Monthly,NY,Month-to-month,Electronic check,None,No,0,0,Yes,Yes,Yes
+C00080,Small Business,East,Monthly,MA,Month-to-month,Bank transfer,None,No,1,1,No,Yes,Yes
+C00081,Small Business,West,Monthly,WA,Month-to-month,Electronic check,Fiber optic,No,0,1,No,Yes,No
+C00082,Small Business,South,Monthly,FL,Month-to-month,Electronic check,DSL,Yes,5,0,Yes,No,No
+C00083,Mid-Market,North,Annual,MI,One year,Credit card,Fiber optic,Yes,2,1,Yes,No,Yes
+C00084,Small Business,West,Monthly,OR,Month-to-month,Electronic check,DSL,No,0,0,Yes,No,No
+C00085,Mid-Market,East,Annual,MA,One year,Electronic check,Fiber optic,No,3,1,No,No,No
+C00086,Small Business,East,Annual,PA,Two year,Bank transfer,DSL,No,5,0,Yes,No,No
+C00087,Small Business,North,Annual,MN,One year,Credit card,None,No,5,0,Yes,No,Yes
+C00088,Small Business,South,Annual,NC,One year,Electronic check,Fiber optic,No,0,1,Yes,Yes,Yes
+C00089,Mid-Market,West,Monthly,CA,Month-to-month,Credit card,Fiber optic,Yes,4,0,No,No,Yes
+C00090,Mid-Market,West,Monthly,AZ,Month-to-month,Bank transfer,Fiber optic,No,2,0,Yes,Yes,Yes
+C00091,Small Business,South,Monthly,TX,Month-to-month,Electronic check,Fiber optic,No,5,0,No,Yes,Yes
+C00092,Enterprise,West,Annual,CA,One year,Electronic check,Fiber optic,Yes,3,0,No,No,Yes
+C00093,Mid-Market,West,Annual,WA,Two year,Credit card,Fiber optic,Yes,4,0,No,Yes,Yes
+C00094,Small Business,South,Monthly,FL,Month-to-month,Credit card,None,No,5,0,No,Yes,Yes
+C00095,Enterprise,West,Monthly,AZ,Month-to-month,Mailed check,Fiber optic,No,5,0,Yes,No,Yes
+C00096,Small Business,South,Monthly,TX,Month-to-month,Credit card,DSL,No,0,0,Yes,No,Yes
+C00097,Small Business,North,Annual,WI,One year,Electronic check,Fiber optic,Yes,4,0,No,No,Yes
+C00098,Mid-Market,East,Annual,VA,One year,Credit card,DSL,No,0,0,Yes,Yes,Yes
+C00099,Small Business,East,Annual,VA,One year,Bank transfer,Fiber optic,Yes,5,0,No,No,No
+C00100,Small Business,North,Annual,IL,Two year,Electronic check,None,Yes,3,0,No,No,Yes
+C00101,Mid-Market,West,Monthly,WA,Month-to-month,Credit card,Fiber optic,No,1,0,Yes,No,Yes
+C00102,Small Business,North,Annual,MN,One year,Electronic check,Fiber optic,No,1,0,Yes,No,Yes
+C00103,Enterprise,West,Annual,AZ,One year,Bank transfer,DSL,No,5,0,No,No,Yes
+C00104,Enterprise,North,Monthly,IL,Month-to-month,Bank transfer,DSL,No,3,0,No,No,Yes
+C00105,Mid-Market,West,Annual,WA,Two year,Credit card,DSL,No,1,0,No,No,Yes
+C00106,Mid-Market,West,Monthly,CA,Month-to-month,Mailed check,Fiber optic,Yes,4,0,Yes,Yes,No
+C00107,Mid-Market,West,Annual,WA,One year,Mailed check,Fiber optic,Yes,4,0,No,Yes,No
+C00108,Enterprise,East,Annual,MA,One year,Electronic check,DSL,No,0,0,Yes,No,Yes
+C00109,Small Business,South,Annual,GA,Two year,Credit card,DSL,No,1,0,Yes,No,Yes
+C00110,Small Business,East,Annual,NY,One year,Credit card,DSL,Yes,5,0,No,No,Yes
+C00111,Mid-Market,South,Monthly,GA,Month-to-month,Electronic check,Fiber optic,Yes,2,0,No,No,Yes
+C00112,Mid-Market,West,Annual,OR,Two year,Credit card,Fiber optic,Yes,0,1,Yes,No,Yes
+C00113,Small Business,East,Annual,VA,One year,Electronic check,None,Yes,3,0,No,No,No
+C00114,Mid-Market,South,Annual,TX,One year,Mailed check,DSL,No,5,0,Yes,No,Yes
+C00115,Small Business,East,Annual,PA,One year,Credit card,Fiber optic,Yes,3,0,Yes,Yes,Yes
+C00116,Enterprise,East,Monthly,MA,Month-to-month,Bank transfer,None,Yes,5,0,Yes,No,Yes
+C00117,Small Business,North,Annual,WI,One year,Credit card,DSL,No,0,0,No,Yes,Yes
+C00118,Small Business,North,Annual,MN,Two year,Electronic check,Fiber optic,No,4,0,Yes,No,No
+C00119,Small Business,North,Monthly,MN,Month-to-month,Bank transfer,Fiber optic,No,3,0,No,No,Yes
+C00120,Small Business,North,Monthly,MN,Month-to-month,Electronic check,DSL,Yes,5,0,Yes,No,Yes
+C00121,Small Business,South,Annual,TX,Two year,Electronic check,Fiber optic,Yes,3,0,Yes,Yes,Yes
+C00122,Small Business,East,Annual,VA,One year,Credit card,DSL,Yes,4,0,Yes,No,No
+C00123,Small Business,East,Annual,PA,Two year,Bank transfer,DSL,Yes,0,0,Yes,Yes,Yes
+C00124,Small Business,South,Monthly,NC,Month-to-month,Credit card,Fiber optic,Yes,0,0,No,Yes,No
+C00125,Small Business,West,Annual,OR,Two year,Electronic check,None,Yes,4,0,No,No,No
+C00126,Small Business,East,Monthly,NY,Month-to-month,Electronic check,Fiber optic,Yes,0,0,No,No,No
+C00127,Small Business,North,Annual,MI,One year,Electronic check,Fiber optic,Yes,5,0,Yes,No,Yes
+C00128,Small Business,West,Monthly,OR,Month-to-month,Electronic check,DSL,No,0,0,No,No,No
+C00129,Small Business,East,Annual,MA,One year,Credit card,DSL,Yes,4,1,No,No,Yes
+C00130,Small Business,East,Annual,NY,Two year,Electronic check,Fiber optic,Yes,2,0,Yes,No,No
+C00131,Small Business,East,Annual,PA,One year,Electronic check,DSL,No,3,0,No,Yes,Yes
+C00132,Mid-Market,East,Annual,VA,One year,Bank transfer,None,Yes,3,0,No,No,Yes
+C00133,Enterprise,North,Monthly,MN,Month-to-month,Bank transfer,DSL,No,2,0,No,No,Yes
+C00134,Enterprise,East,Annual,NY,One year,Electronic check,DSL,No,2,0,No,Yes,No
+C00135,Mid-Market,West,Annual,CA,One year,Electronic check,Fiber optic,No,3,1,No,No,No
+C00136,Mid-Market,South,Monthly,NC,Month-to-month,Electronic check,Fiber optic,Yes,4,0,No,No,Yes
+C00137,Small Business,East,Annual,PA,One year,Mailed check,DSL,No,4,0,No,No,Yes
+C00138,Mid-Market,North,Annual,IL,Two year,Electronic check,Fiber optic,No,2,1,No,Yes,No
+C00139,Mid-Market,South,Annual,NC,One year,Electronic check,DSL,Yes,2,0,Yes,Yes,No
+C00140,Enterprise,South,Annual,GA,One year,Credit card,Fiber optic,Yes,0,0,No,No,No
+C00141,Enterprise,West,Monthly,OR,Month-to-month,Electronic check,Fiber optic,Yes,4,0,No,No,Yes
+C00142,Small Business,North,Annual,WI,One year,Electronic check,Fiber optic,No,1,0,Yes,No,No
+C00143,Mid-Market,South,Monthly,TX,Month-to-month,Electronic check,Fiber optic,Yes,2,1,No,Yes,No
+C00144,Enterprise,South,Monthly,NC,Month-to-month,Bank transfer,Fiber optic,Yes,5,0,No,No,Yes
+C00145,Small Business,West,Monthly,CA,Month-to-month,Credit card,DSL,No,4,0,No,No,Yes
+C00146,Enterprise,West,Monthly,CA,Month-to-month,Bank transfer,DSL,No,2,0,No,Yes,Yes
+C00147,Small Business,North,Monthly,IL,Month-to-month,Bank transfer,Fiber optic,Yes,2,0,Yes,Yes,Yes
+C00148,Enterprise,North,Annual,WI,One year,Electronic check,Fiber optic,Yes,1,1,No,Yes,No
+C00149,Mid-Market,West,Monthly,WA,Month-to-month,Mailed check,DSL,Yes,3,1,No,Yes,Yes
+C00150,Small Business,North,Monthly,WI,Month-to-month,Bank transfer,Fiber optic,No,0,1,No,Yes,Yes
+C00151,Mid-Market,West,Monthly,CA,Month-to-month,Bank transfer,DSL,No,5,0,Yes,Yes,Yes
+C00152,Small Business,South,Annual,GA,One year,Bank transfer,DSL,No,5,0,Yes,Yes,No
+C00153,Mid-Market,West,Monthly,WA,Month-to-month,Credit card,DSL,Yes,1,0,No,No,No
+C00154,Mid-Market,South,Monthly,NC,Month-to-month,Electronic check,DSL,Yes,1,0,Yes,No,Yes
+C00155,Mid-Market,South,Annual,NC,One year,Credit card,DSL,Yes,3,0,Yes,No,No
+C00156,Enterprise,East,Monthly,NY,Month-to-month,Electronic check,None,Yes,3,0,No,No,Yes
+C00157,Small Business,North,Annual,MI,Two year,Credit card,DSL,No,3,0,No,Yes,No
+C00158,Small Business,East,Monthly,PA,Month-to-month,Electronic check,Fiber optic,No,0,0,No,No,No
+C00159,Small Business,East,Monthly,VA,Month-to-month,Electronic check,Fiber optic,Yes,4,1,No,No,Yes
+C00160,Small Business,West,Monthly,CA,Month-to-month,Mailed check,Fiber optic,No,0,0,No,No,No
+C00161,Small Business,West,Annual,WA,One year,Bank transfer,Fiber optic,Yes,2,0,No,Yes,Yes
+C00162,Small Business,East,Monthly,MA,Month-to-month,Credit card,DSL,No,4,0,No,Yes,Yes
+C00163,Small Business,South,Annual,GA,Two year,Credit card,Fiber optic,Yes,5,1,No,No,Yes
+C00164,Small Business,South,Monthly,TX,Month-to-month,Credit card,Fiber optic,No,3,0,No,Yes,No
+C00165,Enterprise,South,Annual,TX,One year,Mailed check,Fiber optic,Yes,0,0,Yes,Yes,Yes
+C00166,Small Business,West,Monthly,WA,Month-to-month,Bank transfer,DSL,No,4,0,Yes,Yes,Yes
+C00167,Enterprise,South,Monthly,GA,Month-to-month,Credit card,DSL,No,0,1,No,No,Yes
+C00168,Small Business,North,Monthly,WI,Month-to-month,Credit card,None,No,1,0,No,No,No
+C00169,Small Business,South,Annual,TX,One year,Credit card,Fiber optic,No,0,0,No,Yes,Yes
+C00170,Mid-Market,North,Monthly,WI,Month-to-month,Bank transfer,Fiber optic,Yes,5,0,No,No,Yes
+C00171,Small Business,North,Annual,IL,Two year,Mailed check,None,No,2,0,No,No,Yes
+C00172,Small Business,North,Annual,MN,One year,Credit card,DSL,Yes,3,0,Yes,Yes,No
+C00173,Mid-Market,West,Annual,WA,Two year,Credit card,DSL,No,4,1,No,No,Yes
+C00174,Small Business,East,Monthly,VA,Month-to-month,Credit card,DSL,Yes,5,1,No,Yes,Yes
+C00175,Small Business,East,Annual,MA,One year,Credit card,Fiber optic,Yes,5,0,Yes,No,No
+C00176,Mid-Market,South,Annual,TX,One year,Mailed check,DSL,No,0,0,No,No,Yes
+C00177,Small Business,East,Annual,MA,One year,Bank transfer,DSL,Yes,2,0,No,No,Yes
+C00178,Enterprise,North,Annual,MI,Two year,Credit card,DSL,No,2,0,No,No,No
+C00179,Small Business,West,Annual,OR,One year,Credit card,DSL,Yes,4,0,Yes,Yes,Yes
+C00180,Enterprise,East,Annual,NY,Two year,Credit card,Fiber optic,No,2,1,Yes,No,Yes
+C00181,Mid-Market,West,Annual,OR,One year,Electronic check,Fiber optic,No,1,0,No,No,Yes
+C00182,Enterprise,North,Monthly,IL,Month-to-month,Credit card,DSL,No,4,0,No,No,No
+C00183,Enterprise,South,Annual,NC,One year,Bank transfer,DSL,Yes,2,0,No,No,No
+C00184,Small Business,East,Monthly,PA,Month-to-month,Bank transfer,Fiber optic,Yes,4,0,Yes,Yes,Yes
+C00185,Mid-Market,South,Annual,NC,Two year,Electronic check,Fiber optic,Yes,2,0,No,Yes,Yes
+C00186,Small Business,South,Annual,GA,Two year,Bank transfer,None,Yes,2,0,Yes,Yes,Yes
+C00187,Enterprise,North,Monthly,MI,Month-to-month,Bank transfer,Fiber optic,No,0,0,Yes,No,Yes
+C00188,Mid-Market,South,Monthly,GA,Month-to-month,Electronic check,Fiber optic,Yes,0,0,Yes,No,Yes
+C00189,Small Business,North,Monthly,MI,Month-to-month,Bank transfer,DSL,Yes,0,0,No,No,Yes
+C00190,Enterprise,South,Monthly,NC,Month-to-month,Credit card,DSL,Yes,1,0,No,Yes,Yes
+C00191,Small Business,East,Monthly,NY,Month-to-month,Bank transfer,DSL,No,2,1,Yes,Yes,No
+C00192,Mid-Market,East,Annual,NY,One year,Electronic check,DSL,Yes,0,0,No,Yes,Yes
+C00193,Mid-Market,East,Annual,NY,One year,Electronic check,Fiber optic,Yes,0,0,No,No,Yes
+C00194,Small Business,South,Annual,FL,Two year,Credit card,None,No,5,0,No,No,Yes
+C00195,Mid-Market,West,Monthly,OR,Month-to-month,Electronic check,None,Yes,5,0,No,No,Yes
+C00196,Enterprise,North,Annual,WI,One year,Credit card,DSL,No,1,0,No,No,Yes
+C00197,Small Business,South,Monthly,GA,Month-to-month,Bank transfer,DSL,Yes,5,0,Yes,No,Yes
+C00198,Mid-Market,North,Annual,WI,Two year,Electronic check,Fiber optic,No,0,0,Yes,Yes,Yes
+C00199,Small Business,South,Monthly,NC,Month-to-month,Credit card,Fiber optic,No,0,0,No,Yes,Yes
+C00200,Mid-Market,West,Monthly,AZ,Month-to-month,Mailed check,Fiber optic,No,2,0,No,Yes,No
+C00201,Small Business,South,Monthly,GA,Month-to-month,Credit card,Fiber optic,No,1,0,No,Yes,No
+C00202,Enterprise,West,Annual,AZ,Two year,Credit card,None,No,0,0,No,No,No
+C00203,Enterprise,South,Monthly,FL,Month-to-month,Credit card,Fiber optic,Yes,5,0,No,No,Yes
+C00204,Small Business,East,Annual,NY,One year,Electronic check,DSL,No,5,0,No,No,No
+C00205,Small Business,South,Annual,GA,One year,Electronic check,Fiber optic,No,1,0,No,No,Yes
+C00206,Mid-Market,South,Annual,TX,One year,Bank transfer,Fiber optic,No,1,0,Yes,No,Yes
+C00207,Mid-Market,West,Monthly,AZ,Month-to-month,Credit card,Fiber optic,No,4,0,No,No,Yes
+C00208,Small Business,West,Monthly,WA,Month-to-month,Electronic check,Fiber optic,Yes,5,1,No,No,Yes
+C00209,Small Business,South,Monthly,FL,Month-to-month,Electronic check,DSL,Yes,1,0,Yes,No,Yes
+C00210,Small Business,West,Monthly,AZ,Month-to-month,Bank transfer,None,Yes,4,0,Yes,Yes,Yes
+C00211,Enterprise,South,Annual,NC,One year,Electronic check,Fiber optic,Yes,0,0,No,No,No
+C00212,Small Business,East,Monthly,VA,Month-to-month,Bank transfer,None,Yes,3,0,No,No,Yes
+C00213,Enterprise,West,Monthly,OR,Month-to-month,Credit card,DSL,Yes,5,0,Yes,Yes,No
+C00214,Mid-Market,South,Monthly,FL,Month-to-month,Credit card,DSL,No,2,0,Yes,Yes,No
+C00215,Enterprise,East,Annual,MA,One year,Electronic check,Fiber optic,No,3,1,Yes,No,Yes
+C00216,Small Business,South,Monthly,GA,Month-to-month,Electronic check,Fiber optic,No,4,1,Yes,No,Yes
+C00217,Small Business,North,Annual,MI,One year,Credit card,DSL,No,3,0,No,No,Yes
+C00218,Enterprise,North,Monthly,WI,Month-to-month,Bank transfer,DSL,Yes,4,0,No,No,Yes
+C00219,Enterprise,South,Annual,GA,Two year,Electronic check,Fiber optic,Yes,5,0,No,No,No
+C00220,Small Business,West,Annual,AZ,One year,Credit card,DSL,No,0,0,Yes,No,No
+C00221,Small Business,North,Monthly,WI,Month-to-month,Credit card,Fiber optic,No,5,0,Yes,Yes,No
+C00222,Small Business,South,Monthly,FL,Month-to-month,Electronic check,DSL,No,5,0,Yes,No,Yes
+C00223,Small Business,East,Monthly,MA,Month-to-month,Credit card,Fiber optic,No,5,0,No,No,No
+C00224,Small Business,North,Monthly,MI,Month-to-month,Electronic check,None,No,2,1,No,No,No
+C00225,Enterprise,East,Monthly,NY,Month-to-month,Credit card,Fiber optic,No,3,0,Yes,No,Yes
+C00226,Small Business,South,Annual,NC,Two year,Electronic check,Fiber optic,No,2,0,No,No,Yes
+C00227,Mid-Market,West,Annual,WA,One year,Credit card,DSL,No,5,0,Yes,No,Yes
+C00228,Small Business,East,Monthly,VA,Month-to-month,Electronic check,Fiber optic,Yes,2,0,Yes,No,Yes
+C00229,Small Business,East,Annual,NY,One year,Credit card,None,Yes,1,0,No,Yes,No
+C00230,Mid-Market,North,Monthly,WI,Month-to-month,Credit card,DSL,Yes,4,0,Yes,No,Yes
+C00231,Small Business,South,Annual,NC,Two year,Mailed check,Fiber optic,No,0,0,No,Yes,Yes
+C00232,Mid-Market,West,Monthly,AZ,Month-to-month,Credit card,Fiber optic,No,2,0,Yes,No,No
+C00233,Small Business,North,Annual,WI,One year,Bank transfer,None,Yes,1,0,No,Yes,Yes
+C00234,Enterprise,West,Annual,AZ,One year,Electronic check,DSL,Yes,2,0,Yes,No,Yes
+C00235,Mid-Market,South,Monthly,NC,Month-to-month,Credit card,DSL,No,2,0,Yes,No,No
+C00236,Enterprise,East,Monthly,VA,Month-to-month,Electronic check,Fiber optic,Yes,0,0,Yes,Yes,No
+C00237,Small Business,East,Monthly,MA,Month-to-month,Credit card,None,No,5,0,No,No,No
+C00238,Small Business,South,Annual,GA,Two year,Bank transfer,DSL,Yes,2,0,No,No,Yes
+C00239,Small Business,South,Annual,GA,One year,Bank transfer,DSL,Yes,2,0,No,Yes,No
+C00240,Mid-Market,East,Annual,VA,One year,Credit card,Fiber optic,Yes,0,0,Yes,No,No
+C00241,Small Business,North,Annual,IL,One year,Bank transfer,Fiber optic,Yes,5,0,Yes,No,No
+C00242,Small Business,East,Annual,PA,Two year,Electronic check,None,Yes,5,0,Yes,No,Yes
+C00243,Small Business,North,Monthly,MI,Month-to-month,Electronic check,None,Yes,2,0,No,No,Yes
+C00244,Small Business,East,Annual,MA,One year,Bank transfer,Fiber optic,Yes,2,0,Yes,Yes,No
+C00245,Small Business,East,Annual,PA,One year,Electronic check,None,Yes,2,0,Yes,Yes,No
+C00246,Small Business,North,Monthly,WI,Month-to-month,Electronic check,Fiber optic,No,5,0,No,No,Yes
+C00247,Small Business,West,Annual,OR,Two year,Mailed check,Fiber optic,Yes,1,0,No,No,Yes
+C00248,Mid-Market,South,Monthly,FL,Month-to-month,Mailed check,Fiber optic,Yes,4,0,Yes,Yes,No
+C00249,Small Business,West,Monthly,AZ,Month-to-month,Credit card,Fiber optic,Yes,5,1,Yes,No,Yes
+C00250,Small Business,North,Annual,MI,Two year,Credit card,Fiber optic,No,4,0,Yes,No,Yes
+C00251,Mid-Market,North,Monthly,MN,Month-to-month,Bank transfer,Fiber optic,No,5,0,No,Yes,Yes
+C00252,Mid-Market,South,Monthly,NC,Month-to-month,Electronic check,Fiber optic,No,5,0,Yes,No,Yes
+C00253,Small Business,North,Monthly,IL,Month-to-month,Credit card,DSL,No,0,0,No,No,No
+C00254,Mid-Market,South,Annual,NC,One year,Credit card,DSL,Yes,1,0,Yes,Yes,Yes
+C00255,Enterprise,East,Annual,NY,Two year,Mailed check,DSL,No,0,1,No,Yes,Yes
+C00256,Mid-Market,North,Monthly,MN,Month-to-month,Mailed check,Fiber optic,Yes,3,0,No,Yes,No
+C00257,Enterprise,East,Monthly,VA,Month-to-month,Bank transfer,DSL,No,2,0,Yes,No,No
+C00258,Mid-Market,North,Monthly,MN,Month-to-month,Electronic check,Fiber optic,Yes,0,0,Yes,Yes,Yes
+C00259,Small Business,North,Annual,IL,Two year,Credit card,DSL,Yes,3,0,Yes,No,Yes
+C00260,Small Business,East,Monthly,VA,Month-to-month,Electronic check,DSL,No,0,0,No,No,No
+C00261,Mid-Market,West,Annual,AZ,Two year,Mailed check,Fiber optic,No,2,0,No,Yes,Yes
+C00262,Enterprise,North,Annual,WI,Two year,Electronic check,Fiber optic,No,2,0,No,No,Yes
+C00263,Small Business,South,Monthly,FL,Month-to-month,Electronic check,DSL,Yes,5,0,Yes,No,Yes
+C00264,Small Business,West,Annual,OR,Two year,Bank transfer,None,Yes,4,0,Yes,Yes,Yes
+C00265,Mid-Market,West,Annual,AZ,One year,Credit card,DSL,Yes,3,0,No,No,No
+C00266,Small Business,East,Annual,MA,One year,Bank transfer,None,Yes,4,0,No,Yes,Yes
+C00267,Mid-Market,South,Monthly,NC,Month-to-month,Electronic check,None,No,1,0,No,No,Yes
+C00268,Mid-Market,South,Annual,NC,Two year,Bank transfer,Fiber optic,Yes,1,0,No,Yes,Yes
+C00269,Mid-Market,East,Annual,MA,One year,Electronic check,DSL,No,4,0,No,No,Yes
+C00270,Enterprise,East,Annual,VA,One year,Electronic check,Fiber optic,Yes,4,0,No,No,Yes
+C00271,Mid-Market,South,Annual,GA,Two year,Credit card,DSL,No,0,0,No,No,No
+C00272,Mid-Market,North,Monthly,MI,Month-to-month,Electronic check,Fiber optic,No,1,1,No,No,Yes
+C00273,Mid-Market,North,Annual,MI,Two year,Credit card,None,No,1,0,No,Yes,Yes
+C00274,Enterprise,West,Annual,CA,Two year,Electronic check,DSL,Yes,0,0,No,No,Yes
+C00275,Enterprise,South,Monthly,FL,Month-to-month,Electronic check,Fiber optic,Yes,3,0,Yes,Yes,No
+C00276,Small Business,South,Monthly,GA,Month-to-month,Bank transfer,Fiber optic,Yes,0,0,No,Yes,Yes
+C00277,Mid-Market,South,Monthly,FL,Month-to-month,Electronic check,Fiber optic,No,5,0,No,Yes,No
+C00278,Small Business,West,Annual,AZ,Two year,Bank transfer,DSL,No,3,0,Yes,No,No
+C00279,Enterprise,North,Monthly,MI,Month-to-month,Bank transfer,None,Yes,4,0,No,No,Yes
+C00280,Mid-Market,North,Annual,MN,One year,Electronic check,Fiber optic,No,2,0,Yes,Yes,No
+C00281,Small Business,South,Monthly,TX,Month-to-month,Bank transfer,Fiber optic,No,5,0,Yes,No,Yes
+C00282,Small Business,South,Monthly,GA,Month-to-month,Electronic check,DSL,No,1,0,Yes,No,No
+C00283,Small Business,East,Annual,NY,One year,Credit card,Fiber optic,Yes,3,1,No,No,No
+C00284,Mid-Market,South,Monthly,TX,Month-to-month,Electronic check,DSL,No,0,0,No,No,Yes
+C00285,Small Business,South,Annual,NC,Two year,Bank transfer,Fiber optic,Yes,4,0,No,No,Yes
+C00286,Small Business,West,Monthly,WA,Month-to-month,Credit card,Fiber optic,Yes,3,0,Yes,No,Yes
+C00287,Enterprise,North,Annual,WI,Two year,Credit card,Fiber optic,No,1,0,No,No,Yes
+C00288,Mid-Market,East,Monthly,VA,Month-to-month,Mailed check,None,No,4,0,Yes,No,No
+C00289,Small Business,East,Annual,VA,Two year,Electronic check,Fiber optic,No,5,0,Yes,Yes,No
+C00290,Small Business,South,Annual,GA,One year,Mailed check,Fiber optic,Yes,0,1,Yes,No,Yes
+C00291,Enterprise,West,Monthly,CA,Month-to-month,Bank transfer,DSL,Yes,5,0,No,No,No
+C00292,Mid-Market,South,Monthly,GA,Month-to-month,Mailed check,None,No,4,0,Yes,Yes,No
+C00293,Mid-Market,West,Monthly,AZ,Month-to-month,Mailed check,Fiber optic,No,2,1,No,Yes,Yes
+C00294,Small Business,South,Annual,NC,One year,Mailed check,Fiber optic,Yes,3,0,No,No,Yes
+C00295,Small Business,East,Annual,PA,Two year,Electronic check,DSL,Yes,4,1,Yes,No,No
+C00296,Small Business,East,Monthly,VA,Month-to-month,Bank transfer,Fiber optic,No,2,1,No,No,No
+C00297,Mid-Market,West,Monthly,AZ,Month-to-month,Bank transfer,DSL,No,3,0,Yes,Yes,No
+C00298,Small Business,South,Annual,GA,One year,Bank transfer,Fiber optic,Yes,0,0,Yes,No,Yes
+C00299,Small Business,South,Annual,FL,One year,Electronic check,Fiber optic,No,5,0,Yes,Yes,Yes
+C00300,Mid-Market,North,Annual,WI,One year,Mailed check,Fiber optic,No,5,0,No,No,Yes
+C00301,Enterprise,South,Monthly,GA,Month-to-month,Electronic check,DSL,Yes,1,0,No,Yes,Yes
+C00302,Mid-Market,West,Annual,AZ,One year,Credit card,Fiber optic,No,2,0,No,No,Yes
+C00303,Mid-Market,North,Annual,MN,Two year,Credit card,Fiber optic,No,1,0,No,No,No
+C00304,Mid-Market,West,Monthly,WA,Month-to-month,Electronic check,Fiber optic,No,2,0,Yes,No,Yes
+C00305,Small Business,East,Monthly,VA,Month-to-month,Bank transfer,DSL,No,1,0,No,No,No
+C00306,Small Business,North,Monthly,IL,Month-to-month,Electronic check,Fiber optic,No,5,0,Yes,No,Yes
+C00307,Mid-Market,South,Annual,GA,One year,Bank transfer,DSL,No,4,0,Yes,No,Yes
+C00308,Small Business,East,Monthly,MA,Month-to-month,Bank transfer,DSL,Yes,5,0,No,No,No
+C00309,Mid-Market,South,Annual,GA,Two year,Credit card,Fiber optic,No,4,0,Yes,No,No
+C00310,Enterprise,North,Annual,MN,One year,Bank transfer,None,Yes,4,0,Yes,No,Yes
+C00311,Enterprise,East,Annual,NY,One year,Electronic check,DSL,Yes,0,0,Yes,No,No
+C00312,Small Business,East,Annual,MA,One year,Bank transfer,Fiber optic,No,4,0,Yes,No,Yes
+C00313,Small Business,North,Monthly,MN,Month-to-month,Mailed check,Fiber optic,No,4,0,No,No,Yes
+C00314,Small Business,South,Annual,FL,Two year,Electronic check,Fiber optic,No,0,0,No,No,Yes
+C00315,Small Business,North,Monthly,IL,Month-to-month,Bank transfer,Fiber optic,No,0,0,No,Yes,No
+C00316,Small Business,East,Annual,MA,One year,Credit card,DSL,No,4,0,Yes,No,Yes
+C00317,Small Business,East,Annual,MA,Two year,Credit card,None,Yes,2,0,No,No,No
+C00318,Mid-Market,East,Annual,NY,One year,Bank transfer,DSL,No,1,1,No,No,Yes
+C00319,Mid-Market,West,Annual,WA,Two year,Credit card,Fiber optic,No,2,0,No,No,Yes
+C00320,Enterprise,West,Monthly,WA,Month-to-month,Credit card,Fiber optic,Yes,5,0,No,No,No
+C00321,Small Business,South,Annual,FL,Two year,Electronic check,Fiber optic,No,2,1,No,No,Yes
+C00322,Small Business,North,Annual,IL,One year,Credit card,DSL,No,2,0,No,No,Yes
+C00323,Small Business,East,Annual,NY,One year,Bank transfer,Fiber optic,Yes,2,0,No,Yes,Yes
+C00324,Small Business,West,Monthly,OR,Month-to-month,Electronic check,None,No,0,0,Yes,No,Yes
+C00325,Small Business,West,Monthly,OR,Month-to-month,Credit card,DSL,Yes,0,0,Yes,Yes,Yes
+C00326,Enterprise,North,Annual,WI,One year,Electronic check,Fiber optic,Yes,2,0,No,No,Yes
+C00327,Small Business,North,Monthly,MI,Month-to-month,Bank transfer,DSL,Yes,0,0,Yes,No,Yes
+C00328,Small Business,North,Annual,IL,One year,Credit card,DSL,Yes,4,0,Yes,No,Yes
+C00329,Mid-Market,North,Annual,IL,Two year,Credit card,DSL,Yes,2,0,No,Yes,Yes
+C00330,Mid-Market,East,Annual,MA,Two year,Electronic check,Fiber optic,No,3,0,Yes,Yes,Yes
+C00331,Mid-Market,East,Monthly,MA,Month-to-month,Credit card,Fiber optic,Yes,2,0,Yes,Yes,Yes
+C00332,Small Business,South,Annual,TX,Two year,Mailed check,DSL,No,4,0,No,No,Yes
+C00333,Enterprise,South,Monthly,GA,Month-to-month,Credit card,Fiber optic,No,2,0,Yes,No,No
+C00334,Small Business,West,Monthly,WA,Month-to-month,Credit card,DSL,Yes,0,1,Yes,No,Yes
+C00335,Small Business,South,Annual,NC,Two year,Bank transfer,Fiber optic,Yes,2,0,Yes,No,Yes
+C00336,Mid-Market,West,Monthly,OR,Month-to-month,Credit card,DSL,No,1,0,Yes,No,Yes
+C00337,Enterprise,West,Monthly,CA,Month-to-month,Credit card,DSL,No,3,0,Yes,Yes,Yes
+C00338,Small Business,South,Monthly,TX,Month-to-month,Electronic check,Fiber optic,No,3,0,No,No,Yes
+C00339,Mid-Market,North,Annual,IL,One year,Electronic check,Fiber optic,Yes,2,0,Yes,No,No
+C00340,Small Business,West,Annual,AZ,Two year,Bank transfer,DSL,No,2,0,Yes,Yes,Yes
+C00341,Small Business,East,Monthly,NY,Month-to-month,Mailed check,Fiber optic,No,3,0,No,No,Yes
+C00342,Small Business,South,Monthly,GA,Month-to-month,Mailed check,DSL,No,4,0,Yes,No,No
+C00343,Mid-Market,East,Annual,PA,One year,Mailed check,DSL,Yes,5,0,Yes,No,Yes
+C00344,Small Business,East,Monthly,PA,Month-to-month,Credit card,Fiber optic,No,5,0,Yes,Yes,No
+C00345,Mid-Market,West,Annual,OR,One year,Electronic check,DSL,Yes,0,0,Yes,No,No
+C00346,Small Business,South,Annual,GA,Two year,Bank transfer,DSL,No,3,0,Yes,Yes,Yes
+C00347,Enterprise,West,Annual,CA,One year,Mailed check,DSL,No,0,0,Yes,No,Yes
+C00348,Enterprise,West,Annual,WA,Two year,Bank transfer,Fiber optic,No,2,0,No,No,Yes
+C00349,Small Business,North,Annual,IL,One year,Credit card,Fiber optic,Yes,4,0,No,No,No
+C00350,Small Business,North,Annual,MN,Two year,Bank transfer,Fiber optic,No,3,0,No,No,Yes
+C00351,Small Business,East,Monthly,PA,Month-to-month,Bank transfer,None,Yes,4,0,Yes,Yes,No
+C00352,Enterprise,North,Monthly,WI,Month-to-month,Mailed check,DSL,No,5,0,No,No,Yes
+C00353,Small Business,South,Annual,NC,One year,Bank transfer,DSL,No,5,0,No,Yes,Yes
+C00354,Mid-Market,South,Monthly,GA,Month-to-month,Credit card,Fiber optic,No,4,0,Yes,No,Yes
+C00355,Small Business,West,Annual,CA,Two year,Electronic check,DSL,No,4,0,No,No,Yes
+C00356,Mid-Market,West,Annual,CA,One year,Credit card,DSL,No,4,0,No,No,Yes
+C00357,Mid-Market,North,Annual,MI,Two year,Electronic check,DSL,No,1,0,Yes,No,No
+C00358,Mid-Market,West,Monthly,AZ,Month-to-month,Mailed check,Fiber optic,No,1,0,No,No,Yes
+C00359,Enterprise,North,Monthly,MN,Month-to-month,Credit card,DSL,No,2,0,Yes,No,No
+C00360,Small Business,East,Annual,MA,One year,Credit card,Fiber optic,No,4,0,Yes,No,No
+C00361,Enterprise,West,Monthly,OR,Month-to-month,Credit card,Fiber optic,No,2,0,Yes,Yes,Yes
+C00362,Small Business,West,Annual,WA,One year,Bank transfer,None,No,0,0,Yes,No,Yes
+C00363,Mid-Market,North,Annual,WI,One year,Credit card,DSL,Yes,4,0,No,No,Yes
+C00364,Enterprise,West,Annual,AZ,Two year,Electronic check,Fiber optic,No,4,0,No,No,Yes
+C00365,Mid-Market,North,Annual,WI,One year,Bank transfer,DSL,Yes,3,0,Yes,No,No
+C00366,Mid-Market,East,Monthly,MA,Month-to-month,Credit card,None,Yes,5,0,No,Yes,No
+C00367,Small Business,South,Monthly,GA,Month-to-month,Credit card,Fiber optic,No,4,1,No,No,No
+C00368,Small Business,South,Annual,FL,One year,Electronic check,DSL,Yes,5,0,No,No,Yes
+C00369,Small Business,North,Monthly,IL,Month-to-month,Credit card,Fiber optic,No,1,0,No,No,Yes
+C00370,Mid-Market,West,Monthly,AZ,Month-to-month,Bank transfer,Fiber optic,No,0,0,No,Yes,Yes
+C00371,Mid-Market,South,Monthly,FL,Month-to-month,Mailed check,Fiber optic,Yes,2,0,No,No,No
+C00372,Small Business,East,Monthly,VA,Month-to-month,Electronic check,DSL,Yes,4,0,Yes,No,Yes
+C00373,Small Business,South,Annual,FL,One year,Mailed check,Fiber optic,Yes,5,1,No,No,Yes
+C00374,Small Business,South,Monthly,GA,Month-to-month,Bank transfer,Fiber optic,Yes,0,0,Yes,No,Yes
+C00375,Small Business,West,Annual,OR,One year,Electronic check,DSL,No,5,0,Yes,No,Yes
+C00376,Small Business,North,Monthly,WI,Month-to-month,Electronic check,DSL,No,2,0,Yes,No,Yes
+C00377,Enterprise,East,Annual,VA,One year,Electronic check,DSL,No,4,0,Yes,Yes,Yes
+C00378,Mid-Market,East,Monthly,MA,Month-to-month,Mailed check,DSL,Yes,4,0,No,No,No
+C00379,Small Business,South,Annual,TX,Two year,Electronic check,Fiber optic,No,0,1,No,Yes,No
+C00380,Mid-Market,South,Monthly,NC,Month-to-month,Credit card,Fiber optic,Yes,2,1,No,No,Yes
+C00381,Enterprise,North,Annual,IL,One year,Bank transfer,DSL,No,0,0,No,No,No
+C00382,Small Business,West,Monthly,CA,Month-to-month,Mailed check,DSL,No,2,0,Yes,No,Yes
+C00383,Small Business,West,Monthly,WA,Month-to-month,Bank transfer,Fiber optic,Yes,4,0,No,No,No
+C00384,Small Business,North,Monthly,MI,Month-to-month,Bank transfer,Fiber optic,No,4,0,Yes,Yes,Yes
+C00385,Small Business,North,Annual,IL,Two year,Electronic check,Fiber optic,No,4,0,Yes,No,Yes
+C00386,Mid-Market,North,Annual,WI,Two year,Mailed check,Fiber optic,Yes,3,0,No,No,Yes
+C00387,Enterprise,North,Monthly,WI,Month-to-month,Electronic check,None,No,0,1,No,Yes,Yes
+C00388,Small Business,West,Monthly,WA,Month-to-month,Electronic check,DSL,No,3,0,Yes,No,Yes
+C00389,Mid-Market,West,Annual,WA,One year,Mailed check,Fiber optic,Yes,2,0,Yes,No,No
+C00390,Small Business,North,Annual,WI,One year,Electronic check,DSL,Yes,3,0,Yes,No,No
+C00391,Mid-Market,East,Monthly,NY,Month-to-month,Electronic check,DSL,No,1,0,No,No,Yes
+C00392,Mid-Market,North,Annual,IL,One year,Bank transfer,Fiber optic,No,4,0,Yes,No,Yes
+C00393,Small Business,South,Annual,NC,One year,Electronic check,Fiber optic,No,3,0,Yes,No,No
+C00394,Small Business,East,Annual,MA,One year,Electronic check,DSL,No,2,1,No,No,Yes
+C00395,Mid-Market,East,Monthly,NY,Month-to-month,Credit card,Fiber optic,No,0,0,No,Yes,Yes
+C00396,Enterprise,West,Monthly,OR,Month-to-month,Bank transfer,DSL,No,0,0,Yes,Yes,Yes
+C00397,Small Business,North,Monthly,WI,Month-to-month,Bank transfer,DSL,Yes,2,0,No,No,Yes
+C00398,Small Business,North,Annual,MI,One year,Electronic check,DSL,Yes,3,0,Yes,No,Yes
+C00399,Small Business,South,Monthly,GA,Month-to-month,Credit card,None,No,5,1,Yes,No,Yes
+C00400,Mid-Market,South,Annual,NC,One year,Bank transfer,DSL,No,4,0,No,No,Yes
+C00401,Mid-Market,West,Annual,AZ,One year,Electronic check,DSL,No,2,0,Yes,No,No
+C00402,Mid-Market,West,Annual,OR,One year,Electronic check,Fiber optic,Yes,1,0,Yes,Yes,No
+C00403,Mid-Market,South,Monthly,NC,Month-to-month,Electronic check,DSL,No,1,0,No,No,No
+C00404,Enterprise,West,Monthly,OR,Month-to-month,Credit card,DSL,No,0,0,No,No,Yes
+C00405,Enterprise,South,Monthly,GA,Month-to-month,Electronic check,None,Yes,0,0,No,No,No
+C00406,Small Business,East,Annual,VA,One year,Bank transfer,DSL,Yes,5,0,No,Yes,No
+C00407,Mid-Market,South,Annual,GA,Two year,Mailed check,Fiber optic,No,0,0,Yes,No,Yes
+C00408,Small Business,North,Monthly,MN,Month-to-month,Electronic check,DSL,No,5,0,No,No,Yes
+C00409,Small Business,West,Annual,CA,Two year,Bank transfer,DSL,No,3,0,Yes,No,No
+C00410,Enterprise,North,Monthly,IL,Month-to-month,Electronic check,DSL,Yes,3,0,No,No,Yes
+C00411,Mid-Market,North,Monthly,MN,Month-to-month,Electronic check,DSL,No,5,0,Yes,Yes,No
+C00412,Enterprise,North,Monthly,IL,Month-to-month,Bank transfer,DSL,Yes,4,0,Yes,No,No
+C00413,Small Business,South,Annual,TX,One year,Credit card,DSL,Yes,0,1,Yes,No,No
+C00414,Mid-Market,North,Monthly,MN,Month-to-month,Mailed check,Fiber optic,No,5,0,No,No,No
+C00415,Mid-Market,North,Monthly,MI,Month-to-month,Credit card,Fiber optic,Yes,1,0,Yes,No,Yes
+C00416,Small Business,East,Annual,NY,One year,Electronic check,DSL,No,3,0,No,No,No
+C00417,Small Business,West,Annual,OR,One year,Credit card,None,No,3,0,No,No,No
+C00418,Mid-Market,North,Monthly,MI,Month-to-month,Electronic check,DSL,Yes,1,0,No,No,Yes
+C00419,Small Business,South,Monthly,GA,Month-to-month,Mailed check,Fiber optic,Yes,3,0,Yes,No,Yes
+C00420,Enterprise,East,Annual,NY,One year,Bank transfer,Fiber optic,No,3,0,Yes,Yes,Yes
+C00421,Small Business,West,Monthly,CA,Month-to-month,Credit card,Fiber optic,Yes,5,1,No,No,Yes
+C00422,Small Business,East,Monthly,VA,Month-to-month,Credit card,DSL,Yes,5,0,No,No,Yes
+C00423,Mid-Market,West,Annual,AZ,One year,Bank transfer,DSL,Yes,2,0,Yes,No,Yes
+C00424,Small Business,East,Monthly,VA,Month-to-month,Bank transfer,None,Yes,4,0,No,No,Yes
+C00425,Enterprise,South,Annual,GA,One year,Electronic check,Fiber optic,No,4,0,Yes,No,Yes
+C00426,Mid-Market,North,Monthly,MN,Month-to-month,Electronic check,DSL,No,0,0,Yes,Yes,Yes
+C00427,Small Business,West,Monthly,AZ,Month-to-month,Electronic check,DSL,Yes,4,1,Yes,No,No
+C00428,Mid-Market,West,Monthly,CA,Month-to-month,Credit card,Fiber optic,No,5,1,Yes,Yes,No
+C00429,Mid-Market,North,Monthly,WI,Month-to-month,Credit card,None,Yes,0,0,Yes,Yes,No
+C00430,Mid-Market,East,Monthly,NY,Month-to-month,Electronic check,DSL,No,4,0,No,Yes,Yes
+C00431,Enterprise,North,Monthly,IL,Month-to-month,Credit card,Fiber optic,Yes,0,0,Yes,No,Yes
+C00432,Mid-Market,East,Annual,PA,Two year,Credit card,Fiber optic,No,2,0,No,Yes,No
+C00433,Mid-Market,West,Annual,AZ,Two year,Electronic check,DSL,Yes,4,0,No,No,Yes
+C00434,Small Business,North,Monthly,MI,Month-to-month,Mailed check,DSL,No,5,0,No,No,No
+C00435,Mid-Market,South,Annual,GA,One year,Credit card,DSL,Yes,4,1,Yes,Yes,No
+C00436,Enterprise,North,Annual,MN,One year,Credit card,DSL,No,4,0,No,No,Yes
+C00437,Mid-Market,East,Annual,PA,Two year,Credit card,Fiber optic,Yes,1,0,Yes,No,Yes
+C00438,Mid-Market,West,Monthly,OR,Month-to-month,Electronic check,DSL,No,4,1,No,No,Yes
+C00439,Small Business,North,Monthly,WI,Month-to-month,Bank transfer,None,No,3,0,Yes,No,Yes
+C00440,Mid-Market,South,Monthly,FL,Month-to-month,Credit card,Fiber optic,Yes,5,0,No,No,Yes
+C00441,Enterprise,West,Monthly,CA,Month-to-month,Credit card,DSL,Yes,3,1,Yes,Yes,No
+C00442,Small Business,South,Monthly,FL,Month-to-month,Mailed check,Fiber optic,Yes,0,0,No,No,No
+C00443,Small Business,North,Annual,IL,Two year,Bank transfer,Fiber optic,No,3,0,Yes,Yes,Yes
+C00444,Mid-Market,South,Annual,FL,Two year,Bank transfer,Fiber optic,No,4,0,Yes,No,Yes
+C00445,Mid-Market,East,Monthly,PA,Month-to-month,Electronic check,DSL,No,4,0,No,Yes,Yes
+C00446,Mid-Market,East,Monthly,VA,Month-to-month,Electronic check,Fiber optic,Yes,2,0,Yes,No,Yes
+C00447,Small Business,South,Monthly,TX,Month-to-month,Bank transfer,Fiber optic,No,1,0,No,No,No
+C00448,Small Business,West,Monthly,OR,Month-to-month,Credit card,DSL,Yes,5,0,No,Yes,Yes
+C00449,Mid-Market,East,Annual,VA,One year,Bank transfer,Fiber optic,Yes,4,0,No,Yes,No
+C00450,Mid-Market,South,Monthly,FL,Month-to-month,Bank transfer,DSL,Yes,5,0,No,Yes,Yes
+C00451,Mid-Market,West,Annual,WA,Two year,Electronic check,None,No,4,0,No,No,Yes
+C00452,Mid-Market,West,Annual,WA,Two year,Electronic check,Fiber optic,No,4,1,No,No,No
+C00453,Mid-Market,South,Annual,FL,One year,Credit card,Fiber optic,No,2,0,Yes,Yes,No
+C00454,Mid-Market,North,Annual,MI,One year,Electronic check,None,Yes,4,1,No,No,No
+C00455,Mid-Market,East,Annual,VA,One year,Bank transfer,Fiber optic,Yes,2,1,No,Yes,Yes
+C00456,Mid-Market,East,Monthly,NY,Month-to-month,Bank transfer,Fiber optic,No,4,1,Yes,No,No
+C00457,Mid-Market,North,Monthly,WI,Month-to-month,Credit card,None,No,0,0,Yes,No,Yes
+C00458,Small Business,East,Annual,VA,One year,Bank transfer,DSL,Yes,1,0,Yes,No,Yes
+C00459,Small Business,West,Monthly,CA,Month-to-month,Credit card,DSL,Yes,1,0,No,No,No
+C00460,Mid-Market,North,Annual,IL,Two year,Bank transfer,DSL,No,2,0,Yes,No,Yes
+C00461,Enterprise,East,Monthly,NY,Month-to-month,Electronic check,None,No,4,0,No,Yes,No
+C00462,Mid-Market,North,Monthly,IL,Month-to-month,Bank transfer,DSL,No,0,0,No,No,Yes
+C00463,Small Business,East,Monthly,NY,Month-to-month,Bank transfer,DSL,Yes,4,0,No,Yes,Yes
+C00464,Mid-Market,South,Annual,NC,Two year,Electronic check,DSL,No,4,0,Yes,Yes,Yes
+C00465,Small Business,North,Monthly,MI,Month-to-month,Credit card,DSL,Yes,4,0,No,No,No
+C00466,Mid-Market,West,Monthly,AZ,Month-to-month,Bank transfer,DSL,No,3,0,No,No,No
+C00467,Enterprise,North,Monthly,MI,Month-to-month,Electronic check,Fiber optic,Yes,0,0,Yes,No,Yes
+C00468,Mid-Market,East,Annual,PA,One year,Bank transfer,DSL,Yes,3,0,Yes,No,Yes
+C00469,Mid-Market,North,Annual,IL,Two year,Mailed check,DSL,No,1,1,Yes,No,Yes
+C00470,Small Business,West,Monthly,AZ,Month-to-month,Bank transfer,Fiber optic,Yes,1,0,No,Yes,Yes
+C00471,Small Business,East,Annual,VA,Two year,Credit card,Fiber optic,Yes,5,0,Yes,No,No
+C00472,Enterprise,West,Monthly,AZ,Month-to-month,Credit card,DSL,No,3,0,Yes,No,Yes
+C00473,Mid-Market,South,Annual,GA,One year,Mailed check,Fiber optic,No,5,1,Yes,Yes,Yes
+C00474,Mid-Market,South,Monthly,FL,Month-to-month,Credit card,Fiber optic,No,2,0,Yes,No,Yes
+C00475,Small Business,East,Monthly,MA,Month-to-month,Electronic check,Fiber optic,Yes,2,0,Yes,No,Yes
+C00476,Small Business,West,Annual,CA,One year,Electronic check,Fiber optic,Yes,5,0,No,No,No
+C00477,Small Business,West,Annual,OR,One year,Bank transfer,DSL,No,3,1,Yes,No,No
+C00478,Small Business,North,Monthly,IL,Month-to-month,Credit card,Fiber optic,Yes,5,0,No,No,Yes
+C00479,Small Business,East,Annual,MA,Two year,Electronic check,Fiber optic,Yes,0,0,Yes,No,No
+C00480,Enterprise,North,Annual,IL,Two year,Credit card,DSL,No,3,0,Yes,No,Yes
+C00481,Mid-Market,South,Monthly,NC,Month-to-month,Bank transfer,Fiber optic,No,4,0,No,No,No
+C00482,Small Business,West,Annual,WA,One year,Credit card,Fiber optic,Yes,4,0,No,No,No
+C00483,Small Business,South,Annual,FL,One year,Bank transfer,DSL,No,4,0,No,No,Yes
+C00484,Small Business,West,Monthly,CA,Month-to-month,Bank transfer,DSL,No,0,0,Yes,Yes,No
+C00485,Enterprise,South,Annual,GA,Two year,Mailed check,DSL,Yes,3,0,No,No,Yes
+C00486,Small Business,North,Monthly,MI,Month-to-month,Mailed check,DSL,No,0,0,No,No,No
+C00487,Mid-Market,South,Annual,FL,One year,Electronic check,None,Yes,4,1,Yes,No,Yes
+C00488,Enterprise,East,Monthly,MA,Month-to-month,Bank transfer,Fiber optic,Yes,3,0,No,No,Yes
+C00489,Small Business,West,Monthly,OR,Month-to-month,Electronic check,DSL,No,1,0,Yes,No,No
+C00490,Mid-Market,East,Annual,NY,One year,Mailed check,DSL,No,4,0,Yes,No,Yes
+C00491,Enterprise,West,Annual,CA,One year,Electronic check,Fiber optic,Yes,4,0,No,No,Yes
+C00492,Small Business,West,Annual,CA,Two year,Bank transfer,None,No,0,1,No,Yes,Yes
+C00493,Small Business,West,Annual,WA,Two year,Bank transfer,Fiber optic,No,0,0,No,No,Yes
+C00494,Enterprise,East,Monthly,PA,Month-to-month,Electronic check,DSL,Yes,1,1,No,No,No
+C00495,Enterprise,South,Monthly,GA,Month-to-month,Bank transfer,DSL,No,0,0,Yes,Yes,No
+C00496,Mid-Market,South,Monthly,FL,Month-to-month,Electronic check,DSL,No,3,0,No,Yes,No
+C00497,Mid-Market,North,Monthly,WI,Month-to-month,Credit card,Fiber optic,Yes,5,0,No,No,Yes
+C00498,Small Business,South,Monthly,TX,Month-to-month,Credit card,None,No,0,0,Yes,No,Yes
+C00499,Enterprise,West,Annual,AZ,Two year,Credit card,DSL,No,3,1,Yes,No,Yes
+C00500,Mid-Market,South,Annual,TX,One year,Credit card,Fiber optic,No,2,0,No,Yes,Yes
+C00501,Small Business,North,Monthly,MN,Month-to-month,Mailed check,Fiber optic,Yes,5,0,Yes,No,No
+C00502,Mid-Market,East,Monthly,MA,Month-to-month,Electronic check,DSL,Yes,2,0,No,Yes,Yes
+C00503,Enterprise,West,Annual,WA,One year,Credit card,Fiber optic,Yes,4,0,No,Yes,Yes
+C00504,Enterprise,West,Monthly,AZ,Month-to-month,Mailed check,DSL,No,5,0,No,No,No
+C00505,Small Business,South,Monthly,FL,Month-to-month,Bank transfer,DSL,No,0,0,No,No,Yes
+C00506,Small Business,South,Monthly,FL,Month-to-month,Electronic check,Fiber optic,No,1,0,No,No,Yes
+C00507,Enterprise,East,Monthly,NY,Month-to-month,Mailed check,DSL,No,1,0,No,Yes,No
+C00508,Enterprise,North,Monthly,MN,Month-to-month,Electronic check,Fiber optic,Yes,1,0,Yes,Yes,Yes
+C00509,Mid-Market,South,Annual,GA,One year,Credit card,None,Yes,3,0,No,No,No
+C00510,Mid-Market,North,Monthly,IL,Month-to-month,Credit card,DSL,No,0,1,No,Yes,No
+C00511,Mid-Market,West,Annual,AZ,One year,Bank transfer,Fiber optic,No,2,0,No,Yes,Yes
+C00512,Small Business,East,Annual,VA,One year,Electronic check,DSL,No,0,0,No,Yes,Yes
+C00513,Small Business,West,Annual,WA,Two year,Electronic check,DSL,Yes,3,1,No,No,Yes
+C00514,Small Business,West,Monthly,WA,Month-to-month,Bank transfer,None,Yes,4,0,No,No,No
+C00515,Small Business,West,Monthly,AZ,Month-to-month,Electronic check,Fiber optic,No,2,0,No,Yes,Yes
+C00516,Enterprise,North,Monthly,WI,Month-to-month,Credit card,DSL,Yes,2,0,No,No,No
+C00517,Small Business,West,Monthly,OR,Month-to-month,Bank transfer,None,Yes,2,0,No,No,Yes
+C00518,Small Business,North,Monthly,MN,Month-to-month,Bank transfer,Fiber optic,No,1,1,Yes,No,Yes
+C00519,Mid-Market,South,Annual,FL,One year,Electronic check,DSL,No,2,0,Yes,No,Yes
+C00520,Small Business,East,Monthly,VA,Month-to-month,Electronic check,Fiber optic,No,5,0,No,No,Yes
+C00521,Small Business,South,Monthly,GA,Month-to-month,Mailed check,DSL,No,0,0,Yes,No,Yes
+C00522,Mid-Market,North,Monthly,IL,Month-to-month,Credit card,Fiber optic,No,4,0,Yes,Yes,Yes
+C00523,Small Business,North,Annual,IL,One year,Electronic check,None,Yes,0,1,Yes,No,No
+C00524,Mid-Market,West,Annual,CA,Two year,Electronic check,Fiber optic,No,0,0,No,Yes,Yes
+C00525,Enterprise,South,Annual,FL,One year,Credit card,Fiber optic,No,1,0,No,No,No
+C00526,Small Business,South,Annual,GA,One year,Mailed check,DSL,Yes,1,0,No,No,Yes
+C00527,Enterprise,West,Annual,CA,One year,Electronic check,DSL,No,1,0,No,Yes,No
+C00528,Enterprise,North,Annual,WI,One year,Electronic check,DSL,No,5,0,No,Yes,Yes
+C00529,Enterprise,West,Monthly,AZ,Month-to-month,Credit card,DSL,Yes,5,0,Yes,Yes,No
+C00530,Mid-Market,West,Annual,OR,One year,Electronic check,Fiber optic,No,4,0,Yes,Yes,Yes
+C00531,Mid-Market,East,Annual,VA,One year,Electronic check,DSL,No,0,1,Yes,No,Yes
+C00532,Mid-Market,North,Monthly,WI,Month-to-month,Mailed check,Fiber optic,Yes,5,1,Yes,Yes,Yes
+C00533,Mid-Market,North,Annual,WI,One year,Bank transfer,Fiber optic,Yes,5,0,No,No,Yes
+C00534,Small Business,South,Monthly,FL,Month-to-month,Electronic check,None,No,0,1,Yes,No,Yes
+C00535,Enterprise,East,Annual,VA,One year,Credit card,DSL,Yes,2,0,No,Yes,Yes
+C00536,Mid-Market,North,Monthly,WI,Month-to-month,Electronic check,Fiber optic,Yes,4,0,No,Yes,No
+C00537,Mid-Market,South,Annual,GA,One year,Electronic check,Fiber optic,No,0,0,Yes,No,Yes
+C00538,Small Business,North,Annual,MI,Two year,Credit card,None,No,0,0,No,No,Yes
+C00539,Small Business,East,Monthly,PA,Month-to-month,Credit card,Fiber optic,No,3,0,No,No,No
+C00540,Mid-Market,North,Monthly,MI,Month-to-month,Bank transfer,Fiber optic,No,2,0,No,Yes,No
+C00541,Mid-Market,East,Monthly,NY,Month-to-month,Mailed check,Fiber optic,No,2,0,No,No,Yes
+C00542,Small Business,North,Monthly,WI,Month-to-month,Electronic check,Fiber optic,No,4,0,No,No,Yes
+C00543,Small Business,North,Annual,WI,Two year,Mailed check,Fiber optic,Yes,3,0,No,No,Yes
+C00544,Small Business,North,Monthly,MI,Month-to-month,Credit card,None,No,4,0,No,No,Yes
+C00545,Mid-Market,West,Monthly,WA,Month-to-month,Electronic check,Fiber optic,Yes,0,0,Yes,No,Yes
+C00546,Small Business,North,Monthly,MI,Month-to-month,Bank transfer,DSL,No,0,0,No,No,No
+C00547,Enterprise,South,Annual,TX,Two year,Electronic check,DSL,No,1,0,No,No,No
+C00548,Small Business,East,Monthly,PA,Month-to-month,Credit card,DSL,Yes,1,0,Yes,No,Yes
+C00549,Small Business,East,Annual,NY,One year,Bank transfer,DSL,No,1,0,Yes,Yes,Yes
+C00550,Small Business,East,Monthly,MA,Month-to-month,Electronic check,DSL,No,4,0,Yes,No,Yes
+C00551,Mid-Market,West,Monthly,OR,Month-to-month,Bank transfer,DSL,No,0,0,Yes,Yes,Yes
+C00552,Mid-Market,South,Annual,GA,One year,Electronic check,DSL,Yes,0,0,Yes,No,Yes
+C00553,Mid-Market,West,Monthly,AZ,Month-to-month,Bank transfer,DSL,No,1,0,Yes,No,Yes
+C00554,Enterprise,South,Annual,FL,One year,Electronic check,DSL,Yes,1,0,No,No,Yes
+C00555,Small Business,West,Monthly,WA,Month-to-month,Electronic check,DSL,No,1,1,No,No,No
+C00556,Mid-Market,East,Annual,MA,One year,Credit card,Fiber optic,No,1,0,No,Yes,Yes
+C00557,Small Business,East,Annual,VA,One year,Bank transfer,DSL,Yes,3,0,Yes,Yes,Yes
+C00558,Small Business,West,Annual,WA,One year,Electronic check,DSL,Yes,0,0,No,No,Yes
+C00559,Mid-Market,West,Monthly,AZ,Month-to-month,Mailed check,Fiber optic,No,0,0,Yes,Yes,Yes
+C00560,Small Business,West,Annual,OR,One year,Electronic check,DSL,No,5,0,Yes,Yes,Yes
+C00561,Mid-Market,East,Annual,PA,Two year,Credit card,Fiber optic,Yes,0,0,No,No,Yes
+C00562,Mid-Market,North,Monthly,MI,Month-to-month,Credit card,Fiber optic,No,0,0,No,No,Yes
+C00563,Mid-Market,South,Monthly,NC,Month-to-month,Electronic check,DSL,No,0,0,No,Yes,No
+C00564,Mid-Market,North,Annual,MI,Two year,Mailed check,Fiber optic,Yes,3,0,No,No,No
+C00565,Mid-Market,West,Monthly,CA,Month-to-month,Credit card,Fiber optic,No,4,0,No,No,Yes
+C00566,Small Business,North,Annual,MI,One year,Bank transfer,Fiber optic,Yes,4,0,No,No,Yes
+C00567,Small Business,North,Annual,WI,One year,Credit card,DSL,Yes,4,0,No,Yes,Yes
+C00568,Small Business,North,Monthly,MN,Month-to-month,Credit card,Fiber optic,No,0,0,Yes,No,Yes
+C00569,Mid-Market,East,Annual,NY,One year,Credit card,DSL,Yes,2,0,Yes,No,No
+C00570,Enterprise,East,Annual,VA,One year,Mailed check,DSL,No,3,0,No,Yes,Yes
+C00571,Small Business,West,Monthly,WA,Month-to-month,Bank transfer,DSL,No,4,0,No,No,No
+C00572,Mid-Market,South,Annual,TX,Two year,Credit card,None,No,2,0,Yes,No,No
+C00573,Mid-Market,South,Monthly,NC,Month-to-month,Bank transfer,DSL,Yes,5,0,Yes,No,Yes
+C00574,Enterprise,North,Monthly,MI,Month-to-month,Credit card,Fiber optic,Yes,5,0,Yes,Yes,Yes
+C00575,Mid-Market,North,Annual,WI,Two year,Credit card,None,No,4,0,No,No,Yes
+C00576,Mid-Market,South,Monthly,GA,Month-to-month,Bank transfer,DSL,No,4,0,Yes,No,Yes
+C00577,Mid-Market,West,Annual,CA,Two year,Credit card,Fiber optic,No,5,0,No,Yes,Yes
+C00578,Enterprise,East,Monthly,NY,Month-to-month,Bank transfer,Fiber optic,Yes,4,0,Yes,Yes,No
+C00579,Small Business,West,Monthly,WA,Month-to-month,Mailed check,DSL,Yes,3,1,Yes,No,Yes
+C00580,Enterprise,North,Monthly,MN,Month-to-month,Mailed check,Fiber optic,Yes,2,0,Yes,Yes,Yes
+C00581,Small Business,North,Annual,MI,One year,Bank transfer,DSL,No,2,0,No,No,Yes
+C00582,Enterprise,West,Annual,CA,One year,Credit card,Fiber optic,Yes,4,0,Yes,No,Yes
+C00583,Small Business,North,Annual,MI,Two year,Bank transfer,DSL,No,1,0,Yes,Yes,Yes
+C00584,Small Business,North,Annual,MN,Two year,Electronic check,Fiber optic,No,3,1,No,No,No
+C00585,Small Business,South,Annual,GA,One year,Credit card,DSL,Yes,3,0,No,No,Yes
+C00586,Small Business,West,Annual,OR,One year,Electronic check,Fiber optic,No,2,0,Yes,Yes,Yes
+C00587,Small Business,East,Annual,NY,One year,Electronic check,Fiber optic,No,2,0,No,No,Yes
+C00588,Small Business,North,Annual,MI,Two year,Mailed check,Fiber optic,No,0,0,Yes,No,Yes
+C00589,Small Business,West,Annual,WA,One year,Bank transfer,DSL,Yes,4,0,No,No,Yes
+C00590,Small Business,West,Annual,CA,Two year,Credit card,DSL,No,0,0,Yes,No,No
+C00591,Mid-Market,West,Monthly,AZ,Month-to-month,Electronic check,DSL,Yes,0,0,No,No,No
+C00592,Enterprise,West,Monthly,CA,Month-to-month,Bank transfer,Fiber optic,No,1,0,No,No,No
+C00593,Mid-Market,North,Annual,MN,One year,Credit card,DSL,No,3,0,No,Yes,No
+C00594,Small Business,West,Monthly,AZ,Month-to-month,Bank transfer,Fiber optic,Yes,1,0,No,Yes,Yes
+C00595,Small Business,South,Monthly,GA,Month-to-month,Mailed check,Fiber optic,No,5,0,Yes,No,Yes
+C00596,Enterprise,West,Annual,AZ,Two year,Credit card,DSL,No,5,0,No,No,No
+C00597,Small Business,East,Monthly,PA,Month-to-month,Electronic check,DSL,Yes,2,0,Yes,No,No
+C00598,Small Business,West,Monthly,OR,Month-to-month,Electronic check,DSL,No,5,0,Yes,Yes,Yes
+C00599,Enterprise,East,Monthly,VA,Month-to-month,Electronic check,Fiber optic,Yes,0,0,No,No,No
+C00600,Enterprise,East,Monthly,NY,Month-to-month,Credit card,Fiber optic,No,0,0,No,No,Yes
+C00601,Small Business,East,Annual,VA,One year,Electronic check,DSL,No,2,1,No,No,No
+C00602,Mid-Market,West,Annual,AZ,Two year,Electronic check,Fiber optic,No,5,0,No,Yes,No
+C00603,Small Business,East,Annual,VA,Two year,Electronic check,Fiber optic,No,3,0,No,Yes,No
+C00604,Mid-Market,North,Annual,MN,One year,Electronic check,None,No,4,0,No,Yes,Yes
+C00605,Small Business,West,Annual,WA,One year,Bank transfer,DSL,Yes,3,0,No,No,Yes
+C00606,Small Business,East,Monthly,VA,Month-to-month,Electronic check,Fiber optic,Yes,2,0,No,Yes,No
+C00607,Mid-Market,South,Annual,NC,Two year,Bank transfer,Fiber optic,Yes,5,0,Yes,No,Yes
+C00608,Small Business,East,Monthly,NY,Month-to-month,Electronic check,DSL,No,5,0,No,Yes,No
+C00609,Mid-Market,West,Monthly,OR,Month-to-month,Electronic check,Fiber optic,No,2,1,No,Yes,Yes
+C00610,Small Business,West,Annual,WA,Two year,Electronic check,Fiber optic,No,4,1,No,No,No
+C00611,Enterprise,West,Annual,WA,Two year,Bank transfer,Fiber optic,Yes,3,0,Yes,No,No
+C00612,Enterprise,South,Monthly,TX,Month-to-month,Electronic check,DSL,Yes,3,0,Yes,No,Yes
+C00613,Mid-Market,West,Annual,AZ,One year,Credit card,DSL,No,0,0,Yes,Yes,Yes
+C00614,Mid-Market,South,Monthly,NC,Month-to-month,Electronic check,Fiber optic,Yes,1,1,Yes,No,No
+C00615,Small Business,East,Monthly,MA,Month-to-month,Mailed check,Fiber optic,No,5,0,No,No,Yes
+C00616,Mid-Market,East,Monthly,PA,Month-to-month,Electronic check,DSL,Yes,1,0,Yes,No,No
+C00617,Small Business,North,Monthly,WI,Month-to-month,Credit card,DSL,Yes,3,0,Yes,No,Yes
+C00618,Enterprise,South,Annual,FL,One year,Bank transfer,DSL,No,5,0,No,No,Yes
+C00619,Enterprise,North,Monthly,MN,Month-to-month,Electronic check,Fiber optic,No,3,0,Yes,No,Yes
+C00620,Enterprise,North,Annual,WI,One year,Electronic check,DSL,No,1,0,Yes,No,No
+C00621,Enterprise,South,Monthly,TX,Month-to-month,Bank transfer,None,No,5,0,No,No,No
+C00622,Enterprise,South,Annual,GA,Two year,Electronic check,DSL,No,0,0,No,No,No
+C00623,Small Business,North,Annual,IL,One year,Electronic check,Fiber optic,No,4,0,No,No,No
+C00624,Enterprise,South,Annual,TX,Two year,Credit card,DSL,No,1,0,No,No,Yes
+C00625,Mid-Market,East,Monthly,VA,Month-to-month,Electronic check,Fiber optic,No,3,0,No,Yes,No
+C00626,Small Business,North,Annual,MN,One year,Mailed check,Fiber optic,No,2,0,Yes,No,Yes
+C00627,Mid-Market,South,Annual,TX,Two year,Bank transfer,Fiber optic,Yes,3,0,No,Yes,Yes
+C00628,Small Business,South,Monthly,FL,Month-to-month,Credit card,None,Yes,2,0,No,No,Yes
+C00629,Small Business,East,Monthly,PA,Month-to-month,Electronic check,Fiber optic,No,3,0,No,Yes,Yes
+C00630,Small Business,South,Monthly,FL,Month-to-month,Bank transfer,DSL,No,5,0,Yes,Yes,No
+C00631,Small Business,East,Monthly,VA,Month-to-month,Bank transfer,DSL,Yes,4,0,Yes,Yes,Yes
+C00632,Mid-Market,South,Monthly,NC,Month-to-month,Electronic check,DSL,Yes,2,0,Yes,Yes,No
+C00633,Enterprise,South,Monthly,TX,Month-to-month,Mailed check,Fiber optic,No,5,0,No,Yes,No
+C00634,Mid-Market,South,Monthly,NC,Month-to-month,Credit card,DSL,No,5,0,No,Yes,Yes
+C00635,Mid-Market,North,Annual,IL,One year,Bank transfer,Fiber optic,No,3,1,Yes,No,Yes
+C00636,Small Business,East,Monthly,MA,Month-to-month,Electronic check,Fiber optic,Yes,3,0,No,No,No
+C00637,Mid-Market,North,Monthly,MI,Month-to-month,Electronic check,Fiber optic,No,0,0,No,No,Yes
+C00638,Small Business,South,Annual,NC,One year,Bank transfer,Fiber optic,No,3,0,No,No,No
+C00639,Enterprise,West,Monthly,AZ,Month-to-month,Bank transfer,DSL,No,1,0,Yes,Yes,Yes
+C00640,Small Business,West,Monthly,WA,Month-to-month,Credit card,Fiber optic,Yes,0,1,No,No,Yes
+C00641,Mid-Market,East,Monthly,MA,Month-to-month,Electronic check,Fiber optic,No,5,0,No,No,Yes
+C00642,Mid-Market,West,Monthly,CA,Month-to-month,Bank transfer,None,No,1,0,No,No,Yes
+C00643,Mid-Market,West,Monthly,AZ,Month-to-month,Electronic check,Fiber optic,No,3,0,No,No,Yes
+C00644,Enterprise,South,Monthly,GA,Month-to-month,Electronic check,Fiber optic,No,5,0,No,No,Yes
+C00645,Small Business,West,Monthly,CA,Month-to-month,Bank transfer,Fiber optic,No,3,0,Yes,No,Yes
+C00646,Enterprise,South,Annual,FL,Two year,Electronic check,Fiber optic,Yes,4,0,No,No,No
+C00647,Mid-Market,South,Annual,NC,Two year,Electronic check,DSL,No,4,0,Yes,No,Yes
+C00648,Mid-Market,East,Monthly,VA,Month-to-month,Electronic check,Fiber optic,No,2,1,No,Yes,Yes
+C00649,Mid-Market,West,Monthly,WA,Month-to-month,Mailed check,Fiber optic,Yes,5,0,No,No,Yes
+C00650,Enterprise,West,Monthly,CA,Month-to-month,Electronic check,DSL,Yes,5,0,No,No,Yes
+C00651,Enterprise,South,Annual,TX,Two year,Bank transfer,Fiber optic,No,2,0,No,Yes,Yes
+C00652,Small Business,East,Annual,VA,Two year,Mailed check,None,No,4,0,Yes,No,No
+C00653,Enterprise,North,Monthly,WI,Month-to-month,Bank transfer,None,No,1,0,Yes,No,Yes
+C00654,Mid-Market,West,Monthly,CA,Month-to-month,Credit card,Fiber optic,Yes,0,0,No,No,No
+C00655,Small Business,East,Monthly,VA,Month-to-month,Credit card,Fiber optic,Yes,3,1,Yes,Yes,Yes
+C00656,Enterprise,East,Annual,PA,Two year,Credit card,Fiber optic,Yes,3,0,Yes,No,Yes
+C00657,Small Business,West,Annual,AZ,Two year,Credit card,Fiber optic,No,3,0,No,No,Yes
+C00658,Mid-Market,East,Monthly,NY,Month-to-month,Mailed check,DSL,No,4,0,Yes,Yes,No
+C00659,Small Business,North,Annual,MN,One year,Bank transfer,DSL,No,2,0,Yes,No,No
+C00660,Small Business,South,Monthly,FL,Month-to-month,Credit card,Fiber optic,No,4,0,Yes,No,Yes
+C00661,Enterprise,North,Annual,MI,One year,Electronic check,Fiber optic,Yes,5,0,No,Yes,No
+C00662,Small Business,East,Annual,VA,Two year,Mailed check,Fiber optic,No,0,0,Yes,No,Yes
+C00663,Small Business,North,Monthly,IL,Month-to-month,Electronic check,None,No,2,0,No,Yes,Yes
+C00664,Small Business,North,Monthly,MI,Month-to-month,Bank transfer,None,No,1,0,No,No,No
+C00665,Mid-Market,East,Annual,MA,One year,Electronic check,Fiber optic,Yes,3,0,Yes,No,Yes
+C00666,Enterprise,East,Monthly,PA,Month-to-month,Bank transfer,DSL,No,2,0,No,Yes,Yes
+C00667,Enterprise,East,Annual,MA,Two year,Bank transfer,Fiber optic,Yes,1,0,Yes,No,Yes
+C00668,Small Business,West,Monthly,WA,Month-to-month,Credit card,DSL,Yes,1,1,No,No,No
+C00669,Mid-Market,West,Annual,AZ,Two year,Electronic check,DSL,Yes,2,0,Yes,No,Yes
+C00670,Mid-Market,North,Monthly,WI,Month-to-month,Bank transfer,DSL,Yes,0,0,Yes,No,No
+C00671,Mid-Market,West,Monthly,WA,Month-to-month,Credit card,Fiber optic,Yes,0,1,Yes,No,Yes
+C00672,Small Business,East,Monthly,VA,Month-to-month,Electronic check,Fiber optic,No,3,0,Yes,No,No
+C00673,Small Business,East,Monthly,VA,Month-to-month,Credit card,None,Yes,5,0,No,Yes,Yes
+C00674,Mid-Market,North,Monthly,IL,Month-to-month,Credit card,Fiber optic,No,3,0,Yes,No,Yes
+C00675,Mid-Market,East,Annual,VA,One year,Bank transfer,Fiber optic,No,5,1,No,No,Yes
+C00676,Mid-Market,East,Monthly,PA,Month-to-month,Electronic check,DSL,No,0,0,Yes,No,Yes
+C00677,Mid-Market,East,Monthly,VA,Month-to-month,Credit card,DSL,No,5,0,No,No,Yes
+C00678,Enterprise,North,Monthly,WI,Month-to-month,Mailed check,DSL,No,3,0,No,No,No
+C00679,Mid-Market,East,Monthly,PA,Month-to-month,Electronic check,DSL,Yes,4,0,Yes,No,Yes
+C00680,Small Business,West,Annual,CA,Two year,Credit card,DSL,Yes,0,0,No,No,Yes
+C00681,Enterprise,East,Annual,MA,Two year,Bank transfer,Fiber optic,No,3,1,No,Yes,No
+C00682,Enterprise,North,Monthly,IL,Month-to-month,Mailed check,DSL,No,2,0,No,No,Yes
+C00683,Small Business,West,Annual,CA,One year,Credit card,DSL,No,5,0,No,No,Yes
+C00684,Mid-Market,West,Annual,WA,One year,Bank transfer,DSL,No,4,0,No,No,Yes
+C00685,Small Business,North,Annual,MN,Two year,Electronic check,Fiber optic,No,5,1,Yes,No,Yes
+C00686,Mid-Market,West,Monthly,CA,Month-to-month,Credit card,Fiber optic,No,5,0,No,No,Yes
+C00687,Small Business,South,Monthly,FL,Month-to-month,Mailed check,DSL,No,4,0,Yes,No,No
+C00688,Mid-Market,East,Monthly,PA,Month-to-month,Mailed check,Fiber optic,No,1,0,No,Yes,Yes
+C00689,Small Business,South,Annual,NC,Two year,Credit card,Fiber optic,No,1,0,No,No,Yes
+C00690,Mid-Market,West,Annual,WA,One year,Credit card,DSL,No,5,0,No,No,No
+C00691,Enterprise,West,Monthly,OR,Month-to-month,Credit card,DSL,No,3,0,No,Yes,Yes
+C00692,Small Business,West,Monthly,OR,Month-to-month,Electronic check,Fiber optic,No,5,0,Yes,No,Yes
+C00693,Enterprise,West,Annual,WA,One year,Mailed check,Fiber optic,Yes,4,0,No,No,No
+C00694,Enterprise,West,Annual,CA,Two year,Bank transfer,Fiber optic,Yes,3,0,Yes,Yes,Yes
+C00695,Enterprise,North,Monthly,WI,Month-to-month,Credit card,DSL,No,0,0,No,No,Yes
+C00696,Small Business,South,Annual,GA,One year,Electronic check,DSL,Yes,5,0,No,No,No
+C00697,Enterprise,East,Monthly,MA,Month-to-month,Credit card,Fiber optic,No,1,0,Yes,Yes,No
+C00698,Small Business,East,Monthly,NY,Month-to-month,Electronic check,Fiber optic,No,1,0,No,Yes,No
+C00699,Small Business,North,Annual,IL,One year,Bank transfer,Fiber optic,No,0,0,Yes,No,No
+C00700,Enterprise,North,Annual,IL,One year,Credit card,Fiber optic,No,0,0,No,No,Yes
+C00701,Mid-Market,East,Annual,VA,Two year,Electronic check,Fiber optic,No,2,0,No,No,Yes
+C00702,Mid-Market,East,Monthly,VA,Month-to-month,Bank transfer,DSL,Yes,5,0,No,Yes,No
+C00703,Small Business,North,Monthly,IL,Month-to-month,Mailed check,Fiber optic,Yes,5,1,No,Yes,No
+C00704,Enterprise,North,Monthly,WI,Month-to-month,Electronic check,Fiber optic,No,2,0,Yes,No,No
+C00705,Mid-Market,North,Monthly,IL,Month-to-month,Credit card,Fiber optic,Yes,1,0,Yes,No,Yes
+C00706,Mid-Market,East,Monthly,NY,Month-to-month,Credit card,Fiber optic,No,2,0,Yes,No,No
+C00707,Enterprise,North,Monthly,MN,Month-to-month,Electronic check,Fiber optic,No,5,0,Yes,No,Yes
+C00708,Small Business,East,Monthly,NY,Month-to-month,Credit card,Fiber optic,No,0,0,Yes,No,Yes
+C00709,Small Business,South,Monthly,NC,Month-to-month,Credit card,Fiber optic,No,0,1,No,No,Yes
+C00710,Mid-Market,South,Monthly,TX,Month-to-month,Electronic check,Fiber optic,No,0,0,No,No,Yes
+C00711,Enterprise,East,Annual,MA,One year,Electronic check,DSL,No,5,0,Yes,Yes,No
+C00712,Small Business,East,Monthly,MA,Month-to-month,Bank transfer,Fiber optic,Yes,0,0,No,No,Yes
+C00713,Small Business,East,Annual,VA,One year,Electronic check,DSL,No,5,0,No,No,No
+C00714,Small Business,West,Annual,OR,Two year,Bank transfer,DSL,Yes,1,0,Yes,No,Yes
+C00715,Enterprise,West,Annual,OR,One year,Bank transfer,Fiber optic,No,3,0,No,Yes,Yes
+C00716,Small Business,West,Monthly,CA,Month-to-month,Bank transfer,Fiber optic,Yes,5,1,Yes,Yes,Yes
+C00717,Mid-Market,East,Monthly,NY,Month-to-month,Bank transfer,Fiber optic,No,0,0,No,No,Yes
+C00718,Enterprise,South,Annual,NC,One year,Bank transfer,Fiber optic,No,1,0,No,Yes,No
+C00719,Small Business,North,Annual,MN,One year,Bank transfer,DSL,Yes,4,0,Yes,No,Yes
+C00720,Mid-Market,East,Monthly,MA,Month-to-month,Credit card,Fiber optic,No,4,0,Yes,No,Yes
+C00721,Mid-Market,North,Monthly,MN,Month-to-month,Credit card,DSL,Yes,5,1,No,Yes,Yes
+C00722,Enterprise,West,Annual,OR,One year,Credit card,DSL,Yes,0,0,Yes,No,Yes
+C00723,Small Business,West,Monthly,AZ,Month-to-month,Credit card,DSL,Yes,4,0,No,No,Yes
+C00724,Small Business,North,Annual,MI,One year,Electronic check,DSL,Yes,1,1,No,Yes,No
+C00725,Small Business,West,Monthly,WA,Month-to-month,Credit card,DSL,No,3,0,Yes,No,Yes
+C00726,Mid-Market,North,Monthly,MN,Month-to-month,Credit card,None,No,5,0,No,No,Yes
+C00727,Mid-Market,East,Annual,MA,Two year,Electronic check,None,No,5,0,No,No,No
+C00728,Small Business,North,Monthly,IL,Month-to-month,Electronic check,Fiber optic,No,1,0,Yes,Yes,No
+C00729,Small Business,South,Annual,NC,One year,Bank transfer,Fiber optic,No,2,0,No,No,Yes
+C00730,Enterprise,East,Monthly,NY,Month-to-month,Credit card,Fiber optic,No,1,0,No,No,No
+C00731,Small Business,East,Monthly,VA,Month-to-month,Bank transfer,Fiber optic,No,3,1,No,Yes,No
+C00732,Small Business,South,Annual,NC,Two year,Credit card,DSL,Yes,4,0,Yes,No,Yes
+C00733,Mid-Market,West,Monthly,WA,Month-to-month,Bank transfer,Fiber optic,No,1,1,Yes,No,Yes
+C00734,Small Business,West,Monthly,AZ,Month-to-month,Bank transfer,DSL,No,0,1,No,No,No
+C00735,Small Business,North,Annual,MI,Two year,Electronic check,DSL,Yes,0,1,No,No,No
+C00736,Mid-Market,East,Annual,MA,One year,Mailed check,Fiber optic,No,0,0,Yes,No,No
+C00737,Small Business,East,Annual,PA,One year,Electronic check,DSL,Yes,2,0,No,No,Yes
+C00738,Mid-Market,South,Monthly,FL,Month-to-month,Credit card,Fiber optic,Yes,5,0,No,No,No
+C00739,Mid-Market,East,Monthly,NY,Month-to-month,Bank transfer,DSL,No,1,0,Yes,No,Yes
+C00740,Mid-Market,West,Annual,CA,One year,Electronic check,DSL,Yes,2,0,No,No,No
+C00741,Small Business,West,Monthly,AZ,Month-to-month,Credit card,Fiber optic,No,4,0,No,No,No
+C00742,Enterprise,West,Monthly,AZ,Month-to-month,Credit card,DSL,No,3,0,No,No,Yes
+C00743,Small Business,East,Annual,PA,One year,Electronic check,Fiber optic,Yes,1,0,No,No,Yes
+C00744,Mid-Market,South,Monthly,TX,Month-to-month,Electronic check,DSL,No,0,1,No,No,Yes
+C00745,Small Business,West,Monthly,AZ,Month-to-month,Electronic check,DSL,No,0,0,No,Yes,No
+C00746,Mid-Market,South,Monthly,GA,Month-to-month,Electronic check,Fiber optic,No,1,1,No,No,Yes
+C00747,Small Business,East,Monthly,MA,Month-to-month,Credit card,DSL,No,0,0,Yes,Yes,No
+C00748,Small Business,South,Annual,TX,One year,Credit card,DSL,No,2,0,Yes,No,Yes
+C00749,Mid-Market,South,Annual,GA,Two year,Credit card,DSL,Yes,3,0,No,No,Yes
+C00750,Small Business,North,Monthly,WI,Month-to-month,Bank transfer,DSL,Yes,4,0,No,No,Yes
+C00751,Small Business,West,Monthly,AZ,Month-to-month,Electronic check,DSL,Yes,5,0,Yes,Yes,No
+C00752,Mid-Market,North,Annual,IL,One year,Electronic check,Fiber optic,Yes,1,1,Yes,No,Yes
+C00753,Enterprise,North,Monthly,MN,Month-to-month,Bank transfer,DSL,No,3,1,Yes,No,Yes
+C00754,Small Business,West,Monthly,OR,Month-to-month,Mailed check,DSL,Yes,5,0,No,No,Yes
+C00755,Enterprise,East,Annual,VA,Two year,Credit card,Fiber optic,No,0,0,No,No,No
+C00756,Mid-Market,South,Annual,TX,One year,Electronic check,Fiber optic,No,4,0,No,No,No
+C00757,Enterprise,East,Monthly,VA,Month-to-month,Bank transfer,Fiber optic,No,0,0,Yes,Yes,Yes
+C00758,Mid-Market,South,Annual,NC,Two year,Mailed check,Fiber optic,No,3,0,No,No,Yes
+C00759,Mid-Market,North,Monthly,MI,Month-to-month,Credit card,Fiber optic,No,4,0,Yes,No,Yes
+C00760,Mid-Market,East,Annual,NY,Two year,Electronic check,Fiber optic,No,2,0,Yes,No,Yes
+C00761,Mid-Market,North,Annual,IL,One year,Electronic check,DSL,Yes,3,0,Yes,No,No
+C00762,Enterprise,East,Annual,NY,One year,Credit card,Fiber optic,No,3,0,No,No,Yes
+C00763,Small Business,West,Annual,CA,Two year,Mailed check,Fiber optic,Yes,3,0,No,No,Yes
+C00764,Small Business,West,Annual,AZ,One year,Bank transfer,DSL,No,4,0,Yes,Yes,No
+C00765,Small Business,South,Monthly,FL,Month-to-month,Electronic check,Fiber optic,No,5,0,Yes,No,Yes
+C00766,Enterprise,West,Monthly,OR,Month-to-month,Bank transfer,Fiber optic,Yes,0,0,No,No,Yes
+C00767,Small Business,East,Annual,NY,One year,Bank transfer,DSL,Yes,2,0,Yes,Yes,Yes
+C00768,Mid-Market,South,Annual,TX,One year,Credit card,None,Yes,5,1,No,No,Yes
+C00769,Enterprise,North,Monthly,MI,Month-to-month,Bank transfer,DSL,No,2,0,Yes,No,Yes
+C00770,Enterprise,South,Annual,TX,One year,Credit card,Fiber optic,No,2,1,Yes,Yes,Yes
+C00771,Small Business,East,Annual,PA,One year,Credit card,Fiber optic,Yes,4,0,Yes,No,Yes
+C00772,Mid-Market,West,Monthly,AZ,Month-to-month,Credit card,None,Yes,5,0,No,No,Yes
+C00773,Enterprise,North,Monthly,IL,Month-to-month,Credit card,DSL,Yes,1,0,Yes,No,No
+C00774,Small Business,East,Monthly,PA,Month-to-month,Mailed check,DSL,No,5,0,Yes,Yes,Yes
+C00775,Mid-Market,West,Monthly,OR,Month-to-month,Credit card,DSL,Yes,4,0,No,No,Yes
+C00776,Small Business,West,Monthly,CA,Month-to-month,Credit card,Fiber optic,Yes,0,0,Yes,No,Yes
+C00777,Mid-Market,South,Monthly,NC,Month-to-month,Credit card,Fiber optic,No,5,0,No,No,Yes
+C00778,Mid-Market,North,Monthly,WI,Month-to-month,Credit card,DSL,No,2,0,Yes,No,Yes
+C00779,Small Business,South,Monthly,GA,Month-to-month,Credit card,DSL,No,1,0,No,No,Yes
+C00780,Small Business,West,Annual,AZ,One year,Bank transfer,Fiber optic,No,3,0,Yes,Yes,No
+C00781,Small Business,West,Monthly,CA,Month-to-month,Credit card,DSL,No,3,0,No,No,Yes
+C00782,Small Business,East,Annual,VA,Two year,Credit card,Fiber optic,No,3,1,No,No,No
+C00783,Mid-Market,North,Annual,WI,Two year,Credit card,None,Yes,0,0,No,Yes,Yes
+C00784,Small Business,North,Annual,WI,One year,Electronic check,Fiber optic,Yes,4,0,No,Yes,Yes
+C00785,Small Business,South,Annual,TX,Two year,Bank transfer,DSL,No,2,0,Yes,No,Yes
+C00786,Mid-Market,East,Annual,MA,Two year,Credit card,Fiber optic,No,0,0,Yes,No,Yes
+C00787,Mid-Market,North,Monthly,MI,Month-to-month,Credit card,DSL,No,3,0,No,No,No
+C00788,Mid-Market,East,Annual,MA,One year,Bank transfer,DSL,Yes,3,0,No,Yes,No
+C00789,Enterprise,East,Monthly,MA,Month-to-month,Bank transfer,Fiber optic,Yes,0,1,No,No,No
+C00790,Small Business,North,Annual,WI,One year,Bank transfer,DSL,Yes,5,1,No,Yes,Yes
+C00791,Enterprise,North,Monthly,WI,Month-to-month,Credit card,DSL,No,3,0,No,No,No
+C00792,Small Business,South,Monthly,FL,Month-to-month,Electronic check,DSL,No,5,1,No,No,Yes
+C00793,Mid-Market,East,Monthly,PA,Month-to-month,Bank transfer,Fiber optic,No,4,0,No,No,Yes
+C00794,Enterprise,West,Annual,OR,Two year,Credit card,DSL,No,0,1,No,No,Yes
+C00795,Enterprise,South,Monthly,FL,Month-to-month,Bank transfer,DSL,Yes,1,0,Yes,No,Yes
+C00796,Mid-Market,South,Monthly,TX,Month-to-month,Credit card,DSL,No,5,1,No,No,Yes
+C00797,Mid-Market,West,Monthly,WA,Month-to-month,Bank transfer,Fiber optic,Yes,3,0,No,No,No
+C00798,Small Business,South,Monthly,NC,Month-to-month,Electronic check,DSL,Yes,0,0,Yes,No,Yes
+C00799,Mid-Market,South,Annual,NC,Two year,Credit card,Fiber optic,No,0,1,No,No,Yes
+C00800,Mid-Market,South,Annual,GA,One year,Electronic check,Fiber optic,No,3,0,No,No,Yes
+C00801,Enterprise,North,Monthly,WI,Month-to-month,Credit card,Fiber optic,Yes,3,0,Yes,No,No
+C00802,Mid-Market,South,Monthly,GA,Month-to-month,Bank transfer,Fiber optic,Yes,1,0,No,No,No
+C00803,Small Business,East,Monthly,VA,Month-to-month,Credit card,Fiber optic,No,1,0,Yes,Yes,Yes
+C00804,Mid-Market,West,Monthly,AZ,Month-to-month,Credit card,Fiber optic,Yes,3,0,Yes,No,Yes
+C00805,Small Business,East,Annual,MA,Two year,Mailed check,DSL,No,2,0,No,Yes,Yes
+C00806,Small Business,West,Annual,WA,One year,Bank transfer,DSL,No,0,0,No,No,Yes
+C00807,Small Business,East,Monthly,NY,Month-to-month,Credit card,Fiber optic,Yes,0,0,No,No,No
+C00808,Mid-Market,North,Annual,MI,One year,Mailed check,DSL,Yes,1,0,Yes,Yes,No
+C00809,Small Business,South,Monthly,TX,Month-to-month,Credit card,None,Yes,3,1,No,No,No
+C00810,Small Business,West,Annual,AZ,One year,Bank transfer,DSL,No,1,0,Yes,No,Yes
+C00811,Small Business,North,Annual,MN,One year,Electronic check,DSL,Yes,0,0,No,No,No
+C00812,Enterprise,West,Annual,CA,One year,Electronic check,None,No,5,0,Yes,No,No
+C00813,Mid-Market,East,Annual,MA,One year,Electronic check,DSL,Yes,4,1,No,No,Yes
+C00814,Small Business,South,Annual,TX,Two year,Electronic check,None,No,3,0,Yes,No,Yes
+C00815,Small Business,West,Monthly,AZ,Month-to-month,Credit card,None,Yes,1,0,Yes,No,Yes
+C00816,Mid-Market,West,Monthly,AZ,Month-to-month,Electronic check,Fiber optic,Yes,4,1,Yes,No,Yes
+C00817,Small Business,North,Monthly,MN,Month-to-month,Bank transfer,DSL,No,5,0,No,No,No
+C00818,Mid-Market,North,Annual,WI,One year,Electronic check,DSL,No,4,0,No,Yes,No
+C00819,Small Business,East,Annual,MA,One year,Electronic check,DSL,Yes,1,0,No,No,Yes
+C00820,Enterprise,West,Annual,OR,One year,Mailed check,DSL,Yes,2,0,Yes,No,Yes
+C00821,Small Business,North,Annual,MN,One year,Bank transfer,Fiber optic,No,5,0,Yes,No,Yes
+C00822,Mid-Market,East,Monthly,VA,Month-to-month,Mailed check,Fiber optic,Yes,0,0,No,No,Yes
+C00823,Small Business,North,Annual,IL,One year,Credit card,DSL,Yes,1,1,Yes,No,Yes
+C00824,Enterprise,East,Annual,VA,One year,Electronic check,DSL,Yes,0,0,No,No,No
+C00825,Enterprise,East,Monthly,PA,Month-to-month,Credit card,DSL,Yes,3,0,No,Yes,No
+C00826,Mid-Market,North,Monthly,WI,Month-to-month,Credit card,DSL,No,2,0,No,No,No
+C00827,Mid-Market,East,Monthly,NY,Month-to-month,Electronic check,DSL,No,0,0,No,No,No
+C00828,Small Business,West,Monthly,WA,Month-to-month,Bank transfer,None,No,5,0,Yes,Yes,Yes
+C00829,Enterprise,West,Annual,OR,One year,Credit card,Fiber optic,No,3,0,Yes,No,No
+C00830,Mid-Market,North,Annual,IL,Two year,Bank transfer,None,Yes,1,0,No,No,Yes
+C00831,Small Business,North,Annual,WI,One year,Credit card,Fiber optic,No,5,1,Yes,Yes,Yes
+C00832,Small Business,North,Monthly,WI,Month-to-month,Credit card,DSL,Yes,4,0,No,No,Yes
+C00833,Mid-Market,South,Annual,GA,One year,Electronic check,Fiber optic,Yes,0,0,No,Yes,Yes
+C00834,Enterprise,North,Annual,MN,One year,Mailed check,DSL,No,4,0,Yes,No,Yes
+C00835,Mid-Market,West,Monthly,CA,Month-to-month,Credit card,Fiber optic,Yes,0,0,No,No,Yes
+C00836,Mid-Market,West,Annual,OR,Two year,Electronic check,Fiber optic,Yes,5,0,Yes,No,Yes
+C00837,Mid-Market,West,Monthly,WA,Month-to-month,Electronic check,DSL,Yes,2,0,No,No,No
+C00838,Small Business,North,Monthly,WI,Month-to-month,Bank transfer,DSL,No,1,0,Yes,No,Yes
+C00839,Small Business,North,Monthly,IL,Month-to-month,Mailed check,Fiber optic,Yes,0,0,No,No,Yes
+C00840,Small Business,West,Monthly,WA,Month-to-month,Mailed check,DSL,No,5,0,Yes,No,No
+C00841,Mid-Market,South,Annual,GA,Two year,Bank transfer,Fiber optic,No,3,0,Yes,No,Yes
+C00842,Small Business,East,Monthly,PA,Month-to-month,Mailed check,Fiber optic,No,3,0,Yes,No,Yes
+C00843,Small Business,West,Monthly,WA,Month-to-month,Bank transfer,Fiber optic,Yes,5,0,Yes,Yes,No
+C00844,Small Business,North,Monthly,MI,Month-to-month,Electronic check,DSL,No,3,0,No,No,Yes
+C00845,Small Business,North,Monthly,MI,Month-to-month,Credit card,DSL,Yes,1,0,Yes,No,Yes
+C00846,Mid-Market,North,Monthly,MI,Month-to-month,Electronic check,DSL,No,4,0,Yes,Yes,Yes
+C00847,Small Business,North,Monthly,WI,Month-to-month,Electronic check,DSL,No,3,1,Yes,Yes,Yes
+C00848,Small Business,North,Annual,MI,One year,Credit card,DSL,Yes,1,1,Yes,Yes,No
+C00849,Mid-Market,West,Monthly,CA,Month-to-month,Electronic check,DSL,No,5,1,Yes,Yes,Yes
+C00850,Small Business,East,Annual,NY,One year,Mailed check,None,No,4,0,Yes,No,Yes
+C00851,Small Business,West,Monthly,AZ,Month-to-month,Mailed check,Fiber optic,No,1,0,No,No,No
+C00852,Small Business,West,Annual,CA,One year,Credit card,Fiber optic,Yes,3,0,No,No,No
+C00853,Enterprise,West,Annual,AZ,Two year,Bank transfer,Fiber optic,No,5,0,No,Yes,Yes
+C00854,Small Business,North,Monthly,IL,Month-to-month,Credit card,DSL,No,4,0,Yes,No,Yes
+C00855,Mid-Market,South,Monthly,NC,Month-to-month,Electronic check,DSL,No,1,0,No,No,No
+C00856,Enterprise,West,Annual,AZ,Two year,Electronic check,Fiber optic,Yes,5,0,No,No,Yes
+C00857,Mid-Market,North,Monthly,MN,Month-to-month,Electronic check,DSL,No,0,0,No,Yes,Yes
+C00858,Small Business,North,Annual,WI,One year,Electronic check,None,No,3,1,Yes,No,Yes
+C00859,Mid-Market,East,Monthly,PA,Month-to-month,Electronic check,Fiber optic,No,3,0,Yes,Yes,No
+C00860,Small Business,West,Monthly,CA,Month-to-month,Electronic check,Fiber optic,No,0,0,Yes,No,Yes
+C00861,Small Business,West,Annual,AZ,One year,Electronic check,Fiber optic,Yes,4,0,Yes,No,Yes
+C00862,Mid-Market,West,Annual,WA,Two year,Mailed check,Fiber optic,No,1,0,No,No,No
+C00863,Small Business,North,Monthly,WI,Month-to-month,Electronic check,DSL,Yes,5,1,Yes,Yes,Yes
+C00864,Small Business,West,Annual,OR,One year,Electronic check,DSL,Yes,5,1,Yes,Yes,Yes
+C00865,Small Business,West,Annual,AZ,One year,Credit card,Fiber optic,No,3,0,Yes,No,Yes
+C00866,Small Business,East,Monthly,MA,Month-to-month,Credit card,Fiber optic,Yes,3,0,Yes,No,No
+C00867,Small Business,West,Monthly,CA,Month-to-month,Credit card,Fiber optic,Yes,0,0,Yes,No,Yes
+C00868,Mid-Market,West,Monthly,AZ,Month-to-month,Electronic check,Fiber optic,Yes,5,0,Yes,No,No
+C00869,Enterprise,South,Monthly,TX,Month-to-month,Bank transfer,Fiber optic,No,4,0,No,Yes,Yes
+C00870,Small Business,North,Annual,IL,One year,Credit card,DSL,No,2,0,Yes,No,Yes
+C00871,Mid-Market,South,Monthly,GA,Month-to-month,Bank transfer,DSL,No,0,0,No,No,No
+C00872,Small Business,North,Monthly,WI,Month-to-month,Credit card,DSL,Yes,3,0,No,No,Yes
+C00873,Small Business,North,Annual,WI,One year,Credit card,Fiber optic,No,5,0,No,No,Yes
+C00874,Small Business,North,Annual,IL,One year,Credit card,DSL,Yes,5,0,No,No,No
+C00875,Small Business,East,Annual,NY,One year,Electronic check,Fiber optic,No,0,0,Yes,No,Yes
+C00876,Small Business,East,Annual,PA,One year,Credit card,Fiber optic,No,4,0,No,Yes,Yes
+C00877,Small Business,East,Monthly,PA,Month-to-month,Electronic check,DSL,Yes,0,0,No,No,No
+C00878,Small Business,East,Annual,VA,One year,Electronic check,DSL,No,2,0,No,Yes,Yes
+C00879,Mid-Market,East,Monthly,VA,Month-to-month,Bank transfer,Fiber optic,Yes,2,0,Yes,No,No
+C00880,Small Business,East,Monthly,VA,Month-to-month,Electronic check,DSL,No,0,0,No,No,Yes
+C00881,Small Business,North,Monthly,IL,Month-to-month,Electronic check,DSL,Yes,0,0,Yes,Yes,Yes
+C00882,Small Business,West,Annual,AZ,One year,Bank transfer,None,No,5,0,No,Yes,No
+C00883,Mid-Market,South,Annual,NC,One year,Credit card,DSL,No,3,0,Yes,No,Yes
+C00884,Small Business,North,Monthly,IL,Month-to-month,Bank transfer,Fiber optic,No,4,0,Yes,Yes,No
+C00885,Mid-Market,West,Annual,CA,Two year,Mailed check,DSL,No,3,0,No,No,No
+C00886,Small Business,East,Annual,MA,Two year,Mailed check,Fiber optic,Yes,2,0,No,Yes,No
+C00887,Small Business,North,Monthly,WI,Month-to-month,Credit card,Fiber optic,No,0,0,No,No,Yes
+C00888,Enterprise,North,Annual,IL,One year,Electronic check,DSL,No,3,0,No,No,Yes
+C00889,Small Business,North,Monthly,IL,Month-to-month,Credit card,DSL,Yes,4,0,No,Yes,No
+C00890,Small Business,South,Annual,FL,Two year,Bank transfer,Fiber optic,Yes,1,0,Yes,No,Yes
+C00891,Small Business,North,Monthly,IL,Month-to-month,Bank transfer,DSL,Yes,2,0,No,Yes,No
+C00892,Enterprise,East,Monthly,PA,Month-to-month,Electronic check,DSL,Yes,2,0,Yes,No,No
+C00893,Mid-Market,East,Monthly,NY,Month-to-month,Electronic check,DSL,No,5,0,Yes,No,Yes
+C00894,Mid-Market,West,Monthly,WA,Month-to-month,Electronic check,Fiber optic,No,0,0,No,Yes,Yes
+C00895,Enterprise,East,Annual,NY,One year,Electronic check,Fiber optic,No,0,1,Yes,Yes,Yes
+C00896,Small Business,East,Monthly,PA,Month-to-month,Electronic check,Fiber optic,No,1,0,No,No,Yes
+C00897,Enterprise,East,Monthly,PA,Month-to-month,Mailed check,Fiber optic,Yes,0,0,Yes,No,Yes
+C00898,Small Business,North,Annual,MN,One year,Electronic check,Fiber optic,No,5,1,Yes,No,Yes
+C00899,Mid-Market,North,Annual,WI,Two year,Credit card,Fiber optic,Yes,1,1,Yes,No,No
+C00900,Small Business,East,Annual,MA,One year,Mailed check,Fiber optic,Yes,2,0,No,No,Yes
+C00901,Small Business,North,Monthly,MN,Month-to-month,Credit card,Fiber optic,Yes,1,0,No,Yes,Yes
+C00902,Enterprise,North,Monthly,WI,Month-to-month,Credit card,None,Yes,4,0,Yes,Yes,No
+C00903,Small Business,North,Monthly,WI,Month-to-month,Bank transfer,DSL,Yes,3,0,Yes,No,No
+C00904,Enterprise,West,Annual,OR,Two year,Electronic check,Fiber optic,No,2,1,Yes,No,No
+C00905,Small Business,South,Annual,NC,One year,Credit card,None,Yes,4,0,Yes,Yes,Yes
+C00906,Mid-Market,East,Annual,VA,One year,Bank transfer,Fiber optic,Yes,0,0,No,Yes,No
+C00907,Enterprise,South,Annual,NC,Two year,Bank transfer,Fiber optic,No,4,0,No,No,No
+C00908,Small Business,North,Monthly,WI,Month-to-month,Bank transfer,DSL,Yes,2,0,Yes,No,No
+C00909,Enterprise,South,Annual,FL,One year,Mailed check,Fiber optic,No,2,0,Yes,No,Yes
+C00910,Mid-Market,North,Monthly,MI,Month-to-month,Credit card,Fiber optic,No,0,0,No,No,Yes
+C00911,Mid-Market,West,Monthly,AZ,Month-to-month,Bank transfer,Fiber optic,No,0,0,Yes,No,Yes
+C00912,Small Business,North,Monthly,IL,Month-to-month,Credit card,DSL,No,4,0,Yes,No,Yes
+C00913,Mid-Market,South,Monthly,GA,Month-to-month,Bank transfer,DSL,No,5,1,No,No,Yes
+C00914,Mid-Market,West,Annual,AZ,Two year,Bank transfer,Fiber optic,No,5,0,Yes,No,No
+C00915,Small Business,East,Monthly,NY,Month-to-month,Bank transfer,Fiber optic,No,1,0,Yes,No,Yes
+C00916,Small Business,South,Annual,GA,Two year,Mailed check,Fiber optic,No,4,0,Yes,No,No
+C00917,Small Business,East,Annual,PA,One year,Credit card,DSL,Yes,0,0,No,Yes,Yes
+C00918,Enterprise,West,Annual,WA,One year,Bank transfer,Fiber optic,No,4,0,Yes,Yes,No
+C00919,Small Business,South,Annual,TX,Two year,Electronic check,DSL,No,3,0,No,Yes,Yes
+C00920,Mid-Market,East,Monthly,NY,Month-to-month,Credit card,DSL,Yes,5,0,Yes,Yes,Yes
+C00921,Enterprise,West,Monthly,CA,Month-to-month,Bank transfer,Fiber optic,No,0,1,Yes,Yes,Yes
+C00922,Small Business,East,Monthly,VA,Month-to-month,Bank transfer,DSL,No,4,0,No,No,No
+C00923,Small Business,South,Monthly,FL,Month-to-month,Credit card,Fiber optic,No,2,1,Yes,No,Yes
+C00924,Mid-Market,North,Annual,MN,Two year,Credit card,Fiber optic,Yes,3,0,Yes,No,Yes
+C00925,Small Business,North,Monthly,MI,Month-to-month,Electronic check,Fiber optic,Yes,3,0,Yes,No,No
+C00926,Mid-Market,West,Monthly,AZ,Month-to-month,Electronic check,Fiber optic,Yes,4,0,No,No,Yes
+C00927,Mid-Market,East,Monthly,PA,Month-to-month,Electronic check,DSL,No,3,1,Yes,No,Yes
+C00928,Mid-Market,South,Monthly,GA,Month-to-month,Mailed check,None,No,2,0,No,Yes,Yes
+C00929,Small Business,South,Annual,FL,One year,Electronic check,Fiber optic,No,2,0,Yes,Yes,Yes
+C00930,Mid-Market,East,Monthly,PA,Month-to-month,Mailed check,Fiber optic,Yes,0,0,Yes,Yes,Yes
+C00931,Mid-Market,East,Annual,MA,One year,Electronic check,DSL,Yes,4,1,Yes,No,Yes
+C00932,Small Business,East,Annual,PA,One year,Bank transfer,Fiber optic,No,4,0,Yes,Yes,Yes
+C00933,Mid-Market,South,Annual,FL,One year,Credit card,Fiber optic,No,3,0,No,No,Yes
+C00934,Enterprise,East,Monthly,NY,Month-to-month,Bank transfer,None,No,4,0,Yes,No,No
+C00935,Mid-Market,South,Annual,TX,One year,Bank transfer,DSL,Yes,1,0,No,No,No
+C00936,Mid-Market,West,Monthly,AZ,Month-to-month,Bank transfer,None,Yes,1,0,Yes,No,Yes
+C00937,Small Business,North,Monthly,WI,Month-to-month,Mailed check,Fiber optic,No,5,0,No,No,Yes
+C00938,Small Business,North,Annual,MN,One year,Credit card,Fiber optic,No,5,1,Yes,No,Yes
+C00939,Small Business,South,Annual,TX,One year,Electronic check,Fiber optic,Yes,5,0,No,No,No
+C00940,Small Business,East,Monthly,MA,Month-to-month,Electronic check,None,No,0,1,Yes,Yes,Yes
+C00941,Enterprise,East,Annual,PA,Two year,Bank transfer,Fiber optic,No,3,0,No,No,No
+C00942,Small Business,South,Monthly,TX,Month-to-month,Credit card,Fiber optic,No,4,0,No,No,Yes
+C00943,Enterprise,West,Annual,WA,One year,Credit card,Fiber optic,No,0,0,No,Yes,Yes
+C00944,Small Business,South,Annual,FL,Two year,Credit card,DSL,No,5,0,Yes,No,No
+C00945,Small Business,North,Annual,WI,One year,Credit card,DSL,No,4,0,No,No,Yes
+C00946,Small Business,North,Annual,IL,Two year,Bank transfer,DSL,No,1,0,Yes,No,Yes
+C00947,Small Business,West,Annual,OR,One year,Bank transfer,Fiber optic,No,3,0,Yes,No,Yes
+C00948,Mid-Market,North,Annual,MI,One year,Bank transfer,DSL,No,5,0,No,No,Yes
+C00949,Enterprise,West,Annual,OR,One year,Bank transfer,Fiber optic,No,5,0,No,Yes,Yes
+C00950,Enterprise,South,Annual,NC,One year,Mailed check,Fiber optic,Yes,4,0,Yes,Yes,No
+C00951,Small Business,North,Monthly,IL,Month-to-month,Credit card,Fiber optic,Yes,5,1,No,No,Yes
+C00952,Mid-Market,South,Annual,NC,One year,Mailed check,DSL,No,4,0,No,No,Yes
+C00953,Small Business,East,Monthly,VA,Month-to-month,Electronic check,Fiber optic,Yes,5,1,Yes,No,Yes
+C00954,Enterprise,South,Annual,GA,Two year,Bank transfer,None,No,5,0,Yes,No,Yes
+C00955,Mid-Market,West,Monthly,CA,Month-to-month,Bank transfer,Fiber optic,No,0,0,No,No,No
+C00956,Small Business,East,Monthly,VA,Month-to-month,Credit card,Fiber optic,No,3,0,Yes,Yes,Yes
+C00957,Small Business,South,Annual,FL,Two year,Electronic check,DSL,No,2,0,Yes,Yes,Yes
+C00958,Small Business,East,Monthly,NY,Month-to-month,Credit card,DSL,No,2,0,Yes,No,Yes
+C00959,Small Business,West,Monthly,OR,Month-to-month,Credit card,Fiber optic,No,1,0,No,No,No
+C00960,Enterprise,South,Annual,GA,One year,Mailed check,DSL,No,4,0,Yes,Yes,No
+C00961,Mid-Market,North,Monthly,WI,Month-to-month,Credit card,Fiber optic,Yes,5,0,Yes,No,Yes
+C00962,Enterprise,South,Monthly,GA,Month-to-month,Electronic check,Fiber optic,Yes,2,0,Yes,No,Yes
+C00963,Small Business,West,Monthly,WA,Month-to-month,Credit card,DSL,No,4,0,Yes,No,No
+C00964,Mid-Market,North,Monthly,IL,Month-to-month,Credit card,DSL,No,1,0,No,No,No
+C00965,Small Business,West,Monthly,OR,Month-to-month,Electronic check,Fiber optic,No,4,0,No,No,Yes
+C00966,Mid-Market,East,Monthly,PA,Month-to-month,Credit card,Fiber optic,Yes,0,1,No,No,No
+C00967,Small Business,East,Monthly,MA,Month-to-month,Credit card,DSL,No,5,0,No,No,Yes
+C00968,Small Business,South,Monthly,FL,Month-to-month,Electronic check,Fiber optic,No,2,0,Yes,No,Yes
+C00969,Mid-Market,West,Monthly,OR,Month-to-month,Credit card,None,No,3,0,No,Yes,Yes
+C00970,Small Business,North,Annual,MN,One year,Credit card,DSL,Yes,4,0,No,No,Yes
+C00971,Mid-Market,South,Annual,NC,One year,Bank transfer,DSL,No,0,0,No,No,Yes
+C00972,Mid-Market,South,Monthly,FL,Month-to-month,Credit card,Fiber optic,No,5,0,No,No,Yes
+C00973,Small Business,South,Monthly,NC,Month-to-month,Electronic check,DSL,No,3,0,Yes,No,No
+C00974,Enterprise,South,Annual,TX,Two year,Mailed check,Fiber optic,Yes,5,0,No,Yes,No
+C00975,Mid-Market,North,Annual,IL,One year,Credit card,Fiber optic,No,3,0,Yes,No,Yes
+C00976,Enterprise,North,Monthly,MI,Month-to-month,Electronic check,Fiber optic,Yes,1,0,No,Yes,Yes
+C00977,Mid-Market,North,Monthly,MI,Month-to-month,Bank transfer,Fiber optic,No,3,0,Yes,Yes,No
+C00978,Mid-Market,East,Monthly,VA,Month-to-month,Electronic check,None,Yes,3,1,No,No,Yes
+C00979,Mid-Market,South,Annual,GA,Two year,Bank transfer,DSL,No,5,0,No,No,Yes
+C00980,Enterprise,East,Annual,NY,Two year,Bank transfer,DSL,No,3,0,No,No,No
+C00981,Mid-Market,East,Annual,PA,Two year,Mailed check,DSL,Yes,2,0,Yes,No,Yes
+C00982,Small Business,East,Monthly,MA,Month-to-month,Mailed check,DSL,Yes,1,0,No,Yes,Yes
+C00983,Small Business,East,Monthly,VA,Month-to-month,Electronic check,DSL,Yes,1,0,No,Yes,No
+C00984,Mid-Market,East,Monthly,VA,Month-to-month,Bank transfer,DSL,Yes,3,0,No,Yes,Yes
+C00985,Small Business,East,Monthly,PA,Month-to-month,Electronic check,DSL,No,2,0,No,No,Yes
+C00986,Small Business,East,Monthly,PA,Month-to-month,Bank transfer,DSL,Yes,2,0,No,No,No
+C00987,Small Business,East,Annual,PA,One year,Credit card,Fiber optic,Yes,0,0,No,Yes,No
+C00988,Mid-Market,South,Monthly,TX,Month-to-month,Electronic check,None,No,5,0,Yes,No,Yes
+C00989,Small Business,North,Annual,WI,Two year,Electronic check,Fiber optic,Yes,5,0,Yes,No,Yes
+C00990,Mid-Market,West,Monthly,CA,Month-to-month,Electronic check,Fiber optic,No,1,0,No,No,Yes
+C00991,Mid-Market,South,Monthly,GA,Month-to-month,Electronic check,DSL,No,0,0,No,No,Yes
+C00992,Enterprise,East,Annual,PA,Two year,Electronic check,Fiber optic,No,5,0,Yes,No,Yes
+C00993,Small Business,North,Annual,IL,One year,Mailed check,Fiber optic,No,5,0,Yes,No,Yes
+C00994,Mid-Market,South,Monthly,TX,Month-to-month,Credit card,Fiber optic,Yes,5,0,Yes,No,Yes
+C00995,Mid-Market,East,Annual,VA,One year,Bank transfer,Fiber optic,No,3,0,No,Yes,No
+C00996,Mid-Market,East,Monthly,PA,Month-to-month,Bank transfer,None,No,4,1,No,Yes,Yes
+C00997,Mid-Market,East,Monthly,NY,Month-to-month,Bank transfer,DSL,Yes,4,0,No,No,No
+C00998,Small Business,South,Monthly,GA,Month-to-month,Credit card,Fiber optic,No,1,0,Yes,No,Yes
+C00999,Enterprise,West,Monthly,CA,Month-to-month,Bank transfer,None,No,3,0,Yes,Yes,No
+C01000,Small Business,East,Annual,PA,One year,Bank transfer,DSL,No,1,0,No,No,Yes
+C01001,Enterprise,West,Monthly,WA,Month-to-month,Bank transfer,DSL,No,4,0,Yes,No,Yes
+C01002,Mid-Market,East,Annual,PA,One year,Mailed check,Fiber optic,Yes,5,1,Yes,Yes,No
+C01003,Small Business,East,Annual,VA,One year,Credit card,DSL,No,0,1,Yes,Yes,No
+C01004,Mid-Market,West,Monthly,WA,Month-to-month,Credit card,Fiber optic,No,0,0,No,No,Yes
+C01005,Small Business,North,Monthly,MN,Month-to-month,Mailed check,Fiber optic,No,1,0,No,No,Yes
+C01006,Mid-Market,West,Monthly,CA,Month-to-month,Credit card,DSL,Yes,0,0,Yes,Yes,Yes
+C01007,Mid-Market,West,Annual,OR,One year,Bank transfer,Fiber optic,No,0,1,Yes,No,Yes
+C01008,Small Business,East,Annual,NY,One year,Electronic check,DSL,No,5,0,No,No,Yes
+C01009,Small Business,East,Annual,PA,One year,Electronic check,DSL,Yes,3,0,Yes,No,No
+C01010,Mid-Market,East,Monthly,VA,Month-to-month,Credit card,Fiber optic,No,4,0,Yes,Yes,Yes
+C01011,Small Business,South,Monthly,GA,Month-to-month,Electronic check,Fiber optic,No,3,0,Yes,Yes,Yes
+C01012,Enterprise,West,Annual,OR,One year,Mailed check,DSL,No,4,0,Yes,Yes,Yes
+C01013,Mid-Market,North,Monthly,IL,Month-to-month,Electronic check,DSL,No,4,0,No,No,No
+C01014,Mid-Market,South,Annual,NC,One year,Bank transfer,Fiber optic,Yes,0,0,No,No,Yes
+C01015,Small Business,East,Monthly,NY,Month-to-month,Electronic check,None,No,0,0,Yes,No,Yes
+C01016,Mid-Market,West,Monthly,CA,Month-to-month,Mailed check,DSL,No,2,0,No,Yes,Yes
+C01017,Enterprise,South,Annual,NC,One year,Credit card,DSL,No,2,0,Yes,No,No
+C01018,Small Business,South,Monthly,FL,Month-to-month,Electronic check,Fiber optic,Yes,5,0,No,No,Yes
+C01019,Small Business,North,Annual,MN,One year,Electronic check,DSL,Yes,1,0,Yes,No,Yes
+C01020,Small Business,North,Monthly,MN,Month-to-month,Credit card,DSL,No,1,0,Yes,No,Yes
+C01021,Small Business,North,Annual,MI,Two year,Mailed check,Fiber optic,Yes,3,1,No,No,No
+C01022,Mid-Market,North,Annual,IL,Two year,Mailed check,None,No,1,0,No,Yes,Yes
+C01023,Mid-Market,West,Annual,CA,Two year,Electronic check,None,No,5,0,No,Yes,Yes
+C01024,Mid-Market,West,Annual,AZ,One year,Credit card,DSL,No,0,0,No,No,Yes
+C01025,Small Business,West,Annual,CA,One year,Electronic check,DSL,Yes,5,0,No,Yes,Yes
+C01026,Small Business,North,Annual,MN,One year,Credit card,DSL,No,3,0,No,Yes,Yes
+C01027,Small Business,North,Monthly,IL,Month-to-month,Credit card,DSL,Yes,5,0,Yes,No,Yes
+C01028,Enterprise,South,Monthly,NC,Month-to-month,Electronic check,DSL,No,1,0,Yes,Yes,Yes
+C01029,Mid-Market,East,Annual,MA,One year,Credit card,Fiber optic,No,5,0,No,No,Yes
+C01030,Small Business,South,Monthly,TX,Month-to-month,Mailed check,Fiber optic,No,5,0,No,No,Yes
+C01031,Mid-Market,South,Monthly,NC,Month-to-month,Electronic check,Fiber optic,Yes,2,0,No,No,Yes
+C01032,Small Business,North,Annual,MI,Two year,Electronic check,None,Yes,1,0,Yes,Yes,Yes
+C01033,Small Business,East,Monthly,PA,Month-to-month,Electronic check,Fiber optic,No,1,0,Yes,No,Yes
+C01034,Small Business,South,Annual,FL,One year,Electronic check,DSL,No,0,0,Yes,No,Yes
+C01035,Enterprise,North,Annual,IL,One year,Electronic check,Fiber optic,No,3,1,No,No,Yes
+C01036,Mid-Market,East,Monthly,VA,Month-to-month,Bank transfer,Fiber optic,No,5,0,Yes,No,No
+C01037,Mid-Market,West,Annual,WA,Two year,Electronic check,None,No,3,0,No,No,No
+C01038,Small Business,North,Monthly,IL,Month-to-month,Bank transfer,DSL,No,5,0,Yes,Yes,Yes
+C01039,Small Business,South,Annual,GA,Two year,Mailed check,Fiber optic,No,4,0,Yes,Yes,Yes
+C01040,Mid-Market,West,Annual,AZ,One year,Mailed check,Fiber optic,No,4,0,No,No,No
+C01041,Small Business,East,Monthly,NY,Month-to-month,Bank transfer,Fiber optic,No,4,0,Yes,No,No
+C01042,Enterprise,West,Monthly,CA,Month-to-month,Electronic check,Fiber optic,Yes,5,0,No,No,Yes
+C01043,Mid-Market,South,Monthly,GA,Month-to-month,Electronic check,Fiber optic,No,5,0,Yes,Yes,Yes
+C01044,Small Business,South,Monthly,NC,Month-to-month,Electronic check,DSL,Yes,0,0,No,Yes,No
+C01045,Mid-Market,East,Monthly,MA,Month-to-month,Mailed check,Fiber optic,No,3,0,No,No,No
+C01046,Enterprise,North,Annual,WI,Two year,Mailed check,Fiber optic,No,2,1,No,No,No
+C01047,Mid-Market,North,Monthly,MN,Month-to-month,Credit card,Fiber optic,No,5,0,Yes,Yes,Yes
+C01048,Mid-Market,East,Annual,VA,Two year,Electronic check,Fiber optic,No,1,0,Yes,No,Yes
+C01049,Enterprise,East,Monthly,MA,Month-to-month,Credit card,None,Yes,4,0,No,No,No
+C01050,Small Business,North,Annual,MN,Two year,Electronic check,Fiber optic,Yes,2,0,No,Yes,Yes
+C01051,Enterprise,East,Monthly,VA,Month-to-month,Mailed check,Fiber optic,Yes,5,0,No,No,Yes
+C01052,Small Business,South,Monthly,FL,Month-to-month,Electronic check,DSL,Yes,4,0,No,Yes,No
+C01053,Mid-Market,East,Annual,VA,One year,Credit card,None,No,2,0,No,No,Yes
+C01054,Mid-Market,West,Monthly,CA,Month-to-month,Credit card,DSL,Yes,5,0,No,Yes,Yes
+C01055,Mid-Market,North,Annual,WI,Two year,Electronic check,DSL,Yes,1,0,No,No,Yes
+C01056,Mid-Market,West,Monthly,CA,Month-to-month,Credit card,None,No,0,0,No,Yes,Yes
+C01057,Mid-Market,South,Annual,TX,One year,Bank transfer,DSL,Yes,3,0,No,No,Yes
+C01058,Small Business,West,Annual,AZ,One year,Electronic check,None,Yes,2,0,No,No,Yes
+C01059,Small Business,South,Annual,GA,One year,Credit card,Fiber optic,No,0,0,No,No,Yes
+C01060,Small Business,South,Monthly,GA,Month-to-month,Credit card,DSL,Yes,5,0,Yes,No,Yes
+C01061,Mid-Market,West,Monthly,AZ,Month-to-month,Electronic check,DSL,Yes,0,0,Yes,No,Yes
+C01062,Small Business,East,Monthly,NY,Month-to-month,Electronic check,None,No,3,0,No,Yes,No
+C01063,Small Business,North,Monthly,MI,Month-to-month,Electronic check,Fiber optic,Yes,1,0,No,No,Yes
+C01064,Enterprise,East,Monthly,MA,Month-to-month,Electronic check,DSL,Yes,1,1,Yes,No,No
+C01065,Small Business,West,Annual,OR,Two year,Credit card,Fiber optic,Yes,1,0,No,No,Yes
+C01066,Small Business,South,Annual,NC,One year,Bank transfer,DSL,Yes,2,0,No,Yes,Yes
+C01067,Small Business,West,Annual,WA,One year,Bank transfer,Fiber optic,No,4,0,No,Yes,No
+C01068,Small Business,East,Monthly,PA,Month-to-month,Mailed check,DSL,Yes,1,0,No,No,No
+C01069,Mid-Market,South,Monthly,FL,Month-to-month,Credit card,DSL,Yes,4,1,Yes,Yes,Yes
+C01070,Small Business,North,Annual,IL,One year,Bank transfer,Fiber optic,Yes,2,0,Yes,Yes,Yes
+C01071,Small Business,East,Monthly,NY,Month-to-month,Bank transfer,Fiber optic,No,4,0,Yes,No,No
+C01072,Enterprise,North,Monthly,MI,Month-to-month,Electronic check,Fiber optic,Yes,2,1,No,Yes,Yes
+C01073,Enterprise,West,Monthly,AZ,Month-to-month,Electronic check,DSL,No,2,1,Yes,Yes,Yes
+C01074,Mid-Market,East,Annual,VA,One year,Credit card,DSL,Yes,3,1,No,Yes,Yes
+C01075,Enterprise,South,Annual,NC,Two year,Bank transfer,DSL,No,4,0,No,No,Yes
+C01076,Enterprise,North,Monthly,MN,Month-to-month,Credit card,Fiber optic,Yes,2,0,No,No,No
+C01077,Small Business,East,Monthly,MA,Month-to-month,Electronic check,DSL,Yes,5,0,No,Yes,Yes
+C01078,Mid-Market,North,Monthly,WI,Month-to-month,Mailed check,DSL,No,3,0,No,No,No
+C01079,Mid-Market,South,Monthly,FL,Month-to-month,Electronic check,Fiber optic,Yes,1,0,No,No,No
+C01080,Small Business,West,Annual,CA,One year,Mailed check,Fiber optic,No,0,0,Yes,Yes,No
+C01081,Small Business,West,Monthly,CA,Month-to-month,Bank transfer,Fiber optic,No,2,0,Yes,No,Yes
+C01082,Small Business,West,Annual,WA,One year,Bank transfer,Fiber optic,No,0,0,No,No,Yes
+C01083,Mid-Market,West,Monthly,CA,Month-to-month,Bank transfer,Fiber optic,Yes,0,0,Yes,No,Yes
+C01084,Mid-Market,East,Monthly,MA,Month-to-month,Electronic check,Fiber optic,No,2,0,No,No,Yes
+C01085,Mid-Market,North,Annual,MI,Two year,Bank transfer,Fiber optic,Yes,1,1,Yes,No,Yes
+C01086,Small Business,West,Monthly,CA,Month-to-month,Bank transfer,Fiber optic,No,5,0,No,No,No
+C01087,Small Business,West,Annual,AZ,One year,Bank transfer,Fiber optic,No,4,0,Yes,No,Yes
+C01088,Small Business,West,Monthly,AZ,Month-to-month,Electronic check,DSL,No,4,0,No,Yes,Yes
+C01089,Mid-Market,East,Annual,MA,Two year,Electronic check,DSL,No,3,0,Yes,No,No
+C01090,Enterprise,North,Monthly,MI,Month-to-month,Electronic check,Fiber optic,No,0,0,No,No,No
+C01091,Enterprise,East,Monthly,NY,Month-to-month,Credit card,DSL,No,5,1,Yes,Yes,Yes
+C01092,Enterprise,South,Annual,GA,One year,Credit card,DSL,Yes,2,0,No,No,No
+C01093,Enterprise,West,Monthly,OR,Month-to-month,Bank transfer,Fiber optic,No,2,0,Yes,No,Yes
+C01094,Enterprise,South,Monthly,FL,Month-to-month,Bank transfer,Fiber optic,Yes,3,0,No,Yes,No
+C01095,Mid-Market,South,Annual,TX,Two year,Bank transfer,Fiber optic,Yes,0,0,No,No,Yes
+C01096,Small Business,North,Annual,WI,One year,Electronic check,DSL,No,2,0,No,No,Yes
+C01097,Small Business,West,Annual,AZ,One year,Credit card,Fiber optic,Yes,3,0,No,No,Yes
+C01098,Small Business,West,Annual,CA,One year,Electronic check,Fiber optic,No,4,0,No,No,Yes
+C01099,Small Business,North,Annual,IL,Two year,Electronic check,DSL,Yes,3,0,No,No,No
+C01100,Small Business,South,Annual,GA,Two year,Electronic check,None,Yes,5,0,Yes,No,Yes
+C01101,Enterprise,South,Annual,GA,One year,Electronic check,Fiber optic,No,5,0,No,Yes,Yes
+C01102,Small Business,South,Monthly,FL,Month-to-month,Electronic check,DSL,Yes,0,0,Yes,No,Yes
+C01103,Enterprise,West,Monthly,AZ,Month-to-month,Credit card,DSL,No,0,0,No,No,Yes
+C01104,Mid-Market,North,Annual,MI,One year,Electronic check,DSL,No,3,0,Yes,No,No
+C01105,Mid-Market,South,Annual,NC,Two year,Electronic check,DSL,No,4,0,Yes,Yes,Yes
+C01106,Mid-Market,North,Monthly,MI,Month-to-month,Electronic check,DSL,Yes,3,0,No,No,No
+C01107,Small Business,North,Monthly,WI,Month-to-month,Bank transfer,Fiber optic,No,1,0,Yes,No,No
+C01108,Mid-Market,West,Monthly,CA,Month-to-month,Credit card,Fiber optic,No,3,0,Yes,Yes,Yes
+C01109,Small Business,West,Annual,WA,One year,Electronic check,DSL,Yes,5,0,Yes,No,No
+C01110,Enterprise,North,Annual,IL,Two year,Electronic check,Fiber optic,Yes,1,0,No,No,Yes
+C01111,Small Business,East,Monthly,PA,Month-to-month,Mailed check,None,Yes,2,0,Yes,No,Yes
+C01112,Small Business,North,Annual,WI,One year,Credit card,Fiber optic,No,3,0,Yes,No,Yes
+C01113,Mid-Market,North,Annual,IL,One year,Bank transfer,DSL,Yes,2,0,No,Yes,Yes
+C01114,Mid-Market,South,Annual,TX,Two year,Credit card,Fiber optic,Yes,0,0,No,No,Yes
+C01115,Small Business,North,Monthly,MI,Month-to-month,Bank transfer,Fiber optic,No,4,0,Yes,Yes,Yes
+C01116,Mid-Market,South,Annual,GA,Two year,Mailed check,DSL,No,4,0,No,No,No
+C01117,Small Business,West,Annual,OR,One year,Credit card,Fiber optic,Yes,3,0,Yes,No,Yes
+C01118,Mid-Market,East,Annual,PA,One year,Bank transfer,DSL,Yes,3,0,No,Yes,No
+C01119,Small Business,East,Monthly,MA,Month-to-month,Electronic check,DSL,No,3,0,Yes,No,Yes
+C01120,Small Business,South,Annual,TX,One year,Bank transfer,DSL,No,1,0,Yes,No,Yes
+C01121,Small Business,North,Annual,MN,One year,Credit card,DSL,No,0,0,Yes,No,Yes
+C01122,Small Business,North,Monthly,WI,Month-to-month,Electronic check,None,No,5,0,No,Yes,Yes
+C01123,Small Business,South,Monthly,GA,Month-to-month,Mailed check,DSL,No,1,1,Yes,No,Yes
+C01124,Small Business,North,Annual,MN,One year,Bank transfer,Fiber optic,Yes,4,0,No,No,No
+C01125,Small Business,West,Annual,CA,One year,Electronic check,DSL,No,3,0,No,Yes,No
+C01126,Small Business,West,Monthly,WA,Month-to-month,Mailed check,None,Yes,3,0,No,No,Yes
+C01127,Mid-Market,West,Monthly,WA,Month-to-month,Electronic check,Fiber optic,Yes,0,0,No,No,Yes
+C01128,Small Business,East,Monthly,VA,Month-to-month,Credit card,DSL,Yes,5,0,Yes,No,Yes
+C01129,Mid-Market,East,Annual,PA,Two year,Bank transfer,Fiber optic,Yes,3,0,Yes,No,Yes
+C01130,Enterprise,East,Annual,VA,Two year,Electronic check,DSL,No,4,0,Yes,Yes,Yes
+C01131,Small Business,South,Monthly,GA,Month-to-month,Credit card,Fiber optic,Yes,4,0,No,No,No
+C01132,Enterprise,East,Monthly,NY,Month-to-month,Bank transfer,DSL,Yes,0,1,Yes,Yes,No
+C01133,Small Business,West,Monthly,WA,Month-to-month,Electronic check,Fiber optic,Yes,5,0,No,No,Yes
+C01134,Small Business,West,Monthly,AZ,Month-to-month,Credit card,DSL,No,3,0,No,Yes,Yes
+C01135,Mid-Market,East,Annual,PA,Two year,Electronic check,Fiber optic,No,1,0,No,Yes,Yes
+C01136,Mid-Market,North,Annual,IL,One year,Bank transfer,DSL,No,3,0,No,No,No
+C01137,Enterprise,East,Monthly,PA,Month-to-month,Electronic check,DSL,No,3,1,Yes,No,Yes
+C01138,Small Business,South,Monthly,GA,Month-to-month,Electronic check,DSL,No,3,0,Yes,Yes,Yes
+C01139,Mid-Market,East,Monthly,NY,Month-to-month,Bank transfer,Fiber optic,No,1,0,No,No,Yes
+C01140,Small Business,East,Annual,NY,Two year,Electronic check,Fiber optic,Yes,5,0,Yes,Yes,No
+C01141,Small Business,West,Annual,CA,One year,Credit card,Fiber optic,Yes,1,0,No,No,No
+C01142,Small Business,South,Annual,GA,One year,Bank transfer,None,Yes,2,1,No,Yes,Yes
+C01143,Enterprise,West,Monthly,CA,Month-to-month,Bank transfer,Fiber optic,No,5,0,Yes,No,Yes
+C01144,Small Business,West,Annual,OR,Two year,Electronic check,DSL,Yes,0,0,Yes,Yes,No
+C01145,Enterprise,South,Monthly,TX,Month-to-month,Bank transfer,Fiber optic,Yes,2,0,Yes,No,Yes
+C01146,Mid-Market,South,Annual,NC,Two year,Bank transfer,DSL,No,2,1,Yes,No,Yes
+C01147,Mid-Market,East,Annual,PA,Two year,Electronic check,Fiber optic,Yes,4,0,No,No,No
+C01148,Mid-Market,West,Monthly,WA,Month-to-month,Bank transfer,Fiber optic,Yes,4,1,No,No,Yes
+C01149,Enterprise,East,Annual,VA,Two year,Bank transfer,Fiber optic,Yes,4,0,Yes,Yes,Yes
+C01150,Small Business,West,Monthly,AZ,Month-to-month,Credit card,Fiber optic,No,2,0,No,Yes,Yes
+C01151,Small Business,South,Annual,NC,One year,Credit card,Fiber optic,Yes,2,0,Yes,No,No
+C01152,Mid-Market,East,Monthly,MA,Month-to-month,Bank transfer,Fiber optic,Yes,0,0,No,Yes,No
+C01153,Small Business,South,Monthly,FL,Month-to-month,Mailed check,DSL,Yes,4,0,No,No,Yes
+C01154,Small Business,West,Monthly,WA,Month-to-month,Credit card,None,No,1,0,Yes,No,No
+C01155,Small Business,South,Monthly,FL,Month-to-month,Bank transfer,Fiber optic,Yes,2,1,No,No,No
+C01156,Small Business,East,Monthly,VA,Month-to-month,Bank transfer,None,Yes,4,1,No,No,No
+C01157,Small Business,North,Monthly,WI,Month-to-month,Bank transfer,Fiber optic,No,4,0,Yes,No,Yes
+C01158,Small Business,West,Annual,WA,One year,Mailed check,Fiber optic,No,0,0,Yes,No,Yes
+C01159,Enterprise,South,Monthly,NC,Month-to-month,Electronic check,Fiber optic,Yes,4,0,No,No,No
+C01160,Small Business,South,Monthly,TX,Month-to-month,Electronic check,Fiber optic,Yes,2,0,Yes,No,Yes
+C01161,Enterprise,East,Annual,MA,Two year,Credit card,Fiber optic,Yes,2,0,Yes,No,Yes
+C01162,Enterprise,South,Annual,TX,Two year,Credit card,DSL,No,0,0,Yes,No,Yes
+C01163,Small Business,West,Monthly,AZ,Month-to-month,Credit card,DSL,Yes,4,0,No,No,No
+C01164,Mid-Market,East,Monthly,NY,Month-to-month,Bank transfer,DSL,No,2,0,Yes,Yes,Yes
+C01165,Mid-Market,East,Annual,MA,One year,Mailed check,DSL,No,0,0,No,No,Yes
+C01166,Mid-Market,North,Annual,MI,One year,Credit card,Fiber optic,No,0,0,Yes,No,Yes
+C01167,Small Business,North,Monthly,MN,Month-to-month,Bank transfer,DSL,Yes,4,1,Yes,Yes,Yes
+C01168,Small Business,South,Annual,GA,One year,Electronic check,Fiber optic,No,0,0,No,Yes,Yes
+C01169,Small Business,West,Monthly,WA,Month-to-month,Credit card,Fiber optic,No,3,1,Yes,No,Yes
+C01170,Mid-Market,West,Monthly,OR,Month-to-month,Electronic check,Fiber optic,No,4,0,No,Yes,Yes
+C01171,Enterprise,East,Annual,PA,One year,Credit card,Fiber optic,Yes,5,0,Yes,No,No
+C01172,Mid-Market,East,Annual,VA,One year,Credit card,DSL,No,0,0,No,No,Yes
+C01173,Mid-Market,South,Annual,GA,Two year,Bank transfer,Fiber optic,No,1,0,Yes,No,No
+C01174,Enterprise,North,Monthly,MI,Month-to-month,Bank transfer,Fiber optic,No,0,0,No,Yes,Yes
+C01175,Mid-Market,North,Monthly,WI,Month-to-month,Credit card,None,No,5,1,Yes,No,Yes
+C01176,Small Business,South,Monthly,NC,Month-to-month,Electronic check,None,No,3,0,No,No,Yes
+C01177,Enterprise,South,Monthly,NC,Month-to-month,Electronic check,DSL,Yes,5,0,Yes,No,Yes
+C01178,Small Business,North,Monthly,MI,Month-to-month,Mailed check,DSL,No,0,0,Yes,No,Yes
+C01179,Small Business,South,Annual,FL,One year,Mailed check,DSL,No,4,0,No,No,Yes
+C01180,Mid-Market,North,Annual,IL,One year,Electronic check,Fiber optic,No,0,0,Yes,Yes,No
+C01181,Enterprise,East,Annual,MA,One year,Electronic check,Fiber optic,Yes,0,0,Yes,No,Yes
+C01182,Small Business,West,Monthly,AZ,Month-to-month,Credit card,Fiber optic,Yes,2,0,No,No,No
+C01183,Mid-Market,East,Monthly,PA,Month-to-month,Bank transfer,Fiber optic,No,2,0,No,No,Yes
+C01184,Small Business,South,Annual,FL,One year,Credit card,None,No,2,0,No,Yes,Yes
+C01185,Small Business,South,Monthly,NC,Month-to-month,Electronic check,DSL,Yes,0,1,No,No,Yes
+C01186,Small Business,South,Annual,TX,Two year,Credit card,None,Yes,3,0,Yes,No,Yes
+C01187,Mid-Market,North,Monthly,WI,Month-to-month,Electronic check,DSL,No,2,1,Yes,No,Yes
+C01188,Enterprise,East,Annual,NY,One year,Electronic check,DSL,No,5,0,No,No,Yes
+C01189,Small Business,East,Annual,MA,Two year,Electronic check,DSL,Yes,4,0,Yes,Yes,Yes
+C01190,Small Business,North,Annual,WI,One year,Bank transfer,DSL,Yes,2,0,Yes,Yes,No
+C01191,Small Business,South,Annual,FL,One year,Credit card,Fiber optic,Yes,4,1,Yes,No,Yes
+C01192,Small Business,South,Annual,NC,One year,Electronic check,Fiber optic,Yes,3,0,Yes,No,No
+C01193,Mid-Market,North,Monthly,MN,Month-to-month,Credit card,DSL,No,2,0,Yes,Yes,Yes
+C01194,Mid-Market,East,Annual,MA,One year,Credit card,Fiber optic,No,5,0,Yes,No,Yes
+C01195,Mid-Market,East,Annual,PA,Two year,Bank transfer,DSL,No,3,1,No,Yes,Yes
+C01196,Small Business,East,Annual,MA,Two year,Mailed check,Fiber optic,No,2,0,No,No,Yes
+C01197,Mid-Market,East,Monthly,MA,Month-to-month,Electronic check,DSL,Yes,3,0,No,No,No
+C01198,Small Business,West,Monthly,WA,Month-to-month,Mailed check,Fiber optic,Yes,4,0,Yes,Yes,No
+C01199,Small Business,West,Annual,WA,One year,Bank transfer,Fiber optic,Yes,4,0,Yes,No,Yes
+C01200,Enterprise,East,Annual,NY,One year,Bank transfer,DSL,Yes,3,0,No,No,Yes
+C01201,Mid-Market,West,Monthly,WA,Month-to-month,Credit card,Fiber optic,No,1,0,Yes,No,No
+C01202,Enterprise,South,Monthly,TX,Month-to-month,Credit card,None,Yes,3,0,Yes,Yes,Yes
+C01203,Enterprise,West,Monthly,WA,Month-to-month,Electronic check,Fiber optic,No,2,0,No,No,Yes
+C01204,Mid-Market,West,Monthly,AZ,Month-to-month,Mailed check,Fiber optic,Yes,5,0,No,Yes,Yes
+C01205,Enterprise,East,Monthly,NY,Month-to-month,Credit card,Fiber optic,Yes,5,0,Yes,Yes,Yes
+C01206,Small Business,West,Monthly,OR,Month-to-month,Credit card,DSL,Yes,0,0,No,No,Yes
+C01207,Small Business,East,Monthly,VA,Month-to-month,Credit card,DSL,No,5,0,No,No,Yes
+C01208,Small Business,East,Annual,VA,Two year,Electronic check,Fiber optic,No,5,0,No,Yes,No
+C01209,Small Business,South,Monthly,GA,Month-to-month,Electronic check,Fiber optic,No,5,0,Yes,No,Yes
+C01210,Small Business,West,Monthly,AZ,Month-to-month,Bank transfer,DSL,Yes,2,1,No,No,No
+C01211,Small Business,East,Monthly,VA,Month-to-month,Credit card,None,No,1,0,No,No,No
+C01212,Mid-Market,West,Monthly,CA,Month-to-month,Bank transfer,Fiber optic,No,3,0,Yes,No,Yes
+C01213,Mid-Market,South,Annual,GA,Two year,Bank transfer,Fiber optic,Yes,5,1,No,No,Yes
+C01214,Mid-Market,West,Annual,WA,Two year,Credit card,Fiber optic,Yes,2,0,No,No,Yes
+C01215,Small Business,North,Monthly,MN,Month-to-month,Bank transfer,Fiber optic,Yes,5,0,Yes,Yes,No
+C01216,Mid-Market,North,Monthly,MI,Month-to-month,Electronic check,DSL,Yes,1,1,Yes,No,Yes
+C01217,Small Business,East,Monthly,MA,Month-to-month,Bank transfer,None,No,5,1,Yes,No,No
+C01218,Small Business,East,Monthly,NY,Month-to-month,Bank transfer,None,Yes,0,0,No,No,Yes
+C01219,Small Business,West,Monthly,WA,Month-to-month,Electronic check,DSL,No,5,1,Yes,Yes,Yes
+C01220,Small Business,South,Monthly,GA,Month-to-month,Electronic check,Fiber optic,No,5,0,No,No,Yes
+C01221,Small Business,East,Monthly,PA,Month-to-month,Electronic check,None,Yes,4,0,Yes,No,Yes
+C01222,Enterprise,East,Annual,NY,One year,Electronic check,Fiber optic,No,3,0,No,No,No
+C01223,Mid-Market,West,Monthly,WA,Month-to-month,Credit card,Fiber optic,Yes,2,0,No,Yes,No
+C01224,Mid-Market,East,Monthly,VA,Month-to-month,Electronic check,DSL,No,5,0,No,Yes,Yes
+C01225,Small Business,South,Monthly,NC,Month-to-month,Bank transfer,Fiber optic,Yes,0,0,No,No,Yes
+C01226,Enterprise,West,Monthly,WA,Month-to-month,Electronic check,DSL,Yes,1,0,Yes,Yes,Yes
+C01227,Mid-Market,North,Monthly,MN,Month-to-month,Electronic check,None,Yes,0,0,Yes,No,Yes
+C01228,Small Business,West,Monthly,CA,Month-to-month,Electronic check,DSL,No,1,0,No,No,Yes
+C01229,Mid-Market,North,Monthly,MN,Month-to-month,Electronic check,DSL,No,3,0,Yes,No,Yes
+C01230,Mid-Market,South,Monthly,TX,Month-to-month,Mailed check,Fiber optic,No,2,0,No,No,No
+C01231,Small Business,West,Annual,WA,Two year,Electronic check,Fiber optic,Yes,2,0,No,Yes,Yes
+C01232,Small Business,East,Annual,MA,Two year,Electronic check,DSL,No,1,0,No,No,Yes
+C01233,Mid-Market,West,Monthly,OR,Month-to-month,Electronic check,DSL,Yes,2,0,Yes,No,No
+C01234,Small Business,East,Monthly,MA,Month-to-month,Credit card,None,No,2,1,No,No,No
+C01235,Small Business,East,Annual,PA,One year,Credit card,Fiber optic,No,1,1,Yes,No,No
+C01236,Small Business,South,Annual,NC,One year,Bank transfer,Fiber optic,No,5,0,No,Yes,Yes
+C01237,Enterprise,North,Monthly,MI,Month-to-month,Credit card,Fiber optic,Yes,5,0,No,No,Yes
+C01238,Small Business,North,Monthly,WI,Month-to-month,Bank transfer,DSL,No,5,0,No,No,No
+C01239,Small Business,South,Monthly,TX,Month-to-month,Credit card,DSL,No,0,0,No,No,Yes
+C01240,Small Business,North,Annual,IL,One year,Bank transfer,None,Yes,2,0,Yes,Yes,Yes
+C01241,Enterprise,East,Monthly,MA,Month-to-month,Credit card,Fiber optic,No,4,0,No,Yes,Yes
+C01242,Mid-Market,West,Monthly,AZ,Month-to-month,Electronic check,DSL,Yes,2,1,No,No,Yes
+C01243,Enterprise,West,Monthly,WA,Month-to-month,Bank transfer,Fiber optic,No,1,0,Yes,Yes,No
+C01244,Small Business,South,Monthly,NC,Month-to-month,Bank transfer,Fiber optic,No,3,0,No,No,Yes
+C01245,Small Business,West,Monthly,OR,Month-to-month,Credit card,Fiber optic,No,0,0,No,No,Yes
+C01246,Mid-Market,West,Annual,WA,One year,Mailed check,DSL,No,3,0,No,No,No
+C01247,Small Business,West,Annual,WA,One year,Mailed check,Fiber optic,Yes,2,0,No,Yes,No
+C01248,Enterprise,South,Monthly,FL,Month-to-month,Electronic check,Fiber optic,No,4,0,Yes,Yes,Yes
+C01249,Enterprise,South,Monthly,FL,Month-to-month,Bank transfer,DSL,Yes,4,0,No,No,No
+C01250,Mid-Market,West,Annual,CA,Two year,Credit card,DSL,No,3,0,Yes,No,Yes
+C01251,Enterprise,North,Monthly,MI,Month-to-month,Credit card,Fiber optic,No,3,0,No,No,No
+C01252,Mid-Market,South,Monthly,NC,Month-to-month,Credit card,Fiber optic,No,0,0,Yes,No,Yes
+C01253,Small Business,North,Monthly,IL,Month-to-month,Bank transfer,DSL,Yes,5,0,No,No,Yes
+C01254,Mid-Market,West,Annual,CA,Two year,Credit card,DSL,Yes,0,0,Yes,Yes,Yes
+C01255,Small Business,East,Annual,MA,One year,Credit card,DSL,No,5,0,Yes,No,No
+C01256,Enterprise,North,Annual,IL,Two year,Electronic check,Fiber optic,Yes,5,0,Yes,No,Yes
+C01257,Small Business,North,Annual,IL,One year,Credit card,DSL,Yes,4,0,No,No,Yes
+C01258,Small Business,East,Monthly,MA,Month-to-month,Mailed check,None,Yes,4,0,Yes,No,No
+C01259,Mid-Market,East,Monthly,PA,Month-to-month,Bank transfer,Fiber optic,No,0,1,Yes,No,Yes
+C01260,Small Business,West,Monthly,CA,Month-to-month,Electronic check,Fiber optic,Yes,5,0,Yes,No,No
+C01261,Small Business,South,Annual,GA,One year,Mailed check,None,No,3,0,Yes,No,Yes
+C01262,Mid-Market,West,Annual,CA,One year,Bank transfer,Fiber optic,No,2,0,No,No,Yes
+C01263,Small Business,South,Monthly,NC,Month-to-month,Credit card,DSL,No,4,0,No,Yes,Yes
+C01264,Mid-Market,West,Annual,WA,Two year,Electronic check,DSL,Yes,3,0,Yes,No,Yes
+C01265,Small Business,North,Monthly,MN,Month-to-month,Credit card,Fiber optic,Yes,2,0,Yes,No,Yes
+C01266,Small Business,North,Monthly,MN,Month-to-month,Electronic check,DSL,Yes,1,1,Yes,No,Yes
+C01267,Small Business,North,Monthly,MN,Month-to-month,Electronic check,Fiber optic,No,0,1,Yes,Yes,Yes
+C01268,Mid-Market,South,Annual,NC,Two year,Bank transfer,DSL,No,5,0,Yes,Yes,Yes
+C01269,Enterprise,West,Annual,AZ,Two year,Mailed check,None,Yes,3,0,Yes,No,Yes
+C01270,Small Business,North,Monthly,WI,Month-to-month,Credit card,DSL,Yes,1,0,Yes,No,No
+C01271,Enterprise,South,Annual,FL,Two year,Bank transfer,Fiber optic,Yes,4,0,Yes,Yes,Yes
+C01272,Mid-Market,North,Annual,MI,Two year,Mailed check,DSL,Yes,4,0,No,No,Yes
+C01273,Mid-Market,West,Annual,OR,Two year,Electronic check,None,No,0,0,Yes,No,No
+C01274,Mid-Market,East,Annual,NY,Two year,Electronic check,DSL,Yes,1,0,No,No,Yes
+C01275,Mid-Market,West,Monthly,AZ,Month-to-month,Bank transfer,DSL,Yes,1,0,No,Yes,Yes
+C01276,Enterprise,East,Annual,VA,One year,Bank transfer,Fiber optic,Yes,0,0,No,No,No
+C01277,Mid-Market,East,Annual,MA,One year,Credit card,DSL,Yes,4,0,Yes,No,Yes
+C01278,Mid-Market,West,Annual,AZ,One year,Bank transfer,Fiber optic,Yes,0,0,No,No,No
+C01279,Small Business,North,Monthly,WI,Month-to-month,Credit card,Fiber optic,Yes,4,0,No,No,Yes
+C01280,Small Business,West,Annual,OR,One year,Bank transfer,None,Yes,3,0,No,Yes,Yes
+C01281,Mid-Market,East,Annual,MA,Two year,Bank transfer,None,Yes,0,0,No,Yes,Yes
+C01282,Small Business,East,Monthly,VA,Month-to-month,Electronic check,None,No,5,0,Yes,No,Yes
+C01283,Small Business,South,Annual,TX,Two year,Electronic check,Fiber optic,No,1,0,No,No,No
+C01284,Small Business,West,Monthly,AZ,Month-to-month,Electronic check,Fiber optic,Yes,5,0,No,Yes,Yes
+C01285,Small Business,South,Monthly,GA,Month-to-month,Mailed check,DSL,No,0,0,Yes,No,No
+C01286,Mid-Market,North,Monthly,MI,Month-to-month,Mailed check,Fiber optic,Yes,3,1,Yes,Yes,No
+C01287,Mid-Market,West,Annual,AZ,One year,Bank transfer,DSL,No,1,0,No,No,No
+C01288,Small Business,North,Annual,IL,One year,Electronic check,DSL,No,3,0,Yes,No,No
+C01289,Small Business,North,Monthly,IL,Month-to-month,Credit card,Fiber optic,Yes,5,0,No,No,Yes
+C01290,Small Business,East,Annual,MA,One year,Electronic check,Fiber optic,Yes,4,0,Yes,No,No
+C01291,Small Business,North,Monthly,MI,Month-to-month,Credit card,Fiber optic,No,1,0,No,No,No
+C01292,Mid-Market,West,Monthly,CA,Month-to-month,Electronic check,DSL,Yes,0,1,Yes,Yes,Yes
+C01293,Mid-Market,South,Annual,FL,Two year,Bank transfer,DSL,Yes,1,0,No,No,No
+C01294,Mid-Market,North,Annual,MI,One year,Electronic check,Fiber optic,No,4,0,No,Yes,Yes
+C01295,Mid-Market,West,Annual,AZ,One year,Bank transfer,Fiber optic,No,3,0,No,Yes,Yes
+C01296,Enterprise,East,Annual,VA,One year,Mailed check,Fiber optic,No,4,0,Yes,No,Yes
+C01297,Mid-Market,South,Annual,FL,Two year,Bank transfer,Fiber optic,No,2,0,Yes,No,Yes
+C01298,Mid-Market,East,Monthly,VA,Month-to-month,Electronic check,None,No,3,0,Yes,No,Yes
+C01299,Mid-Market,East,Monthly,PA,Month-to-month,Mailed check,DSL,No,0,0,Yes,Yes,Yes
+C01300,Small Business,North,Monthly,WI,Month-to-month,Bank transfer,Fiber optic,No,0,1,No,Yes,No
+C01301,Enterprise,West,Annual,OR,One year,Credit card,DSL,No,4,0,Yes,Yes,No
+C01302,Small Business,South,Annual,GA,One year,Bank transfer,Fiber optic,No,1,1,Yes,No,No
+C01303,Small Business,East,Annual,PA,One year,Mailed check,Fiber optic,No,2,1,No,No,No
+C01304,Enterprise,West,Monthly,CA,Month-to-month,Credit card,DSL,No,2,1,Yes,No,No
+C01305,Mid-Market,East,Monthly,MA,Month-to-month,Credit card,Fiber optic,No,3,1,Yes,No,Yes
+C01306,Small Business,East,Annual,NY,One year,Credit card,Fiber optic,No,5,0,No,No,Yes
+C01307,Small Business,South,Annual,GA,Two year,Electronic check,DSL,Yes,4,0,Yes,No,No
+C01308,Small Business,North,Monthly,IL,Month-to-month,Bank transfer,None,No,3,0,No,No,Yes
+C01309,Mid-Market,South,Monthly,FL,Month-to-month,Electronic check,Fiber optic,Yes,5,0,No,No,Yes
+C01310,Small Business,West,Monthly,WA,Month-to-month,Credit card,DSL,Yes,3,0,Yes,No,Yes
+C01311,Enterprise,East,Monthly,PA,Month-to-month,Credit card,Fiber optic,Yes,0,0,No,No,Yes
+C01312,Enterprise,South,Monthly,GA,Month-to-month,Electronic check,DSL,No,2,0,No,Yes,No
+C01313,Mid-Market,West,Monthly,WA,Month-to-month,Credit card,Fiber optic,No,5,0,Yes,Yes,Yes
+C01314,Mid-Market,West,Annual,AZ,One year,Credit card,DSL,Yes,4,0,No,No,No
+C01315,Small Business,West,Monthly,CA,Month-to-month,Electronic check,Fiber optic,Yes,2,0,Yes,No,Yes
+C01316,Small Business,South,Monthly,TX,Month-to-month,Electronic check,None,Yes,1,0,No,No,Yes
+C01317,Mid-Market,East,Monthly,PA,Month-to-month,Bank transfer,DSL,Yes,5,0,No,No,Yes
+C01318,Small Business,East,Annual,NY,Two year,Mailed check,Fiber optic,Yes,0,0,Yes,Yes,Yes
+C01319,Small Business,South,Monthly,GA,Month-to-month,Credit card,DSL,No,5,0,Yes,No,No
+C01320,Small Business,South,Monthly,FL,Month-to-month,Electronic check,Fiber optic,Yes,4,0,Yes,No,Yes
+C01321,Small Business,North,Monthly,IL,Month-to-month,Electronic check,DSL,Yes,4,0,No,Yes,Yes
+C01322,Small Business,South,Annual,FL,One year,Electronic check,Fiber optic,Yes,1,0,No,No,Yes
+C01323,Mid-Market,East,Annual,VA,Two year,Credit card,Fiber optic,No,3,0,Yes,No,No
+C01324,Enterprise,West,Monthly,OR,Month-to-month,Mailed check,DSL,No,1,0,Yes,Yes,No
+C01325,Mid-Market,West,Monthly,CA,Month-to-month,Bank transfer,Fiber optic,Yes,0,1,No,Yes,No
+C01326,Enterprise,North,Monthly,WI,Month-to-month,Credit card,DSL,Yes,2,0,Yes,No,Yes
+C01327,Small Business,East,Annual,MA,One year,Mailed check,DSL,No,5,1,Yes,No,No
+C01328,Enterprise,North,Annual,IL,Two year,Credit card,Fiber optic,Yes,1,0,Yes,No,Yes
+C01329,Mid-Market,East,Monthly,NY,Month-to-month,Electronic check,Fiber optic,No,0,0,No,Yes,Yes
+C01330,Small Business,South,Monthly,TX,Month-to-month,Credit card,DSL,No,5,1,Yes,Yes,Yes
+C01331,Enterprise,South,Annual,NC,One year,Electronic check,DSL,No,5,0,No,No,Yes
+C01332,Small Business,East,Annual,VA,One year,Mailed check,Fiber optic,No,5,0,No,No,Yes
+C01333,Small Business,South,Monthly,FL,Month-to-month,Credit card,Fiber optic,Yes,5,0,Yes,Yes,Yes
+C01334,Small Business,West,Monthly,WA,Month-to-month,Bank transfer,DSL,Yes,5,0,No,No,Yes
+C01335,Small Business,East,Monthly,MA,Month-to-month,Credit card,DSL,Yes,5,0,Yes,Yes,Yes
+C01336,Small Business,West,Annual,AZ,One year,Mailed check,DSL,Yes,5,0,Yes,No,Yes
+C01337,Mid-Market,East,Annual,PA,One year,Bank transfer,Fiber optic,Yes,4,0,No,No,Yes
+C01338,Enterprise,South,Annual,FL,One year,Credit card,DSL,No,1,1,Yes,No,No
+C01339,Small Business,West,Annual,WA,Two year,Electronic check,DSL,No,2,1,No,No,No
+C01340,Mid-Market,South,Monthly,TX,Month-to-month,Mailed check,Fiber optic,Yes,2,0,No,Yes,Yes
+C01341,Small Business,East,Monthly,PA,Month-to-month,Credit card,Fiber optic,No,3,0,Yes,No,Yes
+C01342,Enterprise,North,Monthly,MI,Month-to-month,Electronic check,Fiber optic,Yes,4,0,No,No,Yes
+C01343,Small Business,North,Annual,IL,Two year,Mailed check,DSL,Yes,1,0,No,Yes,Yes
+C01344,Small Business,East,Annual,PA,One year,Electronic check,Fiber optic,Yes,0,1,Yes,No,Yes
+C01345,Mid-Market,North,Monthly,MN,Month-to-month,Electronic check,DSL,No,3,0,No,Yes,Yes
+C01346,Mid-Market,West,Monthly,WA,Month-to-month,Credit card,DSL,No,5,0,No,Yes,No
+C01347,Mid-Market,West,Annual,OR,One year,Electronic check,Fiber optic,No,5,0,Yes,No,No
+C01348,Mid-Market,East,Annual,MA,One year,Credit card,DSL,Yes,0,0,Yes,No,No
+C01349,Mid-Market,East,Annual,MA,One year,Electronic check,DSL,Yes,3,0,Yes,Yes,Yes
+C01350,Small Business,East,Monthly,VA,Month-to-month,Electronic check,Fiber optic,No,3,0,Yes,Yes,No
+C01351,Small Business,North,Annual,IL,Two year,Electronic check,DSL,Yes,2,0,Yes,Yes,No
+C01352,Small Business,South,Annual,TX,One year,Electronic check,DSL,Yes,4,0,No,No,No
+C01353,Small Business,South,Annual,FL,One year,Mailed check,Fiber optic,Yes,2,0,No,No,No
+C01354,Small Business,West,Annual,OR,One year,Credit card,DSL,Yes,5,0,No,Yes,No
+C01355,Mid-Market,North,Annual,WI,Two year,Credit card,DSL,No,5,1,Yes,No,No
+C01356,Small Business,South,Annual,GA,Two year,Credit card,Fiber optic,Yes,3,0,Yes,No,Yes
+C01357,Mid-Market,South,Annual,FL,One year,Bank transfer,None,No,2,0,Yes,No,Yes
+C01358,Mid-Market,North,Monthly,WI,Month-to-month,Electronic check,DSL,No,3,0,Yes,No,Yes
+C01359,Mid-Market,North,Monthly,IL,Month-to-month,Electronic check,DSL,Yes,5,0,No,No,Yes
+C01360,Mid-Market,South,Annual,NC,Two year,Bank transfer,Fiber optic,Yes,1,0,Yes,No,Yes
+C01361,Small Business,North,Annual,WI,One year,Credit card,Fiber optic,No,5,1,No,No,Yes
+C01362,Small Business,North,Monthly,MN,Month-to-month,Bank transfer,Fiber optic,No,3,1,Yes,Yes,Yes
+C01363,Mid-Market,South,Monthly,FL,Month-to-month,Mailed check,DSL,No,0,0,No,Yes,Yes
+C01364,Mid-Market,North,Annual,WI,Two year,Bank transfer,DSL,Yes,4,0,No,Yes,No
+C01365,Small Business,East,Annual,MA,Two year,Electronic check,DSL,No,1,0,No,No,Yes
+C01366,Small Business,North,Annual,MN,Two year,Electronic check,Fiber optic,No,3,1,No,Yes,Yes
+C01367,Mid-Market,South,Monthly,NC,Month-to-month,Electronic check,DSL,Yes,5,0,No,No,Yes
+C01368,Mid-Market,South,Annual,GA,One year,Bank transfer,DSL,No,4,1,No,Yes,Yes
+C01369,Small Business,West,Annual,CA,Two year,Mailed check,DSL,No,4,1,Yes,No,No
+C01370,Small Business,East,Monthly,MA,Month-to-month,Mailed check,DSL,No,0,0,Yes,Yes,Yes
+C01371,Enterprise,West,Monthly,WA,Month-to-month,Electronic check,DSL,Yes,5,0,No,No,Yes
+C01372,Small Business,South,Annual,FL,Two year,Bank transfer,Fiber optic,Yes,2,1,Yes,No,Yes
+C01373,Enterprise,South,Monthly,GA,Month-to-month,Credit card,DSL,Yes,0,0,No,No,Yes
+C01374,Small Business,South,Annual,NC,One year,Bank transfer,None,No,5,0,Yes,No,No
+C01375,Mid-Market,West,Annual,OR,One year,Credit card,DSL,Yes,1,0,No,No,No
+C01376,Small Business,West,Annual,OR,One year,Electronic check,Fiber optic,Yes,1,0,Yes,No,No
+C01377,Small Business,West,Monthly,OR,Month-to-month,Electronic check,None,No,0,0,No,No,Yes
+C01378,Enterprise,West,Annual,OR,One year,Mailed check,Fiber optic,Yes,3,1,Yes,No,No
+C01379,Small Business,East,Monthly,VA,Month-to-month,Credit card,Fiber optic,No,5,0,Yes,No,No
+C01380,Enterprise,East,Annual,NY,Two year,Credit card,Fiber optic,Yes,3,0,No,No,No
+C01381,Small Business,West,Monthly,WA,Month-to-month,Credit card,Fiber optic,No,5,0,Yes,No,Yes
+C01382,Enterprise,South,Annual,TX,One year,Credit card,Fiber optic,Yes,5,1,Yes,No,Yes
+C01383,Enterprise,South,Annual,TX,One year,Mailed check,DSL,No,5,0,No,No,Yes
+C01384,Mid-Market,West,Monthly,WA,Month-to-month,Electronic check,None,No,0,0,No,No,Yes
+C01385,Small Business,South,Monthly,TX,Month-to-month,Electronic check,Fiber optic,Yes,1,0,Yes,Yes,No
+C01386,Mid-Market,North,Annual,IL,One year,Bank transfer,DSL,Yes,1,1,No,Yes,Yes
+C01387,Mid-Market,East,Monthly,VA,Month-to-month,Credit card,DSL,Yes,3,0,Yes,No,Yes
+C01388,Enterprise,South,Monthly,NC,Month-to-month,Electronic check,DSL,No,5,0,Yes,No,No
+C01389,Small Business,West,Monthly,CA,Month-to-month,Electronic check,Fiber optic,Yes,1,0,No,No,Yes
+C01390,Small Business,West,Annual,OR,Two year,Electronic check,Fiber optic,Yes,3,0,Yes,No,No
+C01391,Small Business,South,Annual,GA,One year,Electronic check,DSL,Yes,1,0,Yes,No,No
+C01392,Mid-Market,East,Monthly,PA,Month-to-month,Electronic check,DSL,No,3,0,Yes,No,No
+C01393,Enterprise,West,Annual,WA,Two year,Electronic check,DSL,No,4,0,No,No,No
+C01394,Small Business,East,Monthly,MA,Month-to-month,Bank transfer,Fiber optic,Yes,2,0,No,Yes,Yes
+C01395,Mid-Market,North,Monthly,MI,Month-to-month,Bank transfer,DSL,No,0,0,Yes,No,Yes
+C01396,Enterprise,East,Monthly,VA,Month-to-month,Mailed check,DSL,No,2,0,No,No,No
+C01397,Small Business,East,Monthly,NY,Month-to-month,Credit card,DSL,No,4,0,No,Yes,Yes
+C01398,Small Business,East,Monthly,VA,Month-to-month,Electronic check,DSL,No,5,0,Yes,No,Yes
+C01399,Mid-Market,North,Annual,IL,One year,Mailed check,DSL,Yes,3,1,No,No,Yes
+C01400,Mid-Market,South,Monthly,NC,Month-to-month,Bank transfer,DSL,No,4,0,Yes,Yes,Yes
+C01401,Small Business,West,Annual,WA,One year,Credit card,DSL,No,2,0,Yes,No,Yes
+C01402,Enterprise,North,Monthly,WI,Month-to-month,Electronic check,DSL,No,5,1,Yes,No,Yes
+C01403,Mid-Market,South,Monthly,FL,Month-to-month,Electronic check,DSL,Yes,5,0,Yes,No,Yes
+C01404,Enterprise,South,Monthly,TX,Month-to-month,Credit card,Fiber optic,Yes,5,0,No,Yes,No
+C01405,Enterprise,North,Annual,MI,One year,Credit card,DSL,No,5,0,No,Yes,Yes
+C01406,Enterprise,North,Annual,MI,One year,Electronic check,DSL,Yes,3,1,No,No,Yes
+C01407,Mid-Market,South,Monthly,GA,Month-to-month,Mailed check,DSL,No,5,0,Yes,Yes,Yes
+C01408,Small Business,West,Monthly,OR,Month-to-month,Credit card,Fiber optic,Yes,3,0,Yes,No,Yes
+C01409,Mid-Market,North,Monthly,MN,Month-to-month,Credit card,DSL,No,3,0,Yes,No,Yes
+C01410,Small Business,South,Annual,GA,Two year,Electronic check,DSL,Yes,3,1,Yes,No,Yes
+C01411,Mid-Market,North,Monthly,IL,Month-to-month,Bank transfer,Fiber optic,Yes,1,0,No,No,No
+C01412,Small Business,East,Annual,VA,One year,Bank transfer,Fiber optic,Yes,5,0,No,No,Yes
+C01413,Mid-Market,South,Monthly,FL,Month-to-month,Electronic check,Fiber optic,No,2,0,No,Yes,No
+C01414,Small Business,West,Monthly,AZ,Month-to-month,Credit card,None,No,3,0,No,Yes,Yes
+C01415,Small Business,East,Annual,PA,One year,Bank transfer,DSL,No,5,0,Yes,No,Yes
+C01416,Small Business,West,Monthly,CA,Month-to-month,Bank transfer,DSL,No,0,0,Yes,No,Yes
+C01417,Mid-Market,East,Monthly,PA,Month-to-month,Electronic check,Fiber optic,No,1,0,Yes,Yes,No
+C01418,Mid-Market,South,Annual,TX,Two year,Mailed check,DSL,No,5,0,No,No,Yes
+C01419,Small Business,West,Monthly,AZ,Month-to-month,Credit card,DSL,No,2,0,Yes,Yes,Yes
+C01420,Enterprise,South,Monthly,GA,Month-to-month,Electronic check,None,No,3,1,Yes,No,Yes
+C01421,Enterprise,West,Monthly,OR,Month-to-month,Electronic check,Fiber optic,No,3,1,No,No,Yes
+C01422,Small Business,West,Monthly,WA,Month-to-month,Electronic check,Fiber optic,Yes,5,0,Yes,No,No
+C01423,Mid-Market,East,Annual,PA,One year,Electronic check,DSL,No,3,1,No,No,No
+C01424,Small Business,East,Monthly,NY,Month-to-month,Credit card,Fiber optic,Yes,2,1,Yes,Yes,Yes
+C01425,Small Business,South,Annual,NC,Two year,Bank transfer,DSL,Yes,0,0,No,No,Yes
+C01426,Mid-Market,West,Annual,WA,One year,Electronic check,DSL,No,2,0,Yes,No,Yes
+C01427,Small Business,East,Annual,NY,Two year,Mailed check,Fiber optic,No,3,0,No,No,No
+C01428,Enterprise,West,Annual,WA,Two year,Electronic check,Fiber optic,Yes,4,0,No,Yes,Yes
+C01429,Enterprise,South,Annual,TX,Two year,Credit card,DSL,Yes,4,0,Yes,No,Yes
+C01430,Enterprise,West,Annual,CA,One year,Mailed check,DSL,No,4,1,No,No,No
+C01431,Mid-Market,South,Monthly,FL,Month-to-month,Bank transfer,DSL,Yes,2,0,No,Yes,No
+C01432,Mid-Market,North,Monthly,WI,Month-to-month,Bank transfer,Fiber optic,Yes,0,1,No,Yes,Yes
+C01433,Enterprise,North,Annual,IL,One year,Bank transfer,DSL,No,1,0,No,Yes,Yes
+C01434,Small Business,East,Monthly,NY,Month-to-month,Electronic check,Fiber optic,No,2,0,No,No,No
+C01435,Small Business,South,Annual,FL,One year,Electronic check,DSL,No,5,1,Yes,Yes,No
+C01436,Mid-Market,North,Monthly,MN,Month-to-month,Credit card,DSL,No,4,0,Yes,No,Yes
+C01437,Small Business,South,Annual,GA,Two year,Electronic check,Fiber optic,Yes,5,0,Yes,No,Yes
+C01438,Small Business,East,Monthly,PA,Month-to-month,Credit card,DSL,Yes,5,0,No,No,Yes
+C01439,Small Business,South,Annual,TX,Two year,Electronic check,DSL,No,0,0,No,Yes,Yes
+C01440,Mid-Market,West,Monthly,WA,Month-to-month,Mailed check,Fiber optic,No,0,0,No,No,Yes
+C01441,Small Business,West,Monthly,WA,Month-to-month,Mailed check,DSL,Yes,3,0,Yes,Yes,No
+C01442,Small Business,East,Annual,MA,Two year,Bank transfer,None,Yes,1,0,No,Yes,Yes
+C01443,Small Business,West,Annual,CA,Two year,Bank transfer,DSL,Yes,5,0,No,No,Yes
+C01444,Small Business,South,Annual,FL,One year,Electronic check,Fiber optic,Yes,2,0,Yes,No,No
+C01445,Enterprise,North,Annual,WI,Two year,Electronic check,DSL,Yes,0,0,No,No,Yes
+C01446,Small Business,North,Monthly,MN,Month-to-month,Bank transfer,Fiber optic,Yes,1,0,Yes,No,Yes
+C01447,Mid-Market,West,Annual,CA,Two year,Bank transfer,DSL,No,2,0,No,No,No
+C01448,Mid-Market,West,Monthly,OR,Month-to-month,Credit card,DSL,Yes,0,0,Yes,Yes,Yes
+C01449,Small Business,East,Annual,PA,One year,Credit card,Fiber optic,No,1,1,No,No,No
+C01450,Enterprise,North,Monthly,MI,Month-to-month,Credit card,Fiber optic,No,3,1,Yes,No,Yes
+C01451,Mid-Market,South,Monthly,GA,Month-to-month,Electronic check,None,No,5,0,Yes,No,Yes
+C01452,Mid-Market,North,Annual,IL,One year,Electronic check,Fiber optic,No,3,0,No,Yes,Yes
+C01453,Small Business,North,Annual,MI,One year,Credit card,DSL,Yes,0,0,No,No,Yes
+C01454,Small Business,North,Monthly,MI,Month-to-month,Credit card,DSL,Yes,2,0,Yes,Yes,Yes
+C01455,Enterprise,East,Annual,VA,Two year,Mailed check,DSL,No,4,0,Yes,Yes,Yes
+C01456,Mid-Market,North,Annual,WI,One year,Credit card,Fiber optic,Yes,2,1,No,No,Yes
+C01457,Enterprise,West,Monthly,WA,Month-to-month,Bank transfer,Fiber optic,Yes,3,0,No,No,Yes
+C01458,Enterprise,South,Annual,FL,One year,Bank transfer,Fiber optic,Yes,5,1,Yes,No,No
+C01459,Small Business,South,Monthly,TX,Month-to-month,Electronic check,DSL,No,0,0,Yes,No,Yes
+C01460,Mid-Market,East,Monthly,NY,Month-to-month,Bank transfer,None,Yes,2,0,Yes,Yes,Yes
+C01461,Small Business,West,Annual,CA,One year,Credit card,DSL,No,3,0,No,No,Yes
+C01462,Mid-Market,South,Monthly,TX,Month-to-month,Credit card,Fiber optic,Yes,4,0,No,Yes,Yes
+C01463,Small Business,North,Monthly,WI,Month-to-month,Electronic check,Fiber optic,No,5,0,No,No,Yes
+C01464,Small Business,North,Annual,IL,One year,Mailed check,Fiber optic,Yes,1,0,Yes,Yes,Yes
+C01465,Mid-Market,West,Monthly,CA,Month-to-month,Mailed check,None,No,2,0,No,No,No
+C01466,Mid-Market,North,Annual,MN,Two year,Electronic check,Fiber optic,No,4,1,Yes,No,Yes
+C01467,Mid-Market,East,Annual,PA,One year,Electronic check,Fiber optic,Yes,5,0,No,Yes,Yes
+C01468,Small Business,South,Monthly,GA,Month-to-month,Electronic check,DSL,Yes,4,1,Yes,No,No
+C01469,Small Business,West,Annual,OR,One year,Bank transfer,DSL,No,4,0,Yes,No,Yes
+C01470,Enterprise,North,Monthly,WI,Month-to-month,Credit card,Fiber optic,No,1,0,Yes,Yes,Yes
+C01471,Small Business,West,Annual,AZ,One year,Electronic check,DSL,Yes,2,0,Yes,No,No
+C01472,Small Business,East,Monthly,PA,Month-to-month,Bank transfer,Fiber optic,Yes,3,0,Yes,Yes,No
+C01473,Mid-Market,South,Annual,NC,Two year,Credit card,Fiber optic,Yes,1,0,No,No,Yes
+C01474,Small Business,North,Monthly,WI,Month-to-month,Credit card,Fiber optic,Yes,4,0,No,No,Yes
+C01475,Mid-Market,West,Annual,CA,One year,Credit card,Fiber optic,Yes,3,0,No,No,Yes
+C01476,Small Business,South,Monthly,FL,Month-to-month,Credit card,None,Yes,2,1,No,No,Yes
+C01477,Enterprise,South,Monthly,NC,Month-to-month,Credit card,DSL,Yes,2,0,Yes,No,Yes
+C01478,Enterprise,South,Monthly,NC,Month-to-month,Electronic check,DSL,No,4,0,No,No,No
+C01479,Enterprise,North,Annual,MI,One year,Credit card,Fiber optic,No,2,0,Yes,No,No
+C01480,Mid-Market,South,Annual,TX,Two year,Mailed check,DSL,No,1,0,Yes,No,No
+C01481,Small Business,North,Monthly,WI,Month-to-month,Credit card,None,No,2,0,Yes,No,Yes
+C01482,Mid-Market,North,Monthly,IL,Month-to-month,Mailed check,Fiber optic,No,2,0,Yes,Yes,Yes
+C01483,Enterprise,South,Monthly,TX,Month-to-month,Credit card,None,Yes,3,1,No,Yes,Yes
+C01484,Mid-Market,North,Monthly,IL,Month-to-month,Bank transfer,DSL,No,5,1,Yes,No,Yes
+C01485,Mid-Market,South,Annual,GA,Two year,Electronic check,DSL,Yes,2,0,Yes,No,Yes
+C01486,Mid-Market,West,Annual,AZ,Two year,Bank transfer,Fiber optic,No,1,1,No,Yes,No
+C01487,Mid-Market,North,Annual,MI,Two year,Electronic check,DSL,No,5,0,Yes,No,Yes
+C01488,Mid-Market,North,Monthly,WI,Month-to-month,Electronic check,DSL,No,0,0,No,Yes,Yes
+C01489,Small Business,North,Monthly,MI,Month-to-month,Electronic check,None,Yes,5,0,Yes,No,Yes
+C01490,Mid-Market,East,Annual,PA,One year,Electronic check,None,No,0,1,No,No,No
+C01491,Mid-Market,South,Monthly,FL,Month-to-month,Mailed check,Fiber optic,Yes,2,0,No,No,Yes
+C01492,Small Business,South,Annual,NC,One year,Mailed check,None,Yes,5,0,Yes,No,No
+C01493,Enterprise,North,Monthly,MI,Month-to-month,Bank transfer,DSL,Yes,0,0,No,No,No
+C01494,Mid-Market,South,Monthly,NC,Month-to-month,Electronic check,DSL,Yes,0,0,Yes,Yes,Yes
+C01495,Small Business,South,Annual,TX,Two year,Mailed check,Fiber optic,No,3,1,Yes,No,Yes
+C01496,Enterprise,South,Monthly,NC,Month-to-month,Bank transfer,Fiber optic,Yes,1,0,No,Yes,Yes
+C01497,Mid-Market,East,Annual,MA,Two year,Electronic check,Fiber optic,Yes,0,0,No,No,Yes
+C01498,Mid-Market,West,Monthly,CA,Month-to-month,Credit card,Fiber optic,No,4,0,Yes,No,Yes
+C01499,Small Business,South,Monthly,FL,Month-to-month,Bank transfer,None,No,5,0,Yes,Yes,Yes
+C01500,Enterprise,West,Monthly,CA,Month-to-month,Electronic check,Fiber optic,Yes,4,1,Yes,Yes,No
+C01501,Small Business,East,Monthly,MA,Month-to-month,Credit card,DSL,No,5,1,No,No,No
+C01502,Mid-Market,South,Annual,NC,One year,Bank transfer,DSL,No,3,0,No,No,Yes
+C01503,Small Business,North,Monthly,MI,Month-to-month,Electronic check,DSL,No,3,0,Yes,Yes,Yes
+C01504,Mid-Market,South,Annual,FL,One year,Credit card,Fiber optic,No,5,1,No,No,Yes
+C01505,Mid-Market,East,Annual,MA,Two year,Credit card,DSL,No,3,1,Yes,No,Yes
+C01506,Mid-Market,North,Monthly,WI,Month-to-month,Bank transfer,DSL,Yes,0,0,No,No,No
+C01507,Mid-Market,West,Monthly,WA,Month-to-month,Mailed check,DSL,No,1,0,No,No,Yes
+C01508,Enterprise,South,Monthly,TX,Month-to-month,Bank transfer,Fiber optic,Yes,3,0,No,Yes,No
+C01509,Mid-Market,West,Annual,AZ,One year,Bank transfer,DSL,No,5,0,Yes,No,Yes
+C01510,Small Business,East,Annual,NY,One year,Credit card,Fiber optic,Yes,3,0,Yes,Yes,No
+C01511,Enterprise,South,Monthly,TX,Month-to-month,Credit card,DSL,Yes,2,0,Yes,No,Yes
+C01512,Mid-Market,North,Annual,MN,One year,Credit card,Fiber optic,No,1,0,No,Yes,Yes
+C01513,Enterprise,East,Monthly,MA,Month-to-month,Electronic check,Fiber optic,No,4,0,No,No,No
+C01514,Enterprise,South,Monthly,FL,Month-to-month,Bank transfer,DSL,Yes,5,1,Yes,No,Yes
+C01515,Enterprise,North,Monthly,MI,Month-to-month,Bank transfer,Fiber optic,Yes,1,0,Yes,No,Yes
+C01516,Mid-Market,West,Annual,WA,Two year,Credit card,None,Yes,3,0,Yes,Yes,No
+C01517,Mid-Market,South,Monthly,FL,Month-to-month,Mailed check,DSL,No,2,0,No,No,Yes
+C01518,Small Business,North,Monthly,WI,Month-to-month,Bank transfer,Fiber optic,Yes,1,0,No,Yes,Yes
+C01519,Mid-Market,South,Monthly,NC,Month-to-month,Credit card,Fiber optic,Yes,2,1,Yes,No,Yes
+C01520,Mid-Market,South,Annual,TX,One year,Electronic check,Fiber optic,No,0,0,No,No,Yes
+C01521,Mid-Market,West,Monthly,WA,Month-to-month,Electronic check,None,Yes,3,0,Yes,No,Yes
+C01522,Enterprise,East,Monthly,NY,Month-to-month,Credit card,DSL,Yes,0,1,No,No,No
+C01523,Small Business,North,Monthly,WI,Month-to-month,Credit card,Fiber optic,No,2,0,Yes,No,Yes
+C01524,Small Business,North,Annual,IL,One year,Electronic check,DSL,Yes,5,0,Yes,No,Yes
+C01525,Mid-Market,East,Monthly,NY,Month-to-month,Electronic check,Fiber optic,No,0,0,No,No,Yes
+C01526,Small Business,North,Annual,IL,Two year,Electronic check,DSL,No,1,0,No,No,Yes
+C01527,Small Business,South,Monthly,FL,Month-to-month,Bank transfer,DSL,Yes,4,0,Yes,No,No
+C01528,Small Business,North,Monthly,IL,Month-to-month,Bank transfer,Fiber optic,No,5,0,No,No,Yes
+C01529,Enterprise,North,Annual,IL,Two year,Credit card,DSL,No,5,0,No,No,Yes
+C01530,Mid-Market,West,Annual,AZ,Two year,Electronic check,Fiber optic,No,0,0,Yes,No,Yes
+C01531,Small Business,North,Monthly,MI,Month-to-month,Electronic check,DSL,No,1,0,No,No,No
+C01532,Small Business,North,Annual,IL,Two year,Electronic check,DSL,Yes,5,0,No,No,Yes
+C01533,Mid-Market,West,Annual,AZ,One year,Credit card,None,Yes,3,0,Yes,Yes,Yes
+C01534,Small Business,North,Monthly,WI,Month-to-month,Electronic check,DSL,No,5,0,No,Yes,No
+C01535,Mid-Market,West,Annual,AZ,Two year,Electronic check,None,Yes,0,1,No,Yes,Yes
+C01536,Mid-Market,North,Annual,IL,One year,Mailed check,Fiber optic,Yes,0,1,Yes,No,Yes
+C01537,Small Business,North,Monthly,IL,Month-to-month,Credit card,DSL,No,1,0,No,No,No
+C01538,Mid-Market,North,Annual,IL,One year,Bank transfer,Fiber optic,Yes,0,0,Yes,Yes,No
+C01539,Small Business,East,Monthly,PA,Month-to-month,Electronic check,DSL,No,5,0,No,No,Yes
+C01540,Small Business,East,Monthly,VA,Month-to-month,Electronic check,Fiber optic,No,4,0,No,No,No
+C01541,Enterprise,South,Annual,NC,Two year,Mailed check,None,No,2,0,Yes,No,Yes
+C01542,Mid-Market,North,Annual,MN,One year,Credit card,None,Yes,0,0,No,Yes,No
+C01543,Enterprise,North,Annual,IL,One year,Bank transfer,Fiber optic,Yes,0,0,Yes,No,Yes
+C01544,Small Business,East,Annual,VA,One year,Mailed check,DSL,No,1,0,No,No,Yes
+C01545,Small Business,North,Annual,IL,One year,Credit card,DSL,Yes,4,0,No,No,Yes
+C01546,Mid-Market,East,Monthly,PA,Month-to-month,Electronic check,Fiber optic,No,4,1,Yes,Yes,No
+C01547,Mid-Market,East,Annual,NY,Two year,Credit card,DSL,No,3,0,No,Yes,No
+C01548,Enterprise,West,Annual,WA,One year,Electronic check,DSL,Yes,5,0,Yes,No,Yes
+C01549,Small Business,South,Annual,GA,One year,Electronic check,DSL,Yes,5,0,No,No,Yes
+C01550,Enterprise,North,Monthly,MN,Month-to-month,Electronic check,Fiber optic,No,4,0,No,Yes,Yes
+C01551,Enterprise,South,Monthly,GA,Month-to-month,Mailed check,None,Yes,0,0,No,No,Yes
+C01552,Mid-Market,West,Monthly,OR,Month-to-month,Bank transfer,Fiber optic,No,5,0,Yes,Yes,No
+C01553,Small Business,East,Monthly,VA,Month-to-month,Electronic check,DSL,No,5,0,No,No,Yes
+C01554,Mid-Market,East,Monthly,PA,Month-to-month,Electronic check,Fiber optic,Yes,3,0,No,No,No
+C01555,Small Business,South,Annual,GA,One year,Bank transfer,Fiber optic,No,3,0,No,Yes,No
+C01556,Mid-Market,North,Annual,MI,Two year,Mailed check,Fiber optic,Yes,4,0,No,Yes,Yes
+C01557,Mid-Market,West,Monthly,OR,Month-to-month,Electronic check,Fiber optic,Yes,3,0,No,No,Yes
+C01558,Enterprise,West,Monthly,CA,Month-to-month,Electronic check,DSL,No,2,1,Yes,No,No
+C01559,Mid-Market,West,Annual,AZ,One year,Bank transfer,DSL,No,4,0,Yes,Yes,No
+C01560,Mid-Market,West,Monthly,CA,Month-to-month,Mailed check,DSL,No,4,0,No,No,No
+C01561,Mid-Market,South,Annual,FL,Two year,Mailed check,DSL,No,0,0,Yes,Yes,Yes
+C01562,Mid-Market,South,Monthly,FL,Month-to-month,Electronic check,Fiber optic,No,4,0,No,No,Yes
+C01563,Enterprise,North,Monthly,MI,Month-to-month,Electronic check,Fiber optic,No,1,0,No,No,No
+C01564,Small Business,West,Monthly,WA,Month-to-month,Credit card,DSL,Yes,3,0,No,No,Yes
+C01565,Enterprise,East,Annual,VA,Two year,Electronic check,DSL,Yes,0,0,No,No,No
+C01566,Enterprise,South,Monthly,GA,Month-to-month,Mailed check,DSL,Yes,5,0,No,No,No
+C01567,Enterprise,West,Annual,CA,One year,Electronic check,Fiber optic,No,4,1,No,Yes,Yes
+C01568,Mid-Market,East,Monthly,MA,Month-to-month,Bank transfer,DSL,No,2,0,No,No,Yes
+C01569,Enterprise,West,Monthly,WA,Month-to-month,Mailed check,Fiber optic,No,3,1,Yes,Yes,Yes
+C01570,Small Business,West,Annual,AZ,Two year,Mailed check,DSL,No,3,1,Yes,No,No
+C01571,Mid-Market,North,Monthly,WI,Month-to-month,Bank transfer,Fiber optic,No,0,1,Yes,No,Yes
+C01572,Small Business,South,Monthly,TX,Month-to-month,Mailed check,DSL,No,3,0,No,Yes,Yes
+C01573,Small Business,East,Annual,PA,One year,Electronic check,Fiber optic,Yes,4,1,Yes,No,No
+C01574,Small Business,West,Annual,CA,Two year,Credit card,DSL,No,1,0,No,No,No
+C01575,Small Business,North,Monthly,WI,Month-to-month,Electronic check,Fiber optic,No,2,1,No,No,Yes
+C01576,Small Business,South,Monthly,NC,Month-to-month,Mailed check,DSL,Yes,1,0,Yes,No,No
+C01577,Enterprise,East,Annual,PA,Two year,Mailed check,Fiber optic,Yes,0,0,No,No,Yes
+C01578,Small Business,West,Annual,WA,One year,Electronic check,DSL,Yes,5,0,Yes,Yes,No
+C01579,Mid-Market,North,Annual,WI,Two year,Electronic check,Fiber optic,No,3,0,No,No,No
+C01580,Small Business,East,Annual,MA,One year,Credit card,Fiber optic,No,2,0,Yes,No,Yes
+C01581,Mid-Market,South,Annual,TX,One year,Electronic check,DSL,No,2,0,Yes,Yes,Yes
+C01582,Mid-Market,North,Monthly,WI,Month-to-month,Bank transfer,Fiber optic,No,4,0,Yes,No,Yes
+C01583,Small Business,East,Monthly,MA,Month-to-month,Electronic check,Fiber optic,Yes,0,0,No,No,No
+C01584,Mid-Market,South,Annual,GA,One year,Bank transfer,DSL,Yes,3,0,Yes,No,Yes
+C01585,Enterprise,East,Annual,VA,One year,Credit card,DSL,No,1,0,No,Yes,Yes
+C01586,Enterprise,South,Annual,FL,Two year,Credit card,DSL,No,5,0,No,No,No
+C01587,Small Business,West,Annual,CA,One year,Electronic check,Fiber optic,No,4,0,Yes,No,Yes
+C01588,Mid-Market,North,Monthly,MN,Month-to-month,Mailed check,DSL,Yes,4,0,Yes,Yes,No
+C01589,Mid-Market,West,Monthly,OR,Month-to-month,Credit card,DSL,Yes,0,0,Yes,No,No
+C01590,Small Business,North,Annual,WI,One year,Credit card,Fiber optic,Yes,0,0,No,Yes,Yes
+C01591,Enterprise,East,Monthly,MA,Month-to-month,Credit card,DSL,Yes,2,0,No,No,Yes
+C01592,Small Business,South,Annual,GA,One year,Mailed check,Fiber optic,Yes,2,1,Yes,No,No
+C01593,Enterprise,South,Annual,TX,One year,Bank transfer,None,No,4,0,No,Yes,No
+C01594,Small Business,North,Monthly,MN,Month-to-month,Bank transfer,DSL,No,4,0,No,No,Yes
+C01595,Small Business,East,Annual,MA,One year,Credit card,DSL,Yes,2,0,No,No,No
+C01596,Enterprise,North,Annual,MI,One year,Mailed check,DSL,Yes,0,1,Yes,No,Yes
+C01597,Enterprise,East,Annual,NY,Two year,Electronic check,Fiber optic,Yes,1,0,Yes,Yes,Yes
+C01598,Enterprise,East,Monthly,PA,Month-to-month,Bank transfer,Fiber optic,No,3,0,Yes,No,No
+C01599,Enterprise,West,Annual,CA,One year,Credit card,DSL,No,1,0,No,Yes,Yes
+C01600,Small Business,East,Monthly,PA,Month-to-month,Credit card,DSL,Yes,1,0,No,No,Yes
+C01601,Small Business,South,Annual,GA,One year,Mailed check,DSL,No,1,0,Yes,No,Yes
+C01602,Small Business,East,Monthly,PA,Month-to-month,Mailed check,Fiber optic,Yes,0,1,Yes,Yes,Yes
+C01603,Mid-Market,West,Annual,AZ,Two year,Credit card,DSL,Yes,3,1,No,Yes,Yes
+C01604,Small Business,South,Annual,NC,Two year,Credit card,Fiber optic,No,5,0,Yes,Yes,Yes
+C01605,Enterprise,North,Annual,WI,One year,Mailed check,Fiber optic,Yes,5,0,No,Yes,Yes
+C01606,Small Business,West,Annual,AZ,One year,Mailed check,None,Yes,5,0,Yes,No,No
+C01607,Small Business,North,Monthly,MI,Month-to-month,Bank transfer,DSL,No,3,1,Yes,No,Yes
+C01608,Small Business,East,Annual,PA,One year,Electronic check,DSL,Yes,4,1,No,Yes,No
+C01609,Small Business,North,Monthly,MN,Month-to-month,Electronic check,None,Yes,0,0,Yes,No,Yes
+C01610,Small Business,North,Annual,MN,One year,Mailed check,Fiber optic,Yes,1,0,No,No,Yes
+C01611,Mid-Market,West,Monthly,OR,Month-to-month,Bank transfer,None,Yes,4,0,Yes,Yes,No
+C01612,Small Business,North,Annual,MN,One year,Bank transfer,DSL,No,5,0,Yes,No,Yes
+C01613,Mid-Market,East,Monthly,PA,Month-to-month,Bank transfer,DSL,Yes,5,0,No,Yes,Yes
+C01614,Enterprise,East,Annual,MA,One year,Credit card,Fiber optic,No,3,0,Yes,No,No
+C01615,Mid-Market,North,Annual,WI,One year,Credit card,Fiber optic,No,0,0,No,No,No
+C01616,Mid-Market,North,Monthly,MI,Month-to-month,Bank transfer,Fiber optic,Yes,5,0,No,No,Yes
+C01617,Small Business,West,Monthly,AZ,Month-to-month,Electronic check,Fiber optic,Yes,1,1,No,No,Yes
+C01618,Small Business,East,Annual,NY,Two year,Bank transfer,Fiber optic,Yes,0,0,Yes,Yes,No
+C01619,Small Business,North,Annual,MI,One year,Bank transfer,DSL,Yes,4,0,Yes,No,Yes
+C01620,Enterprise,West,Monthly,AZ,Month-to-month,Bank transfer,DSL,Yes,1,0,Yes,Yes,No
+C01621,Mid-Market,South,Monthly,TX,Month-to-month,Electronic check,Fiber optic,No,1,0,No,Yes,Yes
+C01622,Small Business,North,Monthly,IL,Month-to-month,Bank transfer,DSL,Yes,4,0,Yes,Yes,Yes
+C01623,Small Business,West,Annual,CA,One year,Electronic check,None,No,5,0,Yes,No,No
+C01624,Enterprise,North,Annual,MI,One year,Electronic check,DSL,No,5,0,No,No,No
+C01625,Mid-Market,East,Monthly,VA,Month-to-month,Credit card,DSL,No,0,0,Yes,No,Yes
+C01626,Mid-Market,West,Annual,OR,One year,Electronic check,DSL,Yes,1,0,No,No,Yes
+C01627,Enterprise,East,Annual,VA,One year,Mailed check,Fiber optic,Yes,4,0,Yes,No,No
+C01628,Mid-Market,East,Annual,MA,One year,Mailed check,Fiber optic,No,1,1,No,No,Yes
+C01629,Mid-Market,South,Monthly,TX,Month-to-month,Electronic check,None,Yes,0,0,No,No,No
+C01630,Small Business,North,Monthly,WI,Month-to-month,Bank transfer,DSL,No,3,0,Yes,No,Yes
+C01631,Small Business,East,Monthly,NY,Month-to-month,Credit card,DSL,No,3,0,No,No,Yes
+C01632,Enterprise,West,Monthly,OR,Month-to-month,Bank transfer,None,No,5,1,No,No,No
+C01633,Mid-Market,North,Monthly,IL,Month-to-month,Mailed check,Fiber optic,Yes,2,0,Yes,Yes,No
+C01634,Small Business,West,Monthly,WA,Month-to-month,Credit card,Fiber optic,Yes,4,0,No,No,Yes
+C01635,Mid-Market,South,Monthly,TX,Month-to-month,Electronic check,DSL,No,3,0,No,No,No
+C01636,Small Business,East,Annual,NY,One year,Electronic check,Fiber optic,No,5,0,No,No,Yes
+C01637,Enterprise,North,Monthly,MN,Month-to-month,Credit card,DSL,No,2,0,No,Yes,Yes
+C01638,Small Business,East,Annual,NY,One year,Mailed check,DSL,No,4,1,Yes,Yes,Yes
+C01639,Enterprise,North,Monthly,IL,Month-to-month,Credit card,DSL,No,5,0,Yes,No,No
+C01640,Mid-Market,South,Annual,NC,One year,Credit card,Fiber optic,No,5,0,Yes,No,Yes
+C01641,Small Business,East,Monthly,PA,Month-to-month,Electronic check,DSL,No,2,0,Yes,No,Yes
+C01642,Small Business,North,Annual,WI,One year,Mailed check,Fiber optic,Yes,3,0,Yes,No,No
+C01643,Enterprise,South,Annual,TX,One year,Electronic check,DSL,Yes,3,0,Yes,No,Yes
+C01644,Small Business,East,Monthly,NY,Month-to-month,Bank transfer,Fiber optic,No,0,0,Yes,No,Yes
+C01645,Small Business,North,Annual,WI,One year,Bank transfer,DSL,No,1,0,No,Yes,Yes
+C01646,Mid-Market,South,Monthly,NC,Month-to-month,Electronic check,DSL,Yes,4,0,Yes,Yes,No
+C01647,Small Business,South,Annual,NC,One year,Electronic check,Fiber optic,No,0,1,No,No,Yes
+C01648,Small Business,East,Monthly,PA,Month-to-month,Credit card,DSL,Yes,3,0,No,No,No
+C01649,Small Business,West,Monthly,WA,Month-to-month,Electronic check,Fiber optic,Yes,2,0,No,No,Yes
+C01650,Enterprise,West,Monthly,OR,Month-to-month,Bank transfer,Fiber optic,No,2,0,Yes,No,Yes
+C01651,Small Business,North,Annual,IL,Two year,Bank transfer,DSL,Yes,5,0,No,Yes,No
+C01652,Small Business,North,Monthly,IL,Month-to-month,Electronic check,DSL,No,1,0,No,No,Yes
+C01653,Small Business,North,Annual,MI,One year,Credit card,Fiber optic,No,4,0,No,Yes,Yes
+C01654,Small Business,East,Monthly,PA,Month-to-month,Electronic check,DSL,No,4,1,Yes,No,Yes
+C01655,Small Business,North,Monthly,MN,Month-to-month,Electronic check,DSL,Yes,5,0,Yes,Yes,Yes
+C01656,Small Business,North,Monthly,MI,Month-to-month,Bank transfer,DSL,No,4,0,No,No,Yes
+C01657,Small Business,West,Annual,OR,Two year,Bank transfer,Fiber optic,Yes,3,0,Yes,No,No
+C01658,Small Business,West,Annual,WA,One year,Bank transfer,Fiber optic,No,2,0,No,No,Yes
+C01659,Enterprise,West,Monthly,CA,Month-to-month,Electronic check,None,Yes,4,0,No,Yes,Yes
+C01660,Small Business,South,Annual,GA,One year,Credit card,Fiber optic,No,5,0,No,Yes,Yes
+C01661,Small Business,East,Monthly,PA,Month-to-month,Credit card,Fiber optic,No,1,0,No,No,Yes
+C01662,Enterprise,East,Monthly,NY,Month-to-month,Mailed check,DSL,Yes,2,1,No,Yes,Yes
+C01663,Enterprise,North,Annual,WI,One year,Bank transfer,Fiber optic,Yes,2,0,No,Yes,No
+C01664,Mid-Market,East,Monthly,VA,Month-to-month,Mailed check,DSL,Yes,0,0,No,No,Yes
+C01665,Small Business,East,Monthly,PA,Month-to-month,Electronic check,Fiber optic,No,1,0,Yes,Yes,No
+C01666,Small Business,South,Annual,GA,One year,Credit card,DSL,No,0,0,No,Yes,Yes
+C01667,Small Business,West,Monthly,OR,Month-to-month,Bank transfer,None,No,4,1,No,No,Yes
+C01668,Small Business,East,Annual,MA,Two year,Credit card,None,No,2,0,No,No,No
+C01669,Small Business,East,Annual,NY,One year,Bank transfer,None,No,3,0,Yes,No,Yes
+C01670,Mid-Market,East,Annual,MA,Two year,Credit card,DSL,No,0,0,Yes,No,No
+C01671,Small Business,West,Annual,AZ,One year,Mailed check,Fiber optic,No,3,0,No,No,No
+C01672,Mid-Market,East,Annual,MA,Two year,Electronic check,None,No,4,0,Yes,No,No
+C01673,Small Business,South,Monthly,NC,Month-to-month,Mailed check,None,No,4,1,No,No,Yes
+C01674,Small Business,West,Annual,AZ,One year,Credit card,DSL,No,4,0,No,Yes,Yes
+C01675,Mid-Market,East,Annual,PA,One year,Credit card,Fiber optic,Yes,0,0,Yes,No,Yes
+C01676,Enterprise,West,Annual,CA,Two year,Credit card,Fiber optic,Yes,3,0,Yes,No,No
+C01677,Small Business,North,Monthly,MI,Month-to-month,Electronic check,DSL,Yes,2,0,No,No,Yes
+C01678,Mid-Market,South,Annual,TX,One year,Mailed check,DSL,No,5,0,Yes,No,Yes
+C01679,Small Business,West,Annual,OR,One year,Mailed check,Fiber optic,No,4,0,No,No,Yes
+C01680,Small Business,East,Monthly,PA,Month-to-month,Mailed check,Fiber optic,Yes,5,0,No,No,Yes
+C01681,Mid-Market,West,Annual,OR,Two year,Mailed check,DSL,Yes,0,0,No,No,Yes
+C01682,Small Business,North,Monthly,IL,Month-to-month,Bank transfer,Fiber optic,No,2,1,Yes,No,Yes
+C01683,Small Business,North,Monthly,IL,Month-to-month,Credit card,None,No,4,0,Yes,No,Yes
+C01684,Mid-Market,West,Annual,OR,One year,Bank transfer,Fiber optic,No,0,0,No,No,No
+C01685,Small Business,South,Monthly,TX,Month-to-month,Electronic check,Fiber optic,No,3,0,Yes,No,Yes
+C01686,Small Business,East,Monthly,MA,Month-to-month,Bank transfer,Fiber optic,No,1,0,Yes,No,Yes
+C01687,Small Business,South,Monthly,FL,Month-to-month,Credit card,DSL,Yes,0,0,No,Yes,Yes
+C01688,Enterprise,South,Monthly,TX,Month-to-month,Bank transfer,DSL,Yes,3,0,Yes,Yes,Yes
+C01689,Mid-Market,West,Annual,WA,One year,Credit card,Fiber optic,No,2,0,Yes,No,Yes
+C01690,Small Business,North,Annual,IL,Two year,Credit card,Fiber optic,No,2,0,No,Yes,Yes
+C01691,Small Business,West,Annual,CA,One year,Electronic check,Fiber optic,Yes,1,0,Yes,Yes,Yes
+C01692,Mid-Market,West,Monthly,OR,Month-to-month,Credit card,Fiber optic,No,4,1,Yes,Yes,No
+C01693,Small Business,East,Annual,MA,One year,Credit card,DSL,Yes,3,0,Yes,No,Yes
+C01694,Mid-Market,South,Annual,GA,Two year,Electronic check,Fiber optic,Yes,4,0,No,No,Yes
+C01695,Mid-Market,North,Annual,MI,One year,Electronic check,DSL,Yes,4,0,No,No,Yes
+C01696,Small Business,East,Monthly,PA,Month-to-month,Credit card,Fiber optic,No,3,0,No,No,Yes
+C01697,Small Business,South,Monthly,GA,Month-to-month,Electronic check,Fiber optic,No,0,0,No,No,Yes
+C01698,Small Business,North,Annual,MI,Two year,Bank transfer,Fiber optic,No,0,0,Yes,No,Yes
+C01699,Small Business,South,Annual,GA,Two year,Electronic check,Fiber optic,No,5,0,No,No,Yes
+C01700,Small Business,West,Monthly,WA,Month-to-month,Credit card,Fiber optic,No,1,0,Yes,No,Yes
+C01701,Enterprise,South,Annual,FL,Two year,Electronic check,Fiber optic,Yes,2,0,No,No,No
+C01702,Small Business,North,Monthly,IL,Month-to-month,Credit card,Fiber optic,No,2,0,No,No,Yes
+C01703,Mid-Market,East,Monthly,MA,Month-to-month,Credit card,None,Yes,5,0,Yes,Yes,Yes
+C01704,Mid-Market,North,Annual,WI,One year,Bank transfer,Fiber optic,No,4,0,No,Yes,Yes
+C01705,Small Business,West,Annual,WA,One year,Credit card,Fiber optic,Yes,2,0,No,No,Yes
+C01706,Small Business,West,Monthly,OR,Month-to-month,Credit card,Fiber optic,Yes,4,0,Yes,No,No
+C01707,Small Business,West,Annual,AZ,Two year,Electronic check,DSL,No,3,0,No,No,Yes
+C01708,Mid-Market,West,Annual,WA,Two year,Credit card,None,Yes,3,0,No,Yes,Yes
+C01709,Small Business,North,Monthly,MI,Month-to-month,Credit card,DSL,No,5,0,Yes,No,No
+C01710,Mid-Market,North,Annual,WI,One year,Bank transfer,DSL,No,4,0,Yes,No,Yes
+C01711,Enterprise,South,Annual,GA,One year,Credit card,DSL,No,0,0,No,No,Yes
+C01712,Mid-Market,South,Annual,TX,One year,Bank transfer,Fiber optic,Yes,3,0,Yes,No,Yes
+C01713,Enterprise,West,Annual,WA,Two year,Credit card,DSL,Yes,4,0,Yes,No,No
+C01714,Mid-Market,East,Annual,MA,One year,Electronic check,DSL,Yes,0,0,No,No,Yes
+C01715,Enterprise,East,Monthly,PA,Month-to-month,Electronic check,Fiber optic,No,2,0,No,No,No
+C01716,Enterprise,West,Monthly,CA,Month-to-month,Electronic check,DSL,No,1,0,Yes,No,Yes
+C01717,Mid-Market,East,Annual,NY,Two year,Credit card,Fiber optic,Yes,4,0,Yes,No,No
+C01718,Enterprise,South,Annual,GA,Two year,Bank transfer,Fiber optic,No,0,1,No,No,Yes
+C01719,Enterprise,South,Monthly,NC,Month-to-month,Bank transfer,DSL,No,3,1,No,Yes,Yes
+C01720,Mid-Market,East,Monthly,NY,Month-to-month,Credit card,Fiber optic,No,0,0,No,No,Yes
+C01721,Mid-Market,North,Annual,MN,One year,Electronic check,DSL,Yes,5,0,No,No,Yes
+C01722,Mid-Market,East,Monthly,PA,Month-to-month,Bank transfer,None,No,1,0,Yes,Yes,Yes
+C01723,Enterprise,East,Monthly,VA,Month-to-month,Electronic check,DSL,No,2,0,No,No,No
+C01724,Small Business,East,Annual,VA,Two year,Credit card,Fiber optic,Yes,4,0,No,No,No
+C01725,Enterprise,East,Annual,MA,Two year,Bank transfer,DSL,Yes,2,0,No,Yes,No
+C01726,Mid-Market,West,Annual,WA,Two year,Credit card,DSL,Yes,0,0,Yes,No,No
+C01727,Enterprise,West,Annual,AZ,One year,Electronic check,Fiber optic,No,5,0,Yes,Yes,Yes
+C01728,Small Business,East,Monthly,PA,Month-to-month,Electronic check,Fiber optic,No,0,0,No,No,No
+C01729,Mid-Market,South,Annual,GA,Two year,Credit card,DSL,No,2,0,No,No,Yes
+C01730,Mid-Market,North,Monthly,MN,Month-to-month,Electronic check,None,Yes,0,0,No,No,No
+C01731,Enterprise,West,Monthly,OR,Month-to-month,Bank transfer,Fiber optic,No,4,0,Yes,No,Yes
+C01732,Enterprise,West,Annual,WA,Two year,Credit card,Fiber optic,Yes,1,0,No,Yes,Yes
+C01733,Mid-Market,East,Annual,NY,One year,Electronic check,None,No,5,0,Yes,No,Yes
+C01734,Mid-Market,West,Annual,WA,Two year,Electronic check,Fiber optic,Yes,1,1,No,Yes,No
+C01735,Small Business,West,Monthly,CA,Month-to-month,Bank transfer,Fiber optic,No,4,0,No,No,No
+C01736,Enterprise,West,Annual,AZ,Two year,Credit card,DSL,No,0,0,No,No,No
+C01737,Small Business,East,Annual,NY,One year,Bank transfer,Fiber optic,No,0,0,Yes,Yes,Yes
+C01738,Mid-Market,North,Annual,MN,One year,Credit card,Fiber optic,No,1,1,No,No,Yes
+C01739,Mid-Market,North,Annual,MN,Two year,Electronic check,DSL,Yes,5,0,Yes,No,No
+C01740,Small Business,North,Monthly,WI,Month-to-month,Credit card,DSL,No,5,0,No,No,Yes
+C01741,Small Business,South,Annual,FL,One year,Credit card,DSL,No,3,0,No,Yes,Yes
+C01742,Small Business,East,Annual,NY,One year,Credit card,Fiber optic,Yes,2,0,No,No,Yes
+C01743,Enterprise,South,Annual,TX,One year,Bank transfer,DSL,No,1,0,No,Yes,Yes
+C01744,Mid-Market,North,Annual,MI,Two year,Mailed check,DSL,Yes,1,0,No,No,No
+C01745,Small Business,North,Annual,IL,One year,Bank transfer,DSL,Yes,2,0,Yes,No,Yes
+C01746,Mid-Market,West,Monthly,WA,Month-to-month,Credit card,DSL,No,2,0,Yes,No,No
+C01747,Small Business,West,Monthly,CA,Month-to-month,Credit card,DSL,Yes,4,0,No,No,No
+C01748,Enterprise,South,Annual,TX,Two year,Bank transfer,DSL,Yes,1,0,No,No,Yes
+C01749,Small Business,West,Annual,WA,Two year,Electronic check,DSL,Yes,0,0,No,No,Yes
+C01750,Small Business,East,Annual,VA,Two year,Bank transfer,Fiber optic,No,3,0,Yes,No,Yes
+C01751,Small Business,West,Monthly,OR,Month-to-month,Bank transfer,None,No,1,0,Yes,No,Yes
+C01752,Mid-Market,West,Monthly,WA,Month-to-month,Electronic check,DSL,Yes,2,0,No,No,Yes
+C01753,Small Business,East,Annual,VA,One year,Mailed check,Fiber optic,No,4,0,No,No,No
+C01754,Mid-Market,South,Annual,GA,One year,Bank transfer,Fiber optic,No,5,1,No,Yes,Yes
+C01755,Mid-Market,East,Monthly,MA,Month-to-month,Credit card,DSL,No,3,0,Yes,No,Yes
+C01756,Small Business,South,Annual,GA,One year,Mailed check,Fiber optic,No,5,0,Yes,No,No
+C01757,Small Business,South,Monthly,NC,Month-to-month,Electronic check,DSL,No,1,0,Yes,No,No
+C01758,Small Business,East,Monthly,PA,Month-to-month,Electronic check,DSL,Yes,4,0,Yes,No,Yes
+C01759,Enterprise,East,Monthly,MA,Month-to-month,Credit card,Fiber optic,Yes,5,0,No,Yes,Yes
+C01760,Small Business,East,Monthly,PA,Month-to-month,Credit card,Fiber optic,No,1,0,Yes,Yes,Yes
+C01761,Enterprise,South,Monthly,FL,Month-to-month,Credit card,DSL,Yes,4,0,Yes,No,Yes
+C01762,Small Business,South,Annual,NC,Two year,Mailed check,Fiber optic,No,2,0,No,No,Yes
+C01763,Small Business,North,Annual,MN,One year,Electronic check,DSL,Yes,5,0,Yes,No,Yes
+C01764,Small Business,East,Annual,PA,Two year,Electronic check,Fiber optic,Yes,1,1,No,No,Yes
+C01765,Small Business,East,Monthly,NY,Month-to-month,Bank transfer,Fiber optic,No,5,0,Yes,Yes,No
+C01766,Mid-Market,West,Monthly,CA,Month-to-month,Electronic check,DSL,Yes,4,1,Yes,No,Yes
+C01767,Mid-Market,East,Monthly,PA,Month-to-month,Bank transfer,Fiber optic,No,4,0,Yes,No,No
+C01768,Small Business,South,Annual,NC,One year,Credit card,DSL,No,0,0,No,No,Yes
+C01769,Mid-Market,North,Monthly,WI,Month-to-month,Mailed check,DSL,Yes,0,0,Yes,Yes,Yes
+C01770,Mid-Market,North,Annual,MI,One year,Bank transfer,Fiber optic,Yes,3,0,No,No,Yes
+C01771,Enterprise,South,Annual,GA,Two year,Electronic check,Fiber optic,Yes,2,0,No,No,No
+C01772,Enterprise,South,Annual,GA,Two year,Electronic check,DSL,No,1,0,Yes,No,Yes
+C01773,Mid-Market,South,Monthly,NC,Month-to-month,Electronic check,DSL,Yes,5,0,No,No,Yes
+C01774,Enterprise,South,Annual,FL,One year,Mailed check,DSL,No,2,0,Yes,Yes,Yes
+C01775,Mid-Market,West,Monthly,CA,Month-to-month,Bank transfer,DSL,Yes,2,0,Yes,No,No
+C01776,Mid-Market,North,Monthly,IL,Month-to-month,Credit card,Fiber optic,Yes,1,0,No,Yes,Yes
+C01777,Mid-Market,South,Annual,NC,One year,Electronic check,Fiber optic,Yes,5,0,Yes,No,Yes
+C01778,Small Business,North,Annual,WI,One year,Mailed check,DSL,Yes,2,0,No,No,No
+C01779,Mid-Market,South,Annual,TX,One year,Electronic check,DSL,Yes,1,0,No,Yes,Yes
+C01780,Enterprise,East,Monthly,NY,Month-to-month,Bank transfer,DSL,No,4,0,Yes,No,Yes
+C01781,Small Business,North,Annual,IL,Two year,Bank transfer,Fiber optic,Yes,0,1,Yes,Yes,Yes
+C01782,Enterprise,South,Annual,FL,Two year,Electronic check,DSL,No,3,0,No,No,No
+C01783,Enterprise,North,Monthly,IL,Month-to-month,Credit card,DSL,No,3,0,No,Yes,No
+C01784,Small Business,West,Annual,WA,Two year,Electronic check,Fiber optic,No,1,0,Yes,No,Yes
+C01785,Mid-Market,East,Monthly,VA,Month-to-month,Credit card,DSL,No,4,0,No,No,No
+C01786,Enterprise,North,Annual,MN,One year,Mailed check,DSL,Yes,0,0,Yes,Yes,No
+C01787,Enterprise,North,Annual,IL,Two year,Bank transfer,Fiber optic,No,5,0,No,No,Yes
+C01788,Small Business,North,Annual,IL,Two year,Bank transfer,Fiber optic,Yes,5,1,Yes,Yes,Yes
+C01789,Small Business,South,Annual,TX,Two year,Credit card,Fiber optic,No,1,0,No,No,Yes
+C01790,Mid-Market,West,Monthly,CA,Month-to-month,Electronic check,None,Yes,2,0,No,Yes,Yes
+C01791,Small Business,East,Annual,MA,Two year,Bank transfer,Fiber optic,No,1,0,No,No,Yes
+C01792,Small Business,West,Annual,AZ,One year,Credit card,Fiber optic,No,3,0,No,Yes,No
+C01793,Small Business,South,Monthly,GA,Month-to-month,Electronic check,Fiber optic,No,2,1,No,Yes,Yes
+C01794,Small Business,South,Monthly,NC,Month-to-month,Credit card,Fiber optic,Yes,2,0,Yes,Yes,Yes
+C01795,Mid-Market,South,Annual,TX,One year,Bank transfer,Fiber optic,No,5,1,Yes,No,Yes
+C01796,Mid-Market,North,Annual,MI,One year,Bank transfer,DSL,No,3,0,No,No,Yes
+C01797,Mid-Market,West,Annual,OR,One year,Electronic check,Fiber optic,No,5,0,Yes,No,Yes
+C01798,Mid-Market,North,Annual,IL,Two year,Mailed check,Fiber optic,Yes,3,0,No,No,Yes
+C01799,Small Business,South,Annual,FL,One year,Credit card,Fiber optic,Yes,2,0,Yes,Yes,Yes
+C01800,Small Business,East,Monthly,MA,Month-to-month,Electronic check,Fiber optic,Yes,0,0,No,No,Yes
+C01801,Small Business,North,Monthly,WI,Month-to-month,Electronic check,Fiber optic,No,0,0,No,No,Yes
+C01802,Small Business,South,Annual,NC,One year,Bank transfer,DSL,Yes,3,0,No,No,No
+C01803,Small Business,South,Annual,TX,One year,Credit card,DSL,No,3,0,Yes,No,Yes
+C01804,Small Business,South,Annual,FL,One year,Credit card,DSL,No,3,0,No,No,Yes
+C01805,Small Business,North,Annual,IL,One year,Electronic check,Fiber optic,No,5,0,No,Yes,Yes
+C01806,Small Business,North,Annual,WI,One year,Bank transfer,DSL,No,0,0,No,No,Yes
+C01807,Mid-Market,North,Annual,IL,One year,Bank transfer,DSL,No,3,0,No,Yes,Yes
+C01808,Mid-Market,South,Annual,FL,Two year,Electronic check,Fiber optic,No,4,0,Yes,No,Yes
+C01809,Enterprise,North,Monthly,MN,Month-to-month,Mailed check,Fiber optic,Yes,3,0,Yes,Yes,Yes
+C01810,Mid-Market,West,Annual,OR,One year,Electronic check,DSL,No,1,0,Yes,No,No
+C01811,Mid-Market,North,Annual,IL,One year,Electronic check,Fiber optic,No,2,0,No,No,Yes
+C01812,Small Business,East,Monthly,NY,Month-to-month,Credit card,Fiber optic,No,0,1,No,No,No
+C01813,Mid-Market,East,Annual,PA,One year,Bank transfer,DSL,No,1,0,Yes,No,No
+C01814,Small Business,South,Annual,GA,One year,Electronic check,Fiber optic,No,4,0,No,No,No
+C01815,Small Business,West,Annual,CA,One year,Credit card,None,No,3,0,Yes,No,Yes
+C01816,Small Business,North,Annual,IL,One year,Electronic check,Fiber optic,No,5,0,No,No,No
+C01817,Small Business,North,Monthly,MI,Month-to-month,Credit card,Fiber optic,No,4,0,No,No,Yes
+C01818,Small Business,South,Monthly,TX,Month-to-month,Bank transfer,Fiber optic,Yes,1,0,Yes,Yes,No
+C01819,Mid-Market,North,Monthly,MN,Month-to-month,Mailed check,Fiber optic,Yes,4,0,Yes,No,Yes
+C01820,Enterprise,South,Monthly,TX,Month-to-month,Credit card,DSL,No,4,1,No,No,No
+C01821,Mid-Market,South,Annual,FL,One year,Bank transfer,DSL,No,1,1,No,No,No
+C01822,Mid-Market,West,Annual,AZ,Two year,Credit card,None,Yes,0,0,Yes,Yes,No
+C01823,Mid-Market,South,Annual,NC,One year,Electronic check,DSL,No,4,0,No,No,Yes
+C01824,Small Business,West,Monthly,AZ,Month-to-month,Electronic check,Fiber optic,No,4,0,No,No,No
+C01825,Mid-Market,West,Monthly,OR,Month-to-month,Mailed check,Fiber optic,No,0,0,Yes,No,Yes
+C01826,Mid-Market,West,Monthly,WA,Month-to-month,Electronic check,Fiber optic,Yes,2,0,No,No,No
+C01827,Small Business,North,Annual,MI,One year,Bank transfer,None,No,5,1,Yes,Yes,Yes
+C01828,Small Business,West,Monthly,OR,Month-to-month,Electronic check,DSL,Yes,4,0,No,No,No
+C01829,Enterprise,East,Annual,PA,One year,Bank transfer,Fiber optic,Yes,4,0,No,No,Yes
+C01830,Mid-Market,West,Annual,AZ,One year,Electronic check,DSL,Yes,2,1,Yes,No,Yes
+C01831,Mid-Market,South,Annual,TX,One year,Mailed check,DSL,Yes,0,0,No,No,Yes
+C01832,Mid-Market,West,Monthly,AZ,Month-to-month,Bank transfer,Fiber optic,Yes,2,1,Yes,Yes,Yes
+C01833,Small Business,East,Monthly,VA,Month-to-month,Electronic check,DSL,No,4,0,No,No,Yes
+C01834,Mid-Market,North,Annual,MN,One year,Bank transfer,DSL,No,5,0,No,Yes,No
+C01835,Small Business,South,Annual,FL,One year,Credit card,DSL,Yes,3,0,Yes,No,No
+C01836,Small Business,North,Monthly,MN,Month-to-month,Electronic check,Fiber optic,No,0,0,No,No,No
+C01837,Mid-Market,West,Annual,AZ,Two year,Electronic check,Fiber optic,No,3,1,Yes,Yes,No
+C01838,Small Business,South,Annual,NC,One year,Bank transfer,Fiber optic,No,1,0,No,No,Yes
+C01839,Mid-Market,North,Monthly,WI,Month-to-month,Bank transfer,DSL,No,3,0,No,No,Yes
+C01840,Small Business,East,Monthly,VA,Month-to-month,Electronic check,None,Yes,2,0,No,No,Yes
+C01841,Mid-Market,South,Monthly,TX,Month-to-month,Mailed check,DSL,No,3,0,No,Yes,Yes
+C01842,Mid-Market,North,Monthly,MI,Month-to-month,Electronic check,Fiber optic,No,3,1,No,No,Yes
+C01843,Mid-Market,West,Monthly,OR,Month-to-month,Electronic check,Fiber optic,No,3,1,Yes,No,No
+C01844,Mid-Market,West,Annual,CA,One year,Credit card,DSL,No,0,0,Yes,No,Yes
+C01845,Enterprise,East,Monthly,VA,Month-to-month,Electronic check,Fiber optic,No,5,1,No,No,No
+C01846,Mid-Market,East,Annual,NY,Two year,Electronic check,DSL,No,3,0,Yes,No,Yes
+C01847,Mid-Market,South,Annual,TX,Two year,Credit card,DSL,No,3,1,Yes,No,No
+C01848,Mid-Market,East,Monthly,NY,Month-to-month,Electronic check,Fiber optic,No,2,0,Yes,Yes,Yes
+C01849,Small Business,East,Monthly,PA,Month-to-month,Electronic check,Fiber optic,Yes,0,0,No,Yes,No
+C01850,Small Business,North,Annual,IL,One year,Bank transfer,Fiber optic,Yes,3,0,No,No,Yes
+C01851,Small Business,North,Annual,MN,Two year,Credit card,Fiber optic,Yes,2,0,Yes,No,Yes
+C01852,Small Business,South,Annual,FL,Two year,Bank transfer,DSL,Yes,5,1,Yes,No,Yes
+C01853,Small Business,South,Monthly,FL,Month-to-month,Credit card,Fiber optic,Yes,3,0,No,Yes,Yes
+C01854,Small Business,North,Monthly,MI,Month-to-month,Credit card,Fiber optic,No,2,1,Yes,Yes,Yes
+C01855,Mid-Market,North,Monthly,MI,Month-to-month,Electronic check,Fiber optic,Yes,0,0,No,No,Yes
+C01856,Small Business,West,Annual,OR,Two year,Bank transfer,Fiber optic,Yes,3,0,No,Yes,Yes
+C01857,Enterprise,South,Annual,GA,One year,Electronic check,DSL,Yes,5,0,No,No,No
+C01858,Small Business,East,Annual,MA,One year,Electronic check,DSL,No,2,0,Yes,No,Yes
+C01859,Mid-Market,East,Annual,NY,One year,Bank transfer,DSL,No,3,1,No,Yes,Yes
+C01860,Small Business,East,Monthly,NY,Month-to-month,Bank transfer,DSL,No,0,0,No,No,No
+C01861,Mid-Market,East,Annual,PA,One year,Credit card,Fiber optic,No,2,0,Yes,No,Yes
+C01862,Small Business,South,Monthly,NC,Month-to-month,Electronic check,DSL,No,4,0,No,No,No
+C01863,Mid-Market,West,Annual,AZ,One year,Electronic check,Fiber optic,No,2,1,Yes,Yes,Yes
+C01864,Small Business,South,Annual,NC,One year,Credit card,None,No,5,1,No,No,Yes
+C01865,Enterprise,West,Annual,OR,One year,Bank transfer,Fiber optic,Yes,2,1,No,No,Yes
+C01866,Small Business,South,Monthly,TX,Month-to-month,Credit card,Fiber optic,No,4,0,Yes,No,Yes
+C01867,Mid-Market,North,Annual,MN,Two year,Electronic check,Fiber optic,Yes,3,1,Yes,Yes,Yes
+C01868,Small Business,West,Annual,WA,One year,Electronic check,DSL,No,5,0,Yes,Yes,No
+C01869,Mid-Market,North,Monthly,IL,Month-to-month,Credit card,Fiber optic,Yes,3,1,Yes,No,Yes
+C01870,Mid-Market,West,Monthly,OR,Month-to-month,Bank transfer,None,Yes,2,0,No,No,No
+C01871,Small Business,North,Annual,IL,One year,Electronic check,Fiber optic,Yes,2,0,Yes,No,Yes
+C01872,Small Business,North,Monthly,IL,Month-to-month,Electronic check,DSL,No,3,0,No,No,Yes
+C01873,Small Business,East,Monthly,VA,Month-to-month,Electronic check,DSL,No,5,0,Yes,No,No
+C01874,Small Business,West,Monthly,CA,Month-to-month,Electronic check,Fiber optic,Yes,1,0,No,No,No
+C01875,Enterprise,South,Monthly,NC,Month-to-month,Credit card,Fiber optic,No,5,0,No,Yes,Yes
+C01876,Small Business,North,Monthly,MN,Month-to-month,Electronic check,Fiber optic,Yes,5,0,No,Yes,Yes
+C01877,Small Business,North,Annual,MN,One year,Bank transfer,DSL,No,4,1,No,Yes,Yes
+C01878,Enterprise,West,Monthly,AZ,Month-to-month,Bank transfer,DSL,Yes,3,0,No,No,Yes
+C01879,Small Business,East,Annual,MA,One year,Mailed check,Fiber optic,Yes,5,0,No,Yes,No
+C01880,Small Business,North,Monthly,IL,Month-to-month,Mailed check,Fiber optic,No,1,0,No,No,Yes
+C01881,Mid-Market,South,Monthly,TX,Month-to-month,Electronic check,Fiber optic,No,3,0,Yes,No,No
+C01882,Enterprise,South,Monthly,FL,Month-to-month,Electronic check,Fiber optic,No,4,0,Yes,No,Yes
+C01883,Mid-Market,North,Annual,MN,One year,Electronic check,DSL,No,4,0,Yes,No,Yes
+C01884,Mid-Market,West,Annual,CA,Two year,Bank transfer,Fiber optic,No,3,0,No,Yes,Yes
+C01885,Enterprise,East,Monthly,MA,Month-to-month,Electronic check,Fiber optic,Yes,2,0,No,No,Yes
+C01886,Small Business,North,Monthly,MI,Month-to-month,Credit card,DSL,Yes,5,0,No,No,Yes
+C01887,Enterprise,East,Monthly,MA,Month-to-month,Electronic check,DSL,No,4,0,No,No,No
+C01888,Enterprise,South,Monthly,FL,Month-to-month,Electronic check,DSL,Yes,4,0,Yes,No,No
+C01889,Enterprise,North,Annual,IL,Two year,Bank transfer,Fiber optic,No,3,0,No,No,No
+C01890,Small Business,South,Monthly,TX,Month-to-month,Bank transfer,None,Yes,5,0,Yes,No,Yes
+C01891,Small Business,North,Annual,MN,Two year,Credit card,DSL,No,2,0,Yes,Yes,No
+C01892,Mid-Market,North,Annual,WI,One year,Mailed check,DSL,Yes,3,0,No,No,No
+C01893,Mid-Market,West,Annual,CA,One year,Electronic check,Fiber optic,No,4,0,Yes,No,No
+C01894,Mid-Market,East,Annual,MA,Two year,Electronic check,DSL,No,3,0,No,Yes,Yes
+C01895,Enterprise,North,Monthly,MN,Month-to-month,Credit card,DSL,Yes,1,0,No,Yes,Yes
+C01896,Mid-Market,West,Annual,WA,One year,Bank transfer,DSL,Yes,4,0,No,No,No
+C01897,Small Business,East,Monthly,PA,Month-to-month,Credit card,DSL,Yes,2,0,Yes,No,Yes
+C01898,Small Business,West,Annual,AZ,Two year,Electronic check,DSL,Yes,0,0,Yes,Yes,Yes
+C01899,Small Business,East,Annual,NY,One year,Mailed check,DSL,Yes,2,0,Yes,No,Yes
+C01900,Small Business,South,Monthly,TX,Month-to-month,Electronic check,None,No,0,0,No,No,Yes
+C01901,Small Business,East,Annual,PA,Two year,Credit card,Fiber optic,Yes,5,0,Yes,No,Yes
+C01902,Enterprise,East,Monthly,VA,Month-to-month,Bank transfer,Fiber optic,Yes,5,0,Yes,No,No
+C01903,Mid-Market,East,Monthly,PA,Month-to-month,Mailed check,DSL,No,1,1,No,No,No
+C01904,Mid-Market,North,Annual,IL,One year,Bank transfer,DSL,Yes,5,0,No,Yes,Yes
+C01905,Small Business,South,Monthly,TX,Month-to-month,Mailed check,DSL,Yes,4,0,No,No,Yes
+C01906,Mid-Market,North,Annual,WI,Two year,Electronic check,DSL,No,5,1,Yes,Yes,No
+C01907,Enterprise,South,Annual,NC,One year,Credit card,DSL,No,0,0,No,No,Yes
+C01908,Enterprise,North,Annual,WI,One year,Bank transfer,DSL,No,0,0,Yes,No,Yes
+C01909,Mid-Market,North,Monthly,IL,Month-to-month,Credit card,Fiber optic,Yes,5,1,Yes,No,Yes
+C01910,Enterprise,West,Monthly,WA,Month-to-month,Credit card,DSL,No,1,0,Yes,No,Yes
+C01911,Mid-Market,North,Annual,IL,Two year,Mailed check,Fiber optic,No,3,0,No,No,No
+C01912,Mid-Market,West,Monthly,WA,Month-to-month,Electronic check,DSL,No,5,0,No,No,Yes
+C01913,Enterprise,North,Annual,IL,One year,Credit card,DSL,No,2,0,Yes,Yes,No
+C01914,Small Business,West,Monthly,OR,Month-to-month,Mailed check,Fiber optic,Yes,0,0,No,No,Yes
+C01915,Small Business,South,Monthly,TX,Month-to-month,Mailed check,Fiber optic,No,4,0,No,No,No
+C01916,Small Business,East,Annual,MA,One year,Mailed check,Fiber optic,No,2,0,Yes,No,Yes
+C01917,Mid-Market,South,Annual,FL,One year,Mailed check,DSL,No,0,0,No,No,Yes
+C01918,Mid-Market,South,Annual,TX,One year,Electronic check,Fiber optic,No,2,1,Yes,No,Yes
+C01919,Mid-Market,South,Annual,FL,Two year,Mailed check,Fiber optic,No,3,0,Yes,No,Yes
+C01920,Small Business,East,Monthly,PA,Month-to-month,Credit card,DSL,No,5,1,No,No,No
+C01921,Small Business,South,Monthly,TX,Month-to-month,Bank transfer,Fiber optic,No,1,0,Yes,Yes,No
+C01922,Enterprise,East,Monthly,PA,Month-to-month,Credit card,DSL,No,3,1,No,No,Yes
+C01923,Small Business,West,Annual,CA,One year,Bank transfer,DSL,No,1,0,Yes,No,Yes
+C01924,Enterprise,South,Monthly,GA,Month-to-month,Credit card,Fiber optic,No,1,0,No,No,No
+C01925,Small Business,South,Annual,NC,One year,Bank transfer,Fiber optic,Yes,1,0,No,No,No
+C01926,Mid-Market,North,Monthly,MN,Month-to-month,Electronic check,None,Yes,3,0,No,No,Yes
+C01927,Mid-Market,South,Annual,NC,Two year,Electronic check,DSL,Yes,3,0,No,No,Yes
+C01928,Enterprise,North,Annual,IL,Two year,Credit card,Fiber optic,No,0,0,No,No,Yes
+C01929,Small Business,North,Annual,MN,Two year,Electronic check,DSL,No,0,0,Yes,No,No
+C01930,Enterprise,West,Monthly,OR,Month-to-month,Bank transfer,DSL,No,4,1,Yes,No,Yes
+C01931,Mid-Market,North,Annual,MN,Two year,Electronic check,Fiber optic,No,1,1,No,No,No
+C01932,Mid-Market,South,Monthly,FL,Month-to-month,Credit card,DSL,No,3,0,No,No,Yes
+C01933,Mid-Market,West,Monthly,OR,Month-to-month,Electronic check,DSL,Yes,0,0,Yes,Yes,Yes
+C01934,Small Business,West,Monthly,OR,Month-to-month,Electronic check,Fiber optic,No,3,0,No,No,Yes
+C01935,Mid-Market,North,Monthly,IL,Month-to-month,Bank transfer,DSL,No,5,0,Yes,Yes,No
+C01936,Small Business,North,Annual,WI,One year,Electronic check,Fiber optic,No,2,1,Yes,No,Yes
+C01937,Small Business,South,Monthly,NC,Month-to-month,Electronic check,Fiber optic,No,3,0,No,Yes,No
+C01938,Mid-Market,East,Monthly,NY,Month-to-month,Electronic check,Fiber optic,No,1,0,No,No,Yes
+C01939,Mid-Market,West,Annual,OR,One year,Electronic check,DSL,Yes,1,0,No,No,No
+C01940,Small Business,North,Annual,MN,Two year,Bank transfer,DSL,No,0,0,Yes,No,No
+C01941,Small Business,North,Annual,MN,One year,Electronic check,None,No,2,1,Yes,No,No
+C01942,Small Business,South,Annual,GA,One year,Credit card,Fiber optic,No,5,0,No,Yes,Yes
+C01943,Small Business,West,Monthly,WA,Month-to-month,Bank transfer,DSL,Yes,0,0,Yes,Yes,No
+C01944,Mid-Market,North,Annual,WI,Two year,Credit card,DSL,Yes,2,0,No,Yes,Yes
+C01945,Small Business,South,Monthly,FL,Month-to-month,Credit card,Fiber optic,Yes,5,0,Yes,No,Yes
+C01946,Enterprise,North,Monthly,MN,Month-to-month,Electronic check,Fiber optic,No,2,0,Yes,No,No
+C01947,Small Business,North,Monthly,IL,Month-to-month,Mailed check,DSL,Yes,4,0,Yes,No,No
+C01948,Small Business,West,Annual,CA,One year,Credit card,Fiber optic,Yes,2,0,Yes,No,Yes
+C01949,Enterprise,North,Monthly,WI,Month-to-month,Electronic check,DSL,No,3,0,Yes,Yes,No
+C01950,Small Business,South,Annual,FL,One year,Mailed check,DSL,Yes,5,1,No,No,Yes
+C01951,Small Business,West,Monthly,CA,Month-to-month,Bank transfer,Fiber optic,No,3,0,No,No,No
+C01952,Enterprise,East,Monthly,MA,Month-to-month,Credit card,None,No,4,0,Yes,No,No
+C01953,Enterprise,North,Monthly,MN,Month-to-month,Mailed check,DSL,Yes,4,0,No,Yes,No
+C01954,Mid-Market,South,Monthly,GA,Month-to-month,Electronic check,DSL,No,0,1,Yes,No,No
+C01955,Small Business,West,Monthly,OR,Month-to-month,Bank transfer,DSL,No,0,0,Yes,No,No
+C01956,Mid-Market,South,Annual,TX,One year,Bank transfer,Fiber optic,No,3,1,No,Yes,Yes
+C01957,Enterprise,East,Annual,PA,One year,Credit card,DSL,No,2,0,No,No,Yes
+C01958,Enterprise,East,Monthly,PA,Month-to-month,Electronic check,Fiber optic,Yes,2,0,No,No,Yes
+C01959,Small Business,East,Annual,MA,One year,Electronic check,Fiber optic,No,2,0,Yes,No,No
+C01960,Small Business,North,Monthly,IL,Month-to-month,Mailed check,Fiber optic,Yes,4,1,Yes,No,Yes
+C01961,Small Business,West,Monthly,WA,Month-to-month,Electronic check,Fiber optic,No,5,0,No,No,No
+C01962,Small Business,West,Monthly,WA,Month-to-month,Electronic check,Fiber optic,Yes,5,0,No,No,Yes
+C01963,Mid-Market,North,Monthly,MN,Month-to-month,Bank transfer,Fiber optic,No,0,1,No,No,No
+C01964,Small Business,West,Monthly,CA,Month-to-month,Bank transfer,None,Yes,4,1,No,No,Yes
+C01965,Small Business,West,Annual,AZ,One year,Electronic check,Fiber optic,Yes,4,0,Yes,No,No
+C01966,Small Business,East,Monthly,VA,Month-to-month,Bank transfer,Fiber optic,Yes,5,0,No,No,No
+C01967,Mid-Market,South,Annual,TX,One year,Credit card,Fiber optic,No,2,0,No,No,Yes
+C01968,Small Business,South,Monthly,FL,Month-to-month,Bank transfer,DSL,Yes,3,0,Yes,No,No
+C01969,Small Business,West,Annual,OR,One year,Electronic check,Fiber optic,No,2,0,Yes,No,Yes
+C01970,Small Business,North,Annual,MN,One year,Electronic check,DSL,Yes,2,0,No,Yes,No
+C01971,Enterprise,West,Monthly,CA,Month-to-month,Bank transfer,DSL,No,1,1,Yes,No,No
+C01972,Small Business,West,Monthly,WA,Month-to-month,Electronic check,Fiber optic,Yes,3,0,No,No,Yes
+C01973,Mid-Market,East,Annual,MA,One year,Credit card,None,No,0,1,No,Yes,Yes
+C01974,Small Business,South,Annual,GA,Two year,Electronic check,Fiber optic,Yes,4,0,Yes,No,Yes
+C01975,Small Business,East,Annual,MA,Two year,Bank transfer,DSL,Yes,5,0,No,No,Yes
+C01976,Small Business,North,Monthly,MN,Month-to-month,Mailed check,Fiber optic,Yes,1,0,No,No,No
+C01977,Small Business,West,Annual,OR,One year,Bank transfer,DSL,Yes,1,0,Yes,No,Yes
+C01978,Small Business,South,Monthly,TX,Month-to-month,Mailed check,DSL,No,3,0,No,No,No
+C01979,Mid-Market,North,Monthly,MN,Month-to-month,Mailed check,Fiber optic,Yes,5,0,Yes,No,No
+C01980,Mid-Market,West,Annual,AZ,One year,Credit card,Fiber optic,No,0,0,No,Yes,No
+C01981,Small Business,East,Annual,NY,One year,Credit card,Fiber optic,No,2,0,Yes,No,Yes
+C01982,Small Business,East,Annual,MA,One year,Mailed check,Fiber optic,Yes,1,0,Yes,No,Yes
+C01983,Mid-Market,North,Annual,MN,Two year,Mailed check,None,No,5,0,No,No,No
+C01984,Small Business,West,Monthly,OR,Month-to-month,Mailed check,DSL,Yes,5,0,Yes,No,No
+C01985,Small Business,East,Annual,VA,One year,Bank transfer,DSL,Yes,0,0,Yes,No,No
+C01986,Small Business,West,Monthly,CA,Month-to-month,Electronic check,None,Yes,0,0,Yes,No,Yes
+C01987,Small Business,West,Monthly,CA,Month-to-month,Mailed check,DSL,Yes,0,0,No,Yes,Yes
+C01988,Mid-Market,North,Monthly,IL,Month-to-month,Mailed check,DSL,Yes,4,0,No,Yes,No
+C01989,Enterprise,North,Annual,MI,Two year,Bank transfer,Fiber optic,No,5,0,Yes,No,No
+C01990,Enterprise,West,Monthly,CA,Month-to-month,Bank transfer,Fiber optic,No,2,0,Yes,No,Yes
+C01991,Enterprise,East,Monthly,VA,Month-to-month,Credit card,Fiber optic,No,0,0,Yes,Yes,No
+C01992,Small Business,South,Annual,TX,One year,Mailed check,Fiber optic,Yes,3,0,No,Yes,Yes
+C01993,Small Business,South,Annual,FL,Two year,Electronic check,Fiber optic,No,5,0,Yes,No,Yes
+C01994,Small Business,East,Annual,NY,Two year,Bank transfer,Fiber optic,Yes,5,0,No,Yes,Yes
+C01995,Small Business,West,Annual,OR,One year,Electronic check,Fiber optic,Yes,2,1,No,Yes,Yes
+C01996,Small Business,North,Monthly,MI,Month-to-month,Electronic check,Fiber optic,No,4,0,No,Yes,Yes
+C01997,Small Business,East,Annual,MA,One year,Electronic check,Fiber optic,Yes,5,0,No,No,Yes
+C01998,Small Business,West,Annual,WA,Two year,Credit card,Fiber optic,Yes,4,1,Yes,No,Yes
+C01999,Small Business,South,Annual,NC,Two year,Electronic check,Fiber optic,No,2,0,No,No,Yes
+C02000,Small Business,South,Annual,NC,Two year,Mailed check,DSL,No,1,0,Yes,No,Yes

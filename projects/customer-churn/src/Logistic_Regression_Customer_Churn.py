@@ -19,7 +19,7 @@ from sklearn.metrics import (
     confusion_matrix,
     roc_auc_score,
 )
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import StratifiedKFold, cross_val_predict, train_test_split
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
@@ -34,6 +34,8 @@ LEAKAGE_COLUMNS = {
     "is_active",
     "tenure_days",
     "years_since_signup",
+    "support_calls_per_day",
+    "avg_transactions_per_day",
 }
 ID_COLUMNS = {"customer_id", "subscription_id"}
 
@@ -185,6 +187,8 @@ def select_model_features(df):
     excluded = set(LEAKAGE_COLUMNS) | set(ID_COLUMNS) | {TARGET_COLUMN, "referral_code"}
     excluded.update(column for column in df.columns if column.endswith("_id"))
     excluded.update(column for column in df.columns if column.endswith("_date"))
+    excluded.update(column for column in df.columns if column.endswith("_per_day"))
+    excluded.update(column for column in df.columns if "tenure" in column)
 
     candidate_columns = [column for column in df.columns if column not in excluded]
 
@@ -203,6 +207,27 @@ def select_model_features(df):
         raise ValueError("No usable model features were found after preprocessing.")
 
     return numeric_features, categorical_features
+
+
+def single_feature_auc_report(df, features, target_column=TARGET_COLUMN):
+    y = df[target_column]
+    rows = []
+    for feature in features:
+        series = df[feature]
+        if series.nunique(dropna=True) < 2 or y.nunique() != 2:
+            auc = np.nan
+        elif pd.api.types.is_numeric_dtype(series):
+            scored = series.fillna(series.median())
+            auc = roc_auc_score(y, scored)
+        else:
+            encoded = pd.Categorical(series.fillna("__missing__")).codes
+            auc = roc_auc_score(y, encoded)
+        if not pd.isna(auc):
+            auc = max(float(auc), float(1 - auc))
+        rows.append({"feature": feature, "single_feature_auc": auc})
+    return pd.DataFrame(rows).sort_values(
+        by="single_feature_auc", ascending=False, na_position="last"
+    )
 
 
 # -------------------------------
@@ -308,7 +333,18 @@ def train_and_evaluate(df, output_dir, test_size=0.30):
     model_results = []
     fitted_models = {}
 
+    cv_splits = min(5, int(y.value_counts().min()))
+    cv = StratifiedKFold(n_splits=cv_splits, shuffle=True, random_state=42)
+
     for model_name, model in build_models(numeric_features, categorical_features).items():
+        oof_prob = cross_val_predict(
+            model,
+            X,
+            y,
+            cv=cv,
+            method="predict_proba",
+        )[:, 1]
+        oof_auc = roc_auc_score(y, oof_prob)
         model.fit(X_train, y_train)
         metrics, y_pred, _ = score_model(model, X_test, y_test)
         fitted_models[model_name] = model
@@ -317,15 +353,17 @@ def train_and_evaluate(df, output_dir, test_size=0.30):
                 "model": model_name,
                 "accuracy": metrics["accuracy"],
                 "roc_auc": metrics["roc_auc"],
+                "oof_roc_auc": oof_auc,
             }
         )
         print(f"\n{model_name} Performance")
         print(f"Accuracy: {metrics['accuracy']:.3f}")
         print(f"ROC-AUC: {metrics['roc_auc']:.3f}")
+        print(f"OOF ROC-AUC: {oof_auc:.3f}")
         print(classification_report(y_test, y_pred, zero_division=0))
 
     metrics_df = pd.DataFrame(model_results).sort_values(
-        by=["roc_auc", "accuracy"], ascending=False
+        by=["oof_roc_auc", "roc_auc", "accuracy"], ascending=False
     )
     best_model_name = metrics_df.iloc[0]["model"]
     best_model = fitted_models[best_model_name]
@@ -349,21 +387,103 @@ def train_and_evaluate(df, output_dir, test_size=0.30):
 # -------------------------------
 # 4. Tableau Export
 # -------------------------------
+def risk_tier(probability):
+    if probability >= 0.70:
+        return "High"
+    if probability >= 0.40:
+        return "Medium"
+    return "Low"
+
+
+def write_qa_packet(tableau_df, leakage_report, output_dir):
+    probability_summary = pd.DataFrame(
+        {
+            "metric": [
+                "rows",
+                "mean_probability",
+                "median_probability",
+                "min_probability",
+                "max_probability",
+                "extreme_probability_rate",
+            ],
+            "value": [
+                len(tableau_df),
+                tableau_df["predicted_churn_probability"].mean(),
+                tableau_df["predicted_churn_probability"].median(),
+                tableau_df["predicted_churn_probability"].min(),
+                tableau_df["predicted_churn_probability"].max(),
+                (
+                    (tableau_df["predicted_churn_probability"] == 0)
+                    | (tableau_df["predicted_churn_probability"] == 1)
+                ).mean(),
+            ],
+        }
+    )
+    risk_counts = tableau_df["churn_risk_tier"].value_counts().rename_axis(
+        "churn_risk_tier"
+    ).reset_index(name="row_count")
+    top_impacted = tableau_df.sort_values(
+        by="revenue_at_risk", ascending=False
+    ).head(10)
+
+    probability_summary.to_csv(output_dir / "probability_summary.csv", index=False)
+    risk_counts.to_csv(output_dir / "risk_tier_counts.csv", index=False)
+    top_impacted.to_csv(output_dir / "top_impacted_customers.csv", index=False)
+
+    with open(output_dir / "qa_packet.md", "w", encoding="utf-8") as qa_file:
+        qa_file.write("# Customer Churn QA Packet\n\n")
+        qa_file.write("## Probability Summary\n\n")
+        qa_file.write(probability_summary.to_string(index=False))
+        qa_file.write("\n\n## Risk Tier Counts\n\n")
+        qa_file.write(risk_counts.to_string(index=False))
+        qa_file.write("\n\n## Highest Single-Feature AUC\n\n")
+        qa_file.write(leakage_report.head(10).to_string(index=False))
+        qa_file.write("\n")
+
+
 def export_for_tableau(df, model, features, model_name, output_dir):
     tableau_df = df.copy()
-    tableau_df["model_name"] = model_name
-    tableau_df["predicted_churn"] = model.predict(tableau_df[features])
-    tableau_df["predicted_churn_probability"] = model.predict_proba(
-        tableau_df[features]
+    X = tableau_df[features]
+    y = tableau_df[TARGET_COLUMN]
+    cv_splits = min(5, int(y.value_counts().min()))
+    cv = StratifiedKFold(n_splits=cv_splits, shuffle=True, random_state=42)
+    oof_prob = cross_val_predict(
+        model,
+        X,
+        y,
+        cv=cv,
+        method="predict_proba",
     )[:, 1]
+
+    tableau_df["model_name"] = model_name
+    tableau_df["predicted_churn_probability"] = oof_prob
+    tableau_df["predicted_churn"] = (oof_prob >= 0.5).astype(int)
+    tableau_df["churn_risk_tier"] = tableau_df[
+        "predicted_churn_probability"
+    ].apply(risk_tier)
+    charge_column = (
+        "monthly_charges" if "monthly_charges" in tableau_df.columns else "subscription_cost"
+    )
+    tableau_df["revenue_at_risk"] = (
+        tableau_df[charge_column] * tableau_df["predicted_churn_probability"]
+    ).round(2)
+    tableau_df["impacted_customer_flag"] = (
+        tableau_df["predicted_churn_probability"] >= 0.70
+    ).astype(int)
+
+    leakage_report = single_feature_auc_report(tableau_df, features)
 
     cleaned_path = output_dir / "cleaned_data.csv"
     tableau_path = output_dir / "final_data_for_tableau.csv"
+    leakage_path = output_dir / "single_feature_auc.csv"
     df.to_csv(cleaned_path, index=False)
     tableau_df.to_csv(tableau_path, index=False)
+    leakage_report.to_csv(leakage_path, index=False)
+    write_qa_packet(tableau_df, leakage_report, output_dir)
 
     print(f"\nCleaned data saved to: {cleaned_path}")
     print(f"Tableau export saved to: {tableau_path}")
+    print(f"Leakage report saved to: {leakage_path}")
 
 
 # -------------------------------
