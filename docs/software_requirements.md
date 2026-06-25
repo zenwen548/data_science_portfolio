@@ -6,8 +6,8 @@ Versions the projects in this repo are built and tested against.
 
 | Software | Version | Notes |
 | --- | --- | --- |
-| Python | 3.11 or 3.12 | Docker uses `python:3.11-slim`; local verification used Python 3.12.13 |
-| Docker | 24 or newer | Optional, used for the bulldozer training container |
+| Python | 3.12 | Docker uses `python:3.12-slim-bookworm`; local verification used Python 3.13 with the pinned packages |
+| Docker | 24 or newer | Optional, used for the bulldozer and churn Spark training containers |
 | Git | 2.40 or newer | Used for normal branch and PR workflows |
 | Tableau Desktop or Tableau Public | Local installed version | Only needed to edit or republish dashboard workbooks |
 
@@ -28,6 +28,8 @@ scikit-learn>=1.9,<2
 xgboost>=3.3,<4
 matplotlib>=3.11,<4
 mlflow>=2.10,<3.13
+pyspark>=3.5,<4
+setuptools>=75,<81
 ```
 
 The lower bounds match the disposable verification environment used during the Phase 1 cleanup. The upper bounds stop the next major release from changing behavior unexpectedly. The MLflow upper bound is required because MLflow 3.13 rejects `file:` tracking URIs by default, which breaks the documented local file-store workflow unless an environment override is set.
