@@ -94,7 +94,7 @@ class ChurnSparkScaleTests(unittest.TestCase):
     def test_spark_dockerfile_has_runtime_and_documented_entrypoint(self):
         dockerfile = SPARK_DOCKERFILE.read_text(encoding="utf-8")
 
-        self.assertIn("FROM python:3.11-slim", dockerfile)
+        self.assertIn("FROM python:3.12-slim-bookworm", dockerfile)
         self.assertIn("openjdk-17-jre-headless", dockerfile)
         self.assertIn("pip install --no-cache-dir -r requirements.txt", dockerfile)
         self.assertIn("projects/customer-churn", dockerfile)
