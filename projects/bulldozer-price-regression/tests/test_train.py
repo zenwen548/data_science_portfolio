@@ -8,6 +8,7 @@ import pandas as pd
 
 PROJECT_DIR = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT_DIR / "src"))
+DOCKERFILE = PROJECT_DIR / "Dockerfile"
 
 from train import TUNED_XGB_PARAMS, prepare_train_validation, rmsle
 
@@ -57,6 +58,11 @@ class BulldozerTrainingTests(unittest.TestCase):
                 "random_state": 42,
             },
         )
+
+    def test_dockerfile_uses_python_312_bookworm_base(self):
+        dockerfile = DOCKERFILE.read_text(encoding="utf-8")
+
+        self.assertIn("FROM python:3.12-slim-bookworm", dockerfile)
 
 
 if __name__ == "__main__":
