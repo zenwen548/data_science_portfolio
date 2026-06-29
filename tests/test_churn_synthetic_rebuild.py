@@ -122,18 +122,61 @@ class ChurnSyntheticRebuildTests(unittest.TestCase):
             probability_summary = pd.read_csv(output_dir / "probability_summary.csv")
 
             required_columns = {
+                "name",
+                "email",
+                "signup_date",
+                "years_since_signup",
+                "is_active",
                 "predicted_churn",
+                "predicted_probability",
                 "predicted_churn_probability",
                 "churn_risk_tier",
                 "revenue_at_risk",
                 "impacted_customer_flag",
             }
+            legacy_tableau_columns = [
+                "customer_id",
+                "name",
+                "email",
+                "signup_date",
+                "years_since_signup",
+                "subscription_id",
+                "subscription_start_date",
+                "subscription_end_date",
+                "subscription_cost",
+                "referral_code",
+                "churned",
+                "tenure_days",
+                "avg_monthly_transactions",
+                "avg_transactions_per_day",
+                "num_support_calls",
+                "support_calls_per_day",
+                "region",
+                "state_province",
+                "is_active",
+                "was_referred",
+                "predicted_churn",
+                "predicted_probability",
+            ]
             extreme_probability_rate = (
                 (tableau["predicted_churn_probability"] == 0)
                 | (tableau["predicted_churn_probability"] == 1)
             ).mean()
 
             self.assertTrue(required_columns.issubset(tableau.columns))
+            self.assertEqual(
+                legacy_tableau_columns,
+                list(tableau.columns[: len(legacy_tableau_columns)]),
+            )
+            self.assertTrue(pd.api.types.is_integer_dtype(tableau["customer_id"]))
+            self.assertTrue(pd.api.types.is_integer_dtype(tableau["subscription_id"]))
+            self.assertTrue(pd.api.types.is_bool_dtype(tableau["churned"]))
+            self.assertTrue(pd.api.types.is_bool_dtype(tableau["predicted_churn"]))
+            pd.testing.assert_series_equal(
+                tableau["predicted_probability"],
+                tableau["predicted_churn_probability"],
+                check_names=False,
+            )
             self.assertIn("oof_roc_auc", metrics_df.columns)
             self.assertGreaterEqual(metrics_df["oof_roc_auc"].max(), 0.75)
             self.assertLessEqual(metrics_df["oof_roc_auc"].max(), 0.88)

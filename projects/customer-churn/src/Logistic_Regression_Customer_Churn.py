@@ -470,8 +470,74 @@ def export_for_tableau(df, model, features, model_name, output_dir):
     tableau_df["impacted_customer_flag"] = (
         tableau_df["predicted_churn_probability"] >= 0.70
     ).astype(int)
+    tableau_df["predicted_probability"] = tableau_df[
+        "predicted_churn_probability"
+    ]
+
+    # Keep the legacy Tableau workbook contract stable while the model/export logic
+    # evolves. Tableau binds formulas and sorts to field names and inferred types.
+    tableau_df["customer_code"] = tableau_df["customer_id"]
+    tableau_df["subscription_code"] = tableau_df["subscription_id"]
+    tableau_df["customer_id"] = (
+        tableau_df["customer_code"]
+        .astype(str)
+        .str.extract(r"(\d+)", expand=False)
+        .astype(int)
+    )
+    tableau_df["subscription_id"] = (
+        tableau_df["subscription_code"]
+        .astype(str)
+        .str.extract(r"(\d+)", expand=False)
+        .astype(int)
+    )
+    tableau_df["churned"] = tableau_df["churned"].astype(bool)
+    tableau_df["predicted_churn"] = tableau_df["predicted_churn"].astype(bool)
+    if "name" not in tableau_df.columns:
+        tableau_df["name"] = tableau_df["customer_code"].map(
+            lambda value: f"Customer {value}"
+        )
+    if "email" not in tableau_df.columns:
+        tableau_df["email"] = tableau_df["customer_code"].map(
+            lambda value: f"{str(value).lower()}@example.com"
+        )
+    if "signup_date" not in tableau_df.columns:
+        tableau_df["signup_date"] = tableau_df["subscription_start_date"]
+    if "years_since_signup" not in tableau_df.columns:
+        tableau_df["years_since_signup"] = (tableau_df["tenure_days"] / 365.25).round(
+            2
+        )
+    if "is_active" not in tableau_df.columns:
+        tableau_df["is_active"] = (~tableau_df["churned"]).astype(int)
 
     leakage_report = single_feature_auc_report(tableau_df, features)
+    legacy_tableau_columns = [
+        "customer_id",
+        "name",
+        "email",
+        "signup_date",
+        "years_since_signup",
+        "subscription_id",
+        "subscription_start_date",
+        "subscription_end_date",
+        "subscription_cost",
+        "referral_code",
+        "churned",
+        "tenure_days",
+        "avg_monthly_transactions",
+        "avg_transactions_per_day",
+        "num_support_calls",
+        "support_calls_per_day",
+        "region",
+        "state_province",
+        "is_active",
+        "was_referred",
+        "predicted_churn",
+        "predicted_probability",
+    ]
+    extra_columns = [
+        column for column in tableau_df.columns if column not in legacy_tableau_columns
+    ]
+    tableau_df = tableau_df[legacy_tableau_columns + extra_columns]
 
     cleaned_path = output_dir / "cleaned_data.csv"
     tableau_path = output_dir / "final_data_for_tableau.csv"
